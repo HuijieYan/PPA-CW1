@@ -1,0 +1,13 @@
+#0
+src/greeterconfiguration.c:88: warning: Premature Nil Termination Argument
+  pointer `xdg_seat` last assigned on line 86 could be null which results in a call to g_build_filename() with 2 arguments instead of 3 (null indicates that the last argument of this variadic function has been reached) at line 88, column 24.
+  86.         xdg_seat = NULL;
+  87. 
+  88.     state_config_dir = g_build_filename(g_get_user_cache_dir(), "lightdm-gtk-greeter", xdg_seat, NULL);
+                             ^
+  89.     state_filename = g_build_filename(state_config_dir, "state", NULL);
+  90.     g_mkdir_with_parents(state_config_dir, 0775);
+
+Found 1 issue
+                                              Issue Type(ISSUED_TYPE_ID): #
+  Premature Nil Termination Argument(PREMATURE_NIL_TERMINATION_ARGUMENT): 1

@@ -1,0 +1,16 @@
+'-fsanitize=address'
+-g
+-Werror
+-Wall
+-Wextra
+-pedantic-errors
+-Wno-gnu-designator
+'-std=gnu11'
+-Wno-gnu-zero-variadic-macro-arguments
+-Isrc
+-Idependencies/linenoise
+-Idependencies/hashmap.c
+-c
+-o
+build/linenoise.o
+dependencies/linenoise/linenoise.c

@@ -1,0 +1,118 @@
+[24970][      debug] Loading models took 186ms
+[24971][      debug] Sqlite write daemon: starting up
+[24971][      debug] Sqlite write daemon: set up complete, waiting for connections
+[24970][environment] CWD = /home/rasofema/Documents/nextvi
+[24970][environment] No .inferconfig file found
+[24970][environment] Project root = /home/rasofema/Documents/nextvi
+[24970][environment] INFER_ARGS =   @/tmp/args.tmp.c1378d
+[24970][environment] command line arguments:   infer run -- cc vi.c -o vi -O2 -pedantic -Wall
+[24970][environment]                           -Wextra -Wno-implicit-fallthrough
+[24970][environment]                           -Wno-missing-field-initializers
+[24970][environment]                           -Wno-unused-parameter -Wno-unused-result
+[24970][environment]                           -Wfatal-errors -std=c99 -D_POSIX_C_SOURCE=200809L
+[24970][environment] Available memory at startup: 5790 MB
+[24970][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[24970][environment] Scheduler: file
+[24970][environment] Cores used: 2
+[24970][environment] Infer version v1.1.0
+[24970][environment] Copyright 2009 - present Facebook. All Rights Reserved.
+[24970][environment] 
+[24970][   progress] Capturing in make/cc mode...
+[24970][      debug] 
+[24970][      debug] *** Beginning capture of file /home/rasofema/Documents/nextvi/vi.c ***
+[24970][      debug] Loading the following linters files: /opt/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[24970][      debug] Elapsed: 1.369s.
+[24970][      debug] GC stats for capture:
+[24970][      debug]   minor_words: 1.03492e+08
+[24970][      debug]   promoted_words: 6.34894e+06
+[24970][      debug]   major_words: 6.77962e+06
+[24970][      debug]   minor_collections: 108
+[24970][      debug]   major_collections: 10
+[24970][      debug]   compactions: 0
+[24970][      debug]   top_heap_words: 7132160
+[24970][      debug]   
+[24970][environment] Parallel jobs: 2
+[24970][   progress] Found 1 source file to analyze in /home/rasofema/Documents/nextvi/infer-out
+[24978][   progress] vi.c starting
+[24978][   progress] vi.c DONE
+[24970][      debug] Backend stats:
+[24970][      debug]   summary_file_try_load= 3649
+[24970][      debug]   summary_read_from_disk= 0
+[24970][      debug]   summary_cache_hits= 27851 (88%)
+[24970][      debug]   summary_cache_misses= 3649
+[24970][      debug]   ondemand_procs_analyzed= 301
+[24970][      debug]   ondemand_local_cache_hits= 12078 (97%)
+[24970][      debug]   ondemand_local_cache_misses= 354
+[24970][      debug]   proc_locker_lock_time_user= 0.00000000
+[24970][      debug]   proc_locker_lock_time_sys= 0.00000000
+[24970][      debug]   proc_locker_lock_time_wall= 0.00000000
+[24970][      debug]   proc_locker_unlock_time_user= 0.00000000
+[24970][      debug]   proc_locker_unlock_time_sys= 0.00000000
+[24970][      debug]   proc_locker_unlock_time_wall= 0.00000000
+[24970][      debug]   restart_scheduler_useful_time_user= 0.00000000
+[24970][      debug]   restart_scheduler_useful_time_sys= 0.00000000
+[24970][      debug]   restart_scheduler_useful_time_wall= 0.00000000
+[24970][      debug]   restart_scheduler_total_time_user= 0.00000000
+[24970][      debug]   restart_scheduler_total_time_sys= 0.00000000
+[24970][      debug]   restart_scheduler_total_time_wall= 0.00000000
+[24970][      debug]   
+[24970][      debug] GC stats for backend_stats.gc_stats_add.:
+[24970][      debug]   minor_words: 1.78819e+10
+[24970][      debug]   promoted_words: 1.45621e+08
+[24970][      debug]   major_words: 1.74895e+08
+[24970][      debug]   minor_collections: 17075
+[24970][      debug]   major_collections: 45
+[24970][      debug]   compactions: 0
+[24970][      debug]   top_heap_words: 23631360
+[24970][      debug]   
+[24970][      debug] GC stats for backend_stats.gc_stats_max.:
+[24970][      debug]   minor_words: 1.78819e+10
+[24970][      debug]   promoted_words: 1.45621e+08
+[24970][      debug]   major_words: 1.74895e+08
+[24970][      debug]   minor_collections: 17075
+[24970][      debug]   major_collections: 45
+[24970][      debug]   compactions: 0
+[24970][      debug]   top_heap_words: 16499200
+[24970][      debug]   
+[24970][      debug] Average over 2 processes
+[24970][      debug] GC stats for backend_stats.gc_stats_average.:
+[24970][      debug]   minor_words: 8.94097e+09
+[24970][      debug]   promoted_words: 7.28107e+07
+[24970][      debug]   major_words: 8.74475e+07
+[24970][      debug]   minor_collections: 8537
+[24970][      debug]   major_collections: 22
+[24970][      debug]   compactions: 0
+[24970][      debug]   top_heap_words: 11815680
+[24970][      debug]   
+[24970][      debug] Analysis phase finished in 46.521s
+[24970][      debug] backend_stats.scheduler_process_analysis_time_user= 0.29509900
+[24970][      debug] backend_stats.scheduler_process_analysis_time_sys= 0.07008500
+[24970][      debug] backend_stats.scheduler_process_analysis_time_wall= 46.52080765
+[24970][      debug] GC stats for analysis_scheduler:
+[24970][      debug]   minor_words: 2.08919e+07
+[24970][      debug]   promoted_words: 10796
+[24970][      debug]   major_words: 19502
+[24970][      debug]   minor_collections: 20
+[24970][      debug]   major_collections: 2
+[24970][      debug]   compactions: 1
+[24970][      debug]   top_heap_words: 7132160
+[24970][      debug]   
+[24970][      debug] GC stats for report:
+[24970][      debug]   minor_words: 1.24663e+06
+[24970][      debug]   promoted_words: 22225
+[24970][      debug]   major_words: 68616
+[24970][      debug]   minor_collections: 2
+[24970][      debug]   major_collections: 0
+[24970][      debug]   compactions: 0
+[24970][      debug]   top_heap_words: 7132160
+[24970][      debug]   
+[24970][      debug] GC stats for main_process_full:
+[24970][      debug]   minor_words: 1.27308e+08
+[24970][      debug]   promoted_words: 6.55089e+06
+[24970][      debug]   major_words: 7.56271e+06
+[24970][      debug]   minor_collections: 150
+[24970][      debug]   major_collections: 17
+[24970][      debug]   compactions: 2
+[24970][      debug]   top_heap_words: 7132160
+[24970][      debug]   
+[24971][      debug] Sqlite write daemon: terminating

@@ -1,0 +1,104 @@
+#0
+hash.h:15: error: Uninitialized Value
+  The value read from val was never initialized.
+  13. // pointer hash
+  14. 
+  15. KHASH_MAP_INIT_STR(ptr, void *)
+      ^
+  16. 
+  17. /*
+
+#1
+hash.c:63: error: Null Dereference
+  pointer `hash` last assigned on line 62 could be null and is dereferenced at line 63, column 3.
+  61. test_hash_set() {
+  62.   hash_t *hash = hash_new();
+  63.   assert(0 == hash_size(hash));
+        ^
+  64. 
+  65.   hash_set(hash, "name", "tobi");
+
+#2
+hash.c:77: error: Null Dereference
+  pointer `hash` last assigned on line 75 could be null and is dereferenced by call to `hash_get()` at line 77, column 3.
+  75.   hash_t *hash = hash_new();
+  76.   hash_set(hash, "foo", "bar");
+  77.   assert(0 == strcmp("bar", hash_get(hash, "foo")));
+        ^
+  78.   assert(NULL == hash_get(hash, "bar"));
+  79. }
+
+#3
+hash.c:85: error: Null Dereference
+  pointer `hash` last assigned on line 83 could be null and is dereferenced by call to `hash_has()` at line 85, column 3.
+  83.   hash_t *hash = hash_new();
+  84.   hash_set(hash, "foo", "bar");
+  85.   assert(1 == hash_has(hash, "foo"));
+        ^
+  86.   assert(0 == hash_has(hash, "bar"));
+  87. }
+
+#4
+hash.c:92: error: Null Dereference
+  pointer `hash` last assigned on line 91 could be null and is dereferenced at line 92, column 3.
+  90. test_hash_size() {
+  91.   hash_t *hash = hash_new();
+  92.   assert(0 == hash_size(hash));
+        ^
+  93.   hash_set(hash, "foo", "bar");
+  94.   assert(1 == hash_size(hash));
+
+#5
+hash.c:103: error: Null Dereference
+  pointer `hash` last assigned on line 101 could be null and is dereferenced by call to `hash_has()` at line 103, column 3.
+  101.   hash_t *hash = hash_new();
+  102.   hash_set(hash, "foo", "bar");
+  103.   assert(1 == hash_has(hash, "foo"));
+         ^
+  104.   assert(0 == hash_has(hash, "bar"));
+  105.   hash_del(hash, "foo");
+
+#6
+hash.c:116: error: Null Dereference
+  pointer `hash` last assigned on line 112 could be null and is dereferenced at line 116, column 3.
+  114.   hash_set(hash, "bar", "baz");
+  115.   hash_set(hash, "raz", "jaz");
+  116.   assert(3 == hash_size(hash));
+         ^
+  117.   hash_clear(hash);
+  118.   assert(0 == hash_size(hash));
+
+#7
+hash.c:131: error: Null Dereference
+  pointer `hash` last assigned on line 123 could be null and is dereferenced at line 131, column 3.
+  129.   int n = 0;
+  130. 
+  131.   hash_each(hash, {
+         ^
+  132.     keys[n] = key;
+  133.     vals[n] = val;
+
+#8
+hash.c:152: error: Null Dereference
+  pointer `hash` last assigned on line 145 could be null and is dereferenced at line 152, column 3.
+  150.   int n = 0;
+  151. 
+  152.   hash_each_key(hash, {
+         ^
+  153.     keys[n++] = key;
+  154.   });
+
+#9
+hash.c:169: error: Null Dereference
+  pointer `hash` last assigned on line 162 could be null and is dereferenced at line 169, column 3.
+  167.   int n = 0;
+  168. 
+  169.   hash_each_val(hash, {
+         ^
+  170.     vals[n++] = val;
+  171.   });
+
+Found 10 issues
+                Issue Type(ISSUED_TYPE_ID): #
+        Null Dereference(NULL_DEREFERENCE): 9
+  Uninitialized Value(UNINITIALIZED_VALUE): 1

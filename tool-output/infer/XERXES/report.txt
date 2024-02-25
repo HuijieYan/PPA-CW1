@@ -1,0 +1,54 @@
+#0
+xerxes.c:47: error: Uninitialized Value
+  The value read from sock was never initialized.
+  45.                     freeaddrinfo(servinfo);
+  46.             fprintf(stderr, "[Connected -> %s:%s]\n", host, port);
+  47.             return sock;
+                  ^
+  48.     }
+  49.      
+
+#1
+xerxes.c:59: error: Dead Store
+  The value written to &g (type int) is never used.
+  57.     void attack(char *host, char *port, int id) {
+  58.             int sockets[CONNECTIONS];
+  59.             int x, g=1, r;
+                  ^
+  60.             for(x=0; x!= CONNECTIONS; x++)
+  61.                     sockets[x]=0;
+
+#2
+xerxes.c:65: error: Uninitialized Value
+  The value read from sockets[_] was never initialized.
+  63.             while(1) {
+  64.                     for(x=0; x != CONNECTIONS; x++) {
+  65.                             if(sockets[x] == 0)
+                                     ^
+  66.                                     sockets[x] = make_socket(host, port);
+  67.                             r=write(sockets[x], "\0", 1);
+
+#3
+xerxes.c:67: error: Uninitialized Value
+  The value read from sockets[_] was never initialized.
+  65.                             if(sockets[x] == 0)
+  66.                                     sockets[x] = make_socket(host, port);
+  67.                             r=write(sockets[x], "\0", 1);
+                                    ^
+  68.                             if(r == -1) {
+  69.                                     close(sockets[x]);
+
+#4
+xerxes.c:69: error: Uninitialized Value
+  The value read from sockets[_] was never initialized.
+  67.                             r=write(sockets[x], "\0", 1);
+  68.                             if(r == -1) {
+  69.                                     close(sockets[x]);
+                                          ^
+  70.                                     sockets[x] = make_socket(host, port);
+  71.                             } else
+
+Found 5 issues
+                Issue Type(ISSUED_TYPE_ID): #
+  Uninitialized Value(UNINITIALIZED_VALUE): 4
+                    Dead Store(DEAD_STORE): 1

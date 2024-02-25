@@ -1,0 +1,49 @@
+[3579][      debug] Loading models took 106ms
+[3580][      debug] Sqlite write daemon: starting up
+[3580][      debug] Sqlite write daemon: set up complete, waiting for connections
+[3579][environment] CWD = /home/rasofema/Documents/cs-token-vault
+[3579][environment] No .inferconfig file found
+[3579][environment] Project root = /home/rasofema/Documents/cs-token-vault
+[3579][environment] INFER_ARGS =   @/tmp/args.tmp.551b71
+[3579][environment] command line arguments:   infer run -- make all
+[3579][environment] Available memory at startup: 5563 MB
+[3579][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[3579][environment] Scheduler: file
+[3579][environment] Cores used: 2
+[3579][environment] Infer version v1.1.0
+[3579][environment] Copyright 2009 - present Facebook. All Rights Reserved.
+[3579][environment] 
+[3579][   progress] Capturing in make/cc mode...
+[3579][environment] Running command make with env:
+[3579][environment] (Extend((PATH /opt/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/wrappers:/home/rasofema/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin)(INFER_OLD_PATH /home/rasofema/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin)))
+[3579][environment] 
+[3579][      debug] GC stats for capture:
+[3579][      debug]   minor_words: 1530
+[3579][      debug]   promoted_words: 0
+[3579][      debug]   major_words: 0
+[3579][      debug]   minor_collections: 0
+[3579][      debug]   major_collections: 0
+[3579][      debug]   compactions: 0
+[3579][      debug]   top_heap_words: 760832
+[3579][      debug]   
+[3579][  user warn] Nothing to compile. Try running `make clean` first.
+[3579][   progress] There was nothing to analyze.
+[3579][      debug] GC stats for report:
+[3579][      debug]   minor_words: 2108
+[3579][      debug]   promoted_words: 153283
+[3579][      debug]   major_words: 153283
+[3579][      debug]   minor_collections: 1
+[3579][      debug]   major_collections: 0
+[3579][      debug]   compactions: 0
+[3579][      debug]   top_heap_words: 875008
+[3579][      debug]   
+[3579][      debug] GC stats for main_process_full:
+[3579][      debug]   minor_words: 1.67976e+06
+[3579][      debug]   promoted_words: 321840
+[3579][      debug]   major_words: 847881
+[3579][      debug]   minor_collections: 20
+[3579][      debug]   major_collections: 5
+[3579][      debug]   compactions: 1
+[3579][      debug]   top_heap_words: 875008
+[3579][      debug]   
+[3580][      debug] Sqlite write daemon: terminating

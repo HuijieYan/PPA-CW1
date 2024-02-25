@@ -1,0 +1,176 @@
+#0
+src/conf_eval.c:125: error: Null Dereference
+  pointer `str` last assigned on line 124 could be null and is dereferenced by call to `strcmp()` at line 125, column 9.
+  123.     bool b = false;
+  124.     char *str = eval_string_expression(e, linenumber, filename, linebuf);
+  125.     if (strcmp(str, "true") == 0 || strcmp(str, "yes") == 0) {
+               ^
+  126.         b = true;
+  127.     } else if (strcmp(str, "false") != 0 && strcmp(str, "no") != 0) {
+
+#1
+src/do_md.c:213: error: Resource Leak
+  resource acquired by call to `open()` at line 203, column 21 is not released after line 213, column 124.
+  211.         sres=fstat(filedes,&new_fs);
+  212.         if (sres != 0) {
+  213.             log_msg(LOG_LEVEL_WARNING, "hash calculation: fstat() failed for '%s': %s (hashsums could not be calculated)", fullpath, strerror(errno));
+                                                                                                                                  ^
+  214.             return md_hash;
+  215.         }
+
+#2
+src/do_md.c:243: error: Resource Leak
+  resource acquired by call to `open()` at line 203, column 21 is not released after line 243, column 13.
+  241.             }
+  242. 
+  243.             off_t r_size=0;
+                   ^
+  244.             off_t size=0;
+  245.             char* buf;
+
+#3
+src/db_disk.c:237: error: Uninitialized Value
+  The value read from add2tree_thread was never initialized.
+  235. 
+  236.     if (!dry_run && conf->num_workers) {
+  237.         if (pthread_join(add2tree_thread, NULL) != 0) {
+                   ^
+  238.             log_msg(LOG_LEVEL_ERROR, "failed to join add2tree thread");
+  239.             exit(THREAD_ERROR);
+
+#4
+src/base64.c:302: error: Dead Store
+  The value written to &triple (type unsigned long) is never used.
+  300. 	    {
+  301. 	    case 2:
+  302. 	      triple = triple>>4;
+              ^
+  303. 	      break;
+  304. 	    case 3:
+
+#5
+src/base64.c:305: error: Dead Store
+  The value written to &triple (type unsigned long) is never used.
+  303. 	      break;
+  304. 	    case 3:
+  305. 	      triple = triple>>2;
+              ^
+  306. 	      break;
+  307. 	    default:
+
+#6
+src/conf_eval.c:328: error: Null Dereference
+  pointer `str` last assigned on line 327 could be null and is dereferenced by call to `access()` at line 328, column 26.
+  326.         case BOOL_OP_EXISTS:
+  327.             str = eval_string_expression(expression->expr, linenumber, filename, linebuf);
+  328.             int retval = access(str, F_OK);
+                                ^
+  329.             result = (retval == 0);
+  330.             log_msg(LOG_LEVEL_DEBUG, "access('%s', F_OK) returns %d: (%s)", str, retval, result?"Success":strerror(errno));
+
+#7
+src/commandconf.c:434: error: Null Dereference
+  pointer `db` last assigned on line 413 could be null and is dereferenced at line 434, column 6.
+  432.   }
+  433. 
+  434.   if(db->url == NULL){
+            ^
+  435.     if ((u=parse_url(val, linenumber, filename, linebuf)) != NULL) {
+  436.     /* FIXME Check the URL if you add support for databases that cannot be 
+
+#8
+src/db_file.c:474: error: Dead Store
+  The value written to &retval (type int) is never used.
+  472. int db_writespec_file(db_config* dbconf)
+  473. {
+  474.   int retval=1;
+         ^
+  475.   struct tm* st;
+  476.   time_t tim=time(&tim);
+
+#9
+src/db_file.c:489: error: Null Dereference
+  pointer `st` last assigned on line 477 could be null and is dereferenced at line 489, column 14.
+  487.              "# Time of generation was %.4u-%.2u-%.2u %.2u:%.2u:%.2u\n",
+  488.              conf->aide_version,
+  489.              st->tm_year+1900, st->tm_mon+1, st->tm_mday,
+                    ^
+  490.              st->tm_hour, st->tm_min, st->tm_sec
+  491.              );
+
+#10
+src/seltree.c:502: error: Null Dereference
+  pointer `tmp` last assigned on line 500 could be null and is dereferenced at line 502, column 5.
+  500.   tmp=strrchr(parentname,'/');
+  501.   if(tmp!=parentname){
+  502.     *tmp='\0';
+           ^
+  503.   }else {
+  504.       /* we are in the root dir */
+
+#11
+src/aide.c:614: error: Dead Store
+  The value written to &linenumber (type int) is never used.
+  612. 
+  613.   if(conf->report_urls==NULL){
+  614.     do_repurldef("stdout" , linenumber++, "(default)",  NULL);
+                                   ^
+  615.   }
+  616. 
+
+#12
+src/conf_yacc.c:1212: error: Dead Store
+  The value written to &yymsg (type char const *) is never used.
+  1210.   YY_USE (config_ast);
+  1211.   if (!yymsg)
+  1212.     yymsg = "Deleting";
+            ^
+  1213.   YY_SYMBOL_PRINT (yymsg, yykind, yyvaluep, yylocationp);
+  1214. 
+
+#13
+src/conf_yacc.c:1867: error: Dead Store
+  The value written to &yyerrstatus (type int) is never used.
+  1865. `-------------------------------------------------------------*/
+  1866. yyerrlab1:
+  1867.   yyerrstatus = 3;      /* Each real token shifted decrements this.  */
+          ^
+  1868. 
+  1869.   /* Pop stack until we find a state that shifts the error token.  */
+
+#14
+src/conf_yacc.c:1810: error: Dead Store
+  The value written to &yymsg_alloc (type long) is never used.
+  1808.               {
+  1809.                 yymsg = yymsgbuf;
+  1810.                 yymsg_alloc = sizeof yymsgbuf;
+                        ^
+  1811.                 yysyntax_error_status = YYENOMEM;
+  1812.               }
+
+#15
+src/conf_yacc.c:1410: error: Dead Store
+  The value written to &yytoken (type int) is never used.
+  1408.          loop in error recovery. */
+  1409.       yychar = YYUNDEF;
+  1410.       yytoken = YYSYMBOL_YYerror;
+              ^
+  1411.       goto yyerrlab1;
+  1412.     }
+
+#16
+src/conf_yacc.c:1475: error: Dead Store
+  The value written to &yyval (type YYSTYPE) is never used.
+  1473.      unconditionally makes the parser a bit smaller, and it avoids a
+  1474.      GCC warning that YYVAL may be used uninitialized.  */
+  1475.   yyval = yyvsp[1-yylen];
+          ^
+  1476. 
+  1477. 
+
+Found 17 issues
+                Issue Type(ISSUED_TYPE_ID): #
+                    Dead Store(DEAD_STORE): 9
+        Null Dereference(NULL_DEREFERENCE): 5
+              Resource Leak(RESOURCE_LEAK): 2
+  Uninitialized Value(UNINITIALIZED_VALUE): 1

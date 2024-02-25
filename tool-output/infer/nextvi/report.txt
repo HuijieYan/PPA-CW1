@@ -1,0 +1,1006 @@
+#0
+term.c:12: error: Null Dereference
+  pointer `term_sbuf->s` last assigned on line 12 could be null and is dereferenced at line 12, column 2.
+  10. 	struct winsize win;
+  11. 	struct termios newtermios;
+  12. 	sbufn_make(term_sbuf, 2048)
+       ^
+  13. 	tcgetattr(0, &termios);
+  14. 	newtermios = termios;
+
+#1
+term.c:12: error: Null Dereference
+  pointer `term_sbuf` last assigned on line 12 could be null and is dereferenced at line 12, column 2.
+  10. 	struct winsize win;
+  11. 	struct termios newtermios;
+  12. 	sbufn_make(term_sbuf, 2048)
+       ^
+  13. 	tcgetattr(0, &termios);
+  14. 	newtermios = termios;
+
+#2
+led.c:19: error: Null Dereference
+  pointer `sylsb` last assigned on line 19 could be null and is dereferenced at line 19, column 2.
+  17. 	sbuf_cut(suggestsb, 0)
+  18. 	sbuf *sylsb;
+  19. 	sbuf_make(sylsb, 1024)
+       ^
+  20. 	char *part = strstr(acsb->s, pattern);
+  21. 	while (part) {
+
+#3
+lbuf.c:35: error: Null Dereference
+  pointer `lb` last assigned on line 33 could be null and is dereferenced by call to `memset()` at line 35, column 2.
+  33. 	struct lbuf *lb = malloc(sizeof(*lb));
+  34. 	int i;
+  35. 	memset(lb, 0, sizeof(*lb));
+       ^
+  36. 	for (i = 0; i < LEN(lb->mark); i++)
+  37. 		lb->mark[i] = -1;
+
+#4
+led.c:52: error: Null Dereference
+  pointer `ibuf` last assigned on line 52 could be null and is dereferenced at line 52, column 2.
+  50. 	if (!rs)
+  51. 		return;
+  52. 	sbuf_make(ibuf, 1024)
+       ^
+  53. 	for (n = 1; n <= acsb->s_n; n++)
+  54. 		if (acsb->s[n - 1] == '\n')
+
+#5
+regex.c:157: error: Uninitialized Value
+  The value read from alt_stack[_] was never initialized.
+  155. 				int _altc = cap_stack[capc];
+  156. 				for (int alts = altc; altc > _altc; altc--) {
+  157. 					int at = alt_stack[_altc+alts-altc]+(altc-_altc)*2;
+            ^
+  158. 					EMIT(at, REL(at, PC) + 1);
+  159. 				}
+
+#6
+regex.c:259: error: Uninitialized Value
+  The value read from alt_stack[_] was never initialized.
+  257. 		EMIT(alt_label, REL(alt_label, PC) + 1);
+  258. 		for (int alts = altc; altc; altc--) {
+  259. 			int at = alt_stack[alts-altc]+altc*2;
+          ^
+  260. 			EMIT(at, REL(at, PC) + 1);
+  261. 		}
+
+#7
+regex.c:155: error: Uninitialized Value
+  The value read from cap_stack[_] was never initialized.
+  153. 			if (code && alt_label) {
+  154. 				EMIT(alt_label, REL(alt_label, PC) + 1);
+  155. 				int _altc = cap_stack[capc];
+           ^
+  156. 				for (int alts = altc; altc > _altc; altc--) {
+  157. 					int at = alt_stack[_altc+alts-altc]+(altc-_altc)*2;
+
+#8
+regex.c:161: error: Uninitialized Value
+  The value read from cap_stack[_] was never initialized.
+  159. 				}
+  160. 			}
+  161. 			start = cap_stack[--capc];
+          ^
+  162. 			alt_label = cap_stack[--capc];
+  163. 			term = cap_stack[--capc];
+
+#9
+regex.c:162: error: Uninitialized Value
+  The value read from cap_stack[_] was never initialized.
+  160. 			}
+  161. 			start = cap_stack[--capc];
+  162. 			alt_label = cap_stack[--capc];
+          ^
+  163. 			term = cap_stack[--capc];
+  164. 			if (cap_stack[--capc]) {
+
+#10
+regex.c:163: error: Uninitialized Value
+  The value read from cap_stack[_] was never initialized.
+  161. 			start = cap_stack[--capc];
+  162. 			alt_label = cap_stack[--capc];
+  163. 			term = cap_stack[--capc];
+          ^
+  164. 			if (cap_stack[--capc]) {
+  165. 				EMIT(PC++, SAVE);
+
+#11
+regex.c:164: error: Uninitialized Value
+  The value read from cap_stack[_] was never initialized.
+  162. 			alt_label = cap_stack[--capc];
+  163. 			term = cap_stack[--capc];
+  164. 			if (cap_stack[--capc]) {
+              ^
+  165. 				EMIT(PC++, SAVE);
+  166. 				EMIT(PC++, code[term+1] + prog->presub + 1);
+
+#12
+term.c:62: error: Null Dereference
+  pointer `term_sbuf->s` last assigned on line 62 could be null and is dereferenced by call to `memcpy()` at line 62, column 3.
+  60. {
+  61. 	if (term_record)
+  62. 		sbufn_str(term_sbuf, s)
+        ^
+  63. 	else
+  64. 		write(1, s, strlen(s));
+
+#13
+uc.c:77: error: Null Dereference
+  pointer `chrs` last assigned on line 75 could be null and is dereferenced at line 77, column 3.
+  75. 	chrs = malloc((*n + 1) * sizeof(chrs[0]));
+  76. 	for (i = 0; i < *n + 1; i++) {
+  77. 		chrs[i] = s;
+        ^
+  78. 		s = uc_next(s);
+  79. 	}
+
+#14
+ren.c:113: error: Null Dereference
+  pointer `pos` last assigned on line 101 could be null and is dereferenced at line 113, column 4.
+  111. 	} else {
+  112. 		for (i = 0; i < nn; i++) {
+  113. 			pos[i] = cpos;
+          ^
+  114. 			cpos += ren_cwid(chrs[0][i], cpos);
+  115. 		}
+
+#15
+uc.c:110: error: Null Dereference
+  pointer `r` last assigned on line 109 could be null and is dereferenced by call to `memcpy()` at line 110, column 2.
+  108. 	int len = sbeg && send && sbeg <= send ? send - sbeg : 0;
+  109. 	char *r = malloc(len + 1);
+  110. 	memcpy(r, sbeg, len);
+        ^
+  111. 	r[len] = '\0';
+  112. 	return r;
+
+#16
+uc.c:110: error: Null Dereference
+  pointer `sbeg` last assigned on line 106 could be null and is dereferenced by call to `memcpy()` at line 110, column 2.
+  108. 	int len = sbeg && send && sbeg <= send ? send - sbeg : 0;
+  109. 	char *r = malloc(len + 1);
+  110. 	memcpy(r, sbeg, len);
+        ^
+  111. 	r[len] = '\0';
+  112. 	return r;
+
+#17
+lbuf.c:124: error: Null Dereference
+  pointer `nln_glob` last assigned on line 122 could be null and is dereferenced by call to `memcpy()` at line 124, column 3.
+  122. 		char *nln_glob = malloc(nsz * sizeof(nln_glob[0]));
+  123. 		memcpy(nln, lb->ln, lb->ln_n * sizeof(lb->ln[0]));
+  124. 		memcpy(nln_glob, lb->ln_glob, lb->ln_n * sizeof(lb->ln_glob[0]));
+         ^
+  125. 		free(lb->ln);
+  126. 		free(lb->ln_glob);
+
+#18
+lbuf.c:123: error: Null Dereference
+  pointer `nln` last assigned on line 121 could be null and is dereferenced by call to `memcpy()` at line 123, column 3.
+  121. 		char **nln = malloc(nsz * sizeof(nln[0]));
+  122. 		char *nln_glob = malloc(nsz * sizeof(nln_glob[0]));
+  123. 		memcpy(nln, lb->ln, lb->ln_n * sizeof(lb->ln[0]));
+         ^
+  124. 		memcpy(nln_glob, lb->ln_glob, lb->ln_n * sizeof(lb->ln_glob[0]));
+  125. 		free(lb->ln);
+
+#19
+vi.c:154: error: Dead Store
+  The value written to &noff (type int) is never used.
+  152. 	if (*vi_word && row == xrow+1) {
+  153. 		last_row:;
+  154. 		int noff = xoff;
+         ^
+  155. 		int nrow = xrow;
+  156. 		c = lbuf_get(xb, xrow);
+
+#20
+vi.c:155: error: Dead Store
+  The value written to &nrow (type int) is never used.
+  153. 		last_row:;
+  154. 		int noff = xoff;
+  155. 		int nrow = xrow;
+         ^
+  156. 		c = lbuf_get(xb, xrow);
+  157. 		if (!c || *c == '\n') {
+
+#21
+led.c:142: error: Null Dereference
+  pointer `out->s` last assigned on line 142 could be null and is dereferenced by call to `memcpy()` at line 142, column 4.
+  140. 		if (o >= 0) {
+  141. 			uc_len(l, chrs[o])
+  142. 			sbuf_mem(out, chrs[o], l)
+          ^
+  143. 			for (; off[i] == o; i++);
+  144. 		} else
+
+#22
+led.c:137: error: Null Dereference
+  pointer `out` last assigned on line 137 could be null and is dereferenced at line 137, column 2.
+  135. 	int l, i = 0;
+  136. 	sbuf *out;
+  137. 	sbuf_make(out, cterm*4);
+        ^
+  138. 	while (i < cterm) {
+  139. 		int o = off[i];
+
+#23
+led.c:142: error: Null Dereference
+  pointer `s` last assigned on line 142 could be null and is dereferenced by call to `memcpy()` at line 142, column 4.
+  140. 		if (o >= 0) {
+  141. 			uc_len(l, chrs[o])
+  142. 			sbuf_mem(out, chrs[o], l)
+          ^
+  143. 			for (; off[i] == o; i++);
+  144. 		} else
+
+#24
+ex.c:208: error: Null Dereference
+  pointer `sb->s` last assigned on line 175 could be null and is dereferenced at line 208, column 4.
+  206. 				(src[1] == '#' || src[1] == '%' || src[1] == '!'))
+  207. 				src++;
+  208. 			sbuf_chr(sb, *src++)
+          ^
+  209. 		}
+  210. 	}
+
+#25
+ex.c:175: error: Null Dereference
+  pointer `sb` last assigned on line 175 could be null and is dereferenced at line 175, column 12.
+  173. static char *ex_pathexpand(char *src)
+  174. {
+  175. 	sbuf *sb; sbuf_make(sb, 1024)
+                  ^
+  176. 	while (*src) {
+  177. 		if (*src == '#' || *src == '%') {
+
+#26
+term.c:190: error: Uninitialized Value
+  The value read from pipefds0[_] was never initialized.
+  188. 		if (ifd) {		/* setting up stdin */
+  189. 			close(0);
+  190. 			dup(pipefds0[0]);
+          ^
+  191. 			close(pipefds0[1]);
+  192. 			close(pipefds0[0]);
+
+#27
+term.c:191: error: Uninitialized Value
+  The value read from pipefds0[_] was never initialized.
+  189. 			close(0);
+  190. 			dup(pipefds0[0]);
+  191. 			close(pipefds0[1]);
+          ^
+  192. 			close(pipefds0[0]);
+  193. 		}
+
+#28
+term.c:192: error: Uninitialized Value
+  The value read from pipefds0[_] was never initialized.
+  190. 			dup(pipefds0[0]);
+  191. 			close(pipefds0[1]);
+  192. 			close(pipefds0[0]);
+          ^
+  193. 		}
+  194. 		if (ofd) {		/* setting up stdout and stderr */
+
+#29
+term.c:206: error: Uninitialized Value
+  The value read from pipefds0[_] was never initialized.
+  204. 	}
+  205. 	if (ifd)
+  206. 		close(pipefds0[0]);
+         ^
+  207. 	if (ofd)
+  208. 		close(pipefds1[1]);
+
+#30
+term.c:211: error: Uninitialized Value
+  The value read from pipefds0[_] was never initialized.
+  209. 	if (pid < 0) {
+  210. 		if (ifd)
+  211. 			close(pipefds0[1]);
+          ^
+  212. 		if (ofd)
+  213. 			close(pipefds1[0]);
+
+#31
+term.c:217: error: Uninitialized Value
+  The value read from pipefds0[_] was never initialized.
+  215. 	}
+  216. 	if (ifd)
+  217. 		*ifd = pipefds0[1];
+         ^
+  218. 	if (ofd)
+  219. 		*ofd = pipefds1[0];
+
+#32
+term.c:196: error: Uninitialized Value
+  The value read from pipefds1[_] was never initialized.
+  194. 		if (ofd) {		/* setting up stdout and stderr */
+  195. 			close(1);
+  196. 			dup(pipefds1[1]);
+          ^
+  197. 			close(2);
+  198. 			dup(pipefds1[1]);
+
+#33
+term.c:198: error: Uninitialized Value
+  The value read from pipefds1[_] was never initialized.
+  196. 			dup(pipefds1[1]);
+  197. 			close(2);
+  198. 			dup(pipefds1[1]);
+          ^
+  199. 			close(pipefds1[0]);
+  200. 			close(pipefds1[1]);
+
+#34
+term.c:199: error: Uninitialized Value
+  The value read from pipefds1[_] was never initialized.
+  197. 			close(2);
+  198. 			dup(pipefds1[1]);
+  199. 			close(pipefds1[0]);
+          ^
+  200. 			close(pipefds1[1]);
+  201. 		}
+
+#35
+term.c:200: error: Uninitialized Value
+  The value read from pipefds1[_] was never initialized.
+  198. 			dup(pipefds1[1]);
+  199. 			close(pipefds1[0]);
+  200. 			close(pipefds1[1]);
+          ^
+  201. 		}
+  202. 		execvp(argv[0], argv);
+
+#36
+term.c:208: error: Uninitialized Value
+  The value read from pipefds1[_] was never initialized.
+  206. 		close(pipefds0[0]);
+  207. 	if (ofd)
+  208. 		close(pipefds1[1]);
+         ^
+  209. 	if (pid < 0) {
+  210. 		if (ifd)
+
+#37
+term.c:213: error: Uninitialized Value
+  The value read from pipefds1[_] was never initialized.
+  211. 			close(pipefds0[1]);
+  212. 		if (ofd)
+  213. 			close(pipefds1[0]);
+          ^
+  214. 		return -1;
+  215. 	}
+
+#38
+term.c:219: error: Uninitialized Value
+  The value read from pipefds1[_] was never initialized.
+  217. 		*ifd = pipefds0[1];
+  218. 	if (ofd)
+  219. 		*ofd = pipefds1[0];
+         ^
+  220. 	return pid;
+  221. }
+
+#39
+lbuf.c:220: error: Null Dereference
+  pointer `sb->s` last assigned on line 220 could be null and is dereferenced by call to `memcpy()` at line 220, column 4.
+  218. 				break; /* can't read files > ~2GB */
+  219. 			sb->s_n += nr;
+  220. 			sbuf_extend(sb, newsz)
+          ^
+  221. 		} else
+  222. 			sb->s_n += nr;
+
+#40
+lbuf.c:213: error: Null Dereference
+  pointer `sb` last assigned on line 213 could be null and is dereferenced at line 213, column 12.
+  211. {
+  212. 	long nr;
+  213. 	sbuf *sb; sbuf_make(sb, 1000000)
+                  ^
+  214. 	while ((nr = read(fd, sb->s + sb->s_n, sb->s_sz - sb->s_n)) > 0) {
+  215. 		if (sb->s_n + nr >= sb->s_sz) {
+
+#41
+ex.c:235: error: Null Dereference
+  pointer `kw->s` last assigned on line 235 could be null and is dereferenced at line 235, column 2.
+  233. 	int row;
+  234. 	char *e = *pat;
+  235. 	sbufn_make(kw, 64)
+        ^
+  236. 	while (*++e) {
+  237. 		if (*e == **pat)
+
+#42
+ex.c:235: error: Null Dereference
+  pointer `kw` last assigned on line 235 could be null and is dereferenced at line 235, column 2.
+  233. 	int row;
+  234. 	char *e = *pat;
+  235. 	sbufn_make(kw, 64)
+        ^
+  236. 	while (*++e) {
+  237. 		if (*e == **pat)
+
+#43
+lbuf.c:265: error: Null Dereference
+  pointer `sb` last assigned on line 265 could be null and is dereferenced at line 265, column 12.
+  263. char *lbuf_cp(struct lbuf *lb, int beg, int end)
+  264. {
+  265. 	sbuf *sb; sbuf_make(sb, 64)
+                  ^
+  266. 	for (int i = beg; i < end; i++)
+  267. 		if (i < lb->ln_n)
+
+#44
+vi.c:292: error: Null Dereference
+  pointer `sb` last assigned on line 292 could be null and is dereferenced at line 292, column 2.
+  290. 		return s;
+  291. 	}
+  292. 	sbuf_make(sb, 128)
+        ^
+  293. 	while ((c = term_read()) != EOF && c != '\n')
+  294. 		sbuf_chr(sb, c)
+
+#45
+led.c:299: error: Null Dereference
+  pointer `ln->s` last assigned on line 299 could be null and is dereferenced by call to `memcpy()` at line 299, column 2.
+  297. 	int idir = 0;
+  298. 	sbuf_make(ln, xcols)
+  299. 	sbuf_str(ln, ai)
+        ^
+  300. 	sbuf_str(ln, pref)
+  301. 	sbuf_str(ln, main)
+
+#46
+led.c:298: error: Null Dereference
+  pointer `ln` last assigned on line 298 could be null and is dereferenced at line 298, column 2.
+  296. 	int off, pos;
+  297. 	int idir = 0;
+  298. 	sbuf_make(ln, xcols)
+        ^
+  299. 	sbuf_str(ln, ai)
+  300. 	sbuf_str(ln, pref)
+
+#47
+led.c:299: error: Null Dereference
+  pointer `s` last assigned on line 299 could be null and is dereferenced by call to `memcpy()` at line 299, column 2.
+  297. 	int idir = 0;
+  298. 	sbuf_make(ln, xcols)
+  299. 	sbuf_str(ln, ai)
+        ^
+  300. 	sbuf_str(ln, pref)
+  301. 	sbuf_str(ln, main)
+
+#48
+led.c:382: error: Null Dereference
+  pointer `sb->s` last assigned on line 382 could be null and is dereferenced at line 382, column 2.
+  380. 	int c, lnmode, i = 0, last_sug = 0, sug_pt = -1;
+  381. 	char *cs, *sug = NULL, *_sug = NULL;
+  382. 	sbufn_make(sb, xcols)
+        ^
+  383. 	if (insert)
+  384. 		sbufn_str(sb, insert)
+
+#49
+led.c:384: error: Null Dereference
+  pointer `sb->s` last assigned on line 384 could be null and is dereferenced by call to `memcpy()` at line 384, column 3.
+  382. 	sbufn_make(sb, xcols)
+  383. 	if (insert)
+  384. 		sbufn_str(sb, insert)
+         ^
+  385. 	if (!pref)
+  386. 		pref = "";
+
+#50
+led.c:382: error: Null Dereference
+  pointer `sb` last assigned on line 382 could be null and is dereferenced at line 382, column 2.
+  380. 	int c, lnmode, i = 0, last_sug = 0, sug_pt = -1;
+  381. 	char *cs, *sug = NULL, *_sug = NULL;
+  382. 	sbufn_make(sb, xcols)
+        ^
+  383. 	if (insert)
+  384. 		sbufn_str(sb, insert)
+
+#51
+led.c:588: error: Uninitialized Value
+  The value read from c was never initialized.
+  586. 	}
+  587. leave:
+  588. 	vi_insmov = c;
+        ^
+  589. 	*key = c;
+  590. 	sbufn_done(sb)
+
+#52
+led.c:589: error: Uninitialized Value
+  The value read from c was never initialized.
+  587. leave:
+  588. 	vi_insmov = c;
+  589. 	*key = c;
+        ^
+  590. 	sbufn_done(sb)
+  591. }
+
+#53
+vi.c:419: error: Null Dereference
+  pointer `sb->s` last assigned on line 418 could be null and is dereferenced at line 419, column 3.
+  417. 			return 1;
+  418. 		sbuf_make(sb, 1024)
+  419. 		sbuf_chr(sb, cmd)
+         ^
+  420. 		sbufn_str(sb, kw)
+  421. 		free(kw);
+
+#54
+vi.c:418: error: Null Dereference
+  pointer `sb` last assigned on line 418 could be null and is dereferenced at line 418, column 3.
+  416. 		if (!kw)
+  417. 			return 1;
+  418. 		sbuf_make(sb, 1024)
+         ^
+  419. 		sbuf_chr(sb, cmd)
+  420. 		sbufn_str(sb, kw)
+
+#55
+lbuf.c:434: error: Uninitialized Value
+  The value read from i was never initialized.
+  432. 	int r0 = *r, o0 = *o, grp = xgrp;
+  433. 	int offs[grp], i = r0;
+  434. 	char *s = lbuf_get(lb, i);
+                  ^
+  435. 	int off = dir > 0 && *uc_chr(s, o0 + 1) ? uc_chr(s, o0 + 1) - s : 0;
+  436. 	int ln_n = lbuf_len(lb);
+
+#56
+lbuf.c:437: error: Uninitialized Value
+  The value read from i was never initialized.
+  435. 	int off = dir > 0 && *uc_chr(s, o0 + 1) ? uc_chr(s, o0 + 1) - s : 0;
+  436. 	int ln_n = lbuf_len(lb);
+  437. 	for (; i >= 0 && i < ln_n; i += dir) {
+               ^
+  438. 		s = lb->ln[i];
+  439. 		while (rset_find(re, s + off, grp / 2, offs,
+
+#57
+lbuf.c:437: error: Uninitialized Value
+  The value read from i was never initialized.
+  435. 	int off = dir > 0 && *uc_chr(s, o0 + 1) ? uc_chr(s, o0 + 1) - s : 0;
+  436. 	int ln_n = lbuf_len(lb);
+  437. 	for (; i >= 0 && i < ln_n; i += dir) {
+                         ^
+  438. 		s = lb->ln[i];
+  439. 		while (rset_find(re, s + off, grp / 2, offs,
+
+#58
+lbuf.c:437: error: Uninitialized Value
+  The value read from i was never initialized.
+  435. 	int off = dir > 0 && *uc_chr(s, o0 + 1) ? uc_chr(s, o0 + 1) - s : 0;
+  436. 	int ln_n = lbuf_len(lb);
+  437. 	for (; i >= 0 && i < ln_n; i += dir) {
+                                   ^
+  438. 		s = lb->ln[i];
+  439. 		while (rset_find(re, s + off, grp / 2, offs,
+
+#59
+lbuf.c:446: error: Uninitialized Value
+  The value read from i was never initialized.
+  444. 				continue;
+  445. 			}
+  446. 			if (dir < 0 && r0 == i && uc_off(s, off+g1) >= o0)
+                         ^
+  447. 				break;
+  448. 			*o = uc_off(s, off + g1);
+
+#60
+lbuf.c:449: error: Uninitialized Value
+  The value read from i was never initialized.
+  447. 				break;
+  448. 			*o = uc_off(s, off + g1);
+  449. 			*r = i;
+          ^
+  450. 			*len = uc_off(s + off + g1, g2 - g1);
+  451. 			off += g2 > 0 ? g2 : 1;
+
+#61
+regex.c:547: error: Uninitialized Value
+  The value read from pcs[_] was never initialized.
+  545. 		goto jmp_start1;
+  546. 	goto jmp_start2;
+  547. 	match(1, if ((unsigned int)c < 128) c = tolower(c);)
+        ^
+  548. 	match(2, /*nop*/)
+  549. }
+
+#62
+regex.c:548: error: Uninitialized Value
+  The value read from pcs[_] was never initialized.
+  546. 	goto jmp_start2;
+  547. 	match(1, if ((unsigned int)c < 128) c = tolower(c);)
+  548. 	match(2, /*nop*/)
+        ^
+  549. }
+  550. 
+
+#63
+regex.c:547: error: Uninitialized Value
+  The value read from sdense[_] was never initialized.
+  545. 		goto jmp_start1;
+  546. 	goto jmp_start2;
+  547. 	match(1, if ((unsigned int)c < 128) c = tolower(c);)
+        ^
+  548. 	match(2, /*nop*/)
+  549. }
+
+#64
+regex.c:548: error: Uninitialized Value
+  The value read from sdense[_] was never initialized.
+  546. 	goto jmp_start2;
+  547. 	match(1, if ((unsigned int)c < 128) c = tolower(c);)
+  548. 	match(2, /*nop*/)
+        ^
+  549. }
+  550. 
+
+#65
+regex.c:547: error: Uninitialized Value
+  The value read from sparsesz was never initialized.
+  545. 		goto jmp_start1;
+  546. 	goto jmp_start2;
+  547. 	match(1, if ((unsigned int)c < 128) c = tolower(c);)
+        ^
+  548. 	match(2, /*nop*/)
+  549. }
+
+#66
+regex.c:548: error: Uninitialized Value
+  The value read from sparsesz was never initialized.
+  546. 	goto jmp_start2;
+  547. 	match(1, if ((unsigned int)c < 128) c = tolower(c);)
+  548. 	match(2, /*nop*/)
+        ^
+  549. }
+  550. 
+
+#67
+regex.c:547: error: Uninitialized Value
+  The value read from subs[_] was never initialized.
+  545. 		goto jmp_start1;
+  546. 	goto jmp_start2;
+  547. 	match(1, if ((unsigned int)c < 128) c = tolower(c);)
+        ^
+  548. 	match(2, /*nop*/)
+  549. }
+
+#68
+regex.c:548: error: Uninitialized Value
+  The value read from subs[_] was never initialized.
+  546. 	goto jmp_start2;
+  547. 	match(1, if ((unsigned int)c < 128) c = tolower(c);)
+  548. 	match(2, /*nop*/)
+        ^
+  549. }
+  550. 
+
+#69
+vi.c:559: error: Null Dereference
+  pointer `buf` last assigned on line 558 could be null and is dereferenced by call to `strcpy()` at line 559, column 2.
+  557. 	char *pre = isupper(c) && regs[tolower(c)] ? regs[tolower(c)] : "";
+  558. 	char *buf = malloc(strlen(pre) + strlen(s) + 1);
+  559. 	strcpy(buf, pre);
+        ^
+  560. 	strcat(buf, s);
+  561. 	free(regs[tolower(c)]);
+
+#70
+ex.c:565: error: Null Dereference
+  pointer `sb->s` last assigned on line 565 could be null and is dereferenced at line 565, column 2.
+  563. 	if (ex_region(loc, &beg, &end) && (beg != 0 || end != 0))
+  564. 		return 1;
+  565. 	sbufn_make(sb, 64)
+        ^
+  566. 	while ((s = ex_read(""))) {
+  567. 		if (!strcmp(".", s)) {
+
+#71
+ex.c:565: error: Null Dereference
+  pointer `sb` last assigned on line 565 could be null and is dereferenced at line 565, column 2.
+  563. 	if (ex_region(loc, &beg, &end) && (beg != 0 || end != 0))
+  564. 		return 1;
+  565. 	sbufn_make(sb, 64)
+        ^
+  566. 	while ((s = ex_read(""))) {
+  567. 		if (!strcmp(".", s)) {
+
+#72
+regex.c:581: error: Null Dereference
+  pointer `rs->grp` last assigned on line 574 could be null and is dereferenced at line 581, column 4.
+  579. 	for (int i = 0; i < n; i++) {
+  580. 		if (!re[i]) {
+  581. 			rs->grp[i] = -1;
+          ^
+  582. 			continue;
+  583. 		}
+
+#73
+regex.c:574: error: Null Dereference
+  pointer `rs` last assigned on line 572 could be null and is dereferenced at line 574, column 2.
+  572. 	rset *rs = malloc(sizeof(*rs));
+  573. 	sbuf *sb; sbuf_make(sb, 1024)
+  574. 	rs->grp = malloc((n + 1) * sizeof(rs->grp[0]));
+        ^
+  575. 	rs->setgrpcnt = malloc((n + 1) * sizeof(rs->setgrpcnt[0]));
+  576. 	rs->grpcnt = 2;
+
+#74
+regex.c:578: error: Null Dereference
+  pointer `sb->s` last assigned on line 573 could be null and is dereferenced at line 578, column 2.
+  576. 	rs->grpcnt = 2;
+  577. 	rs->n = n;
+  578. 	sbuf_chr(sb, '(')
+        ^
+  579. 	for (int i = 0; i < n; i++) {
+  580. 		if (!re[i]) {
+
+#75
+regex.c:573: error: Null Dereference
+  pointer `sb` last assigned on line 573 could be null and is dereferenced at line 573, column 12.
+  571. {
+  572. 	rset *rs = malloc(sizeof(*rs));
+  573. 	sbuf *sb; sbuf_make(sb, 1024)
+                  ^
+  574. 	rs->grp = malloc((n + 1) * sizeof(rs->grp[0]));
+  575. 	rs->setgrpcnt = malloc((n + 1) * sizeof(rs->setgrpcnt[0]));
+
+#76
+led.c:604: error: Null Dereference
+  pointer `sb` last assigned on line 604 could be null and is dereferenced at line 604, column 13.
+  602. 		temp_pos(0, -1, 0, 0);
+  603. 		temp_write(0, s);
+  604. 		sbuf *sb; sbuf_make(sb, 256)
+                   ^
+  605. 		if (pref)
+  606. 			sbuf_str(sb, pref)
+
+#77
+led.c:620: error: Null Dereference
+  pointer `sb` last assigned on line 620 could be null and is dereferenced at line 620, column 12.
+  618. sbuf *led_input(char *pref, char *post, int *kmap, int row)
+  619. {
+  620. 	sbuf *sb; sbuf_make(sb, 256)
+                  ^
+  621. 	char ai[128];
+  622. 	int ai_max = sizeof(ai) - 1;
+
+#78
+vi.c:643: error: Resource Leak
+  resource acquired by call to `opendir()` at line 646, column 15 is not released after line 643, column 6.
+  641. 			strcpy(ptr, dirp->d_name);
+  642. 			if (lstat(cur_dir, &statbuf) >= 0 &&
+  643. 					S_ISDIR(statbuf.st_mode)) {
+            ^
+  644. 				start:
+  645. 				ptr = file_calc(cur_dir);
+
+#79
+regex.c:643: error: Null Dereference
+  pointer `sb` last assigned on line 643 could be null and is dereferenced at line 643, column 12.
+  641. 	if (!delim)
+  642. 		return NULL;
+  643. 	sbuf *sb; sbuf_make(sb, 256)
+                  ^
+  644. 	while (*s && *s != delim) {
+  645. 		if (s[0] == '\\' && s[1])
+
+#80
+vi.c:681: error: Null Dereference
+  pointer `path` last assigned on line 680 could be null and is dereferenced at line 681, column 3.
+  679. 	while (fspos < lbuf_len(tempbufs[1].lb)) {
+  680. 		path = lbuf_get(tempbufs[1].lb, fspos++);
+  681. 		fssearch()
+         ^
+  682. 	}
+  683. 	if (fspos == lbuf_len(tempbufs[1].lb) && !again) {
+
+#81
+vi.c:697: error: Null Dereference
+  pointer `path` last assigned on line 696 could be null and is dereferenced at line 697, column 3.
+  695. 	while (--fspos >= 0) {
+  696. 		path = lbuf_get(tempbufs[1].lb, fspos);
+  697. 		fssearch()
+         ^
+  698. 	}
+  699. 	return 0;
+
+#82
+ex.c:700: error: Null Dereference
+  pointer `dst->s` last assigned on line 700 could be null and is dereferenced by call to `memcpy()` at line 700, column 5.
+  698. 				int grp = (rep[1] - '0') * 2;
+  699. 				int len = offs[grp + 1] - offs[grp];
+  700. 				sbuf_mem(dst, ln + offs[grp], len)
+           ^
+  701. 			} else
+  702. 				sbuf_chr(dst, (unsigned char) rep[1])
+
+#83
+ex.c:702: error: Null Dereference
+  pointer `dst->s` last assigned on line 702 could be null and is dereferenced by call to `memcpy()` at line 702, column 5.
+  700. 				sbuf_mem(dst, ln + offs[grp], len)
+  701. 			} else
+  702. 				sbuf_chr(dst, (unsigned char) rep[1])
+           ^
+  703. 			rep++;
+  704. 		} else
+
+#84
+ex.c:705: error: Null Dereference
+  pointer `dst->s` last assigned on line 705 could be null and is dereferenced by call to `memcpy()` at line 705, column 4.
+  703. 			rep++;
+  704. 		} else
+  705. 			sbuf_chr(dst, (unsigned char) rep[0])
+          ^
+  706. 		rep++;
+  707. 	}
+
+#85
+ex.c:760: error: Uninitialized Value
+  The value read from last was never initialized.
+  758. 	}
+  759. 	if (first >= 0)
+  760. 		lbuf_emark(xb, lbuf_opt(xb, NULL, xrow, 0), first, last);
+         ^
+  761. 	return 0;
+  762. }
+
+#86
+ex.c:819: error: Uninitialized Value
+  The value read from rs was never initialized.
+  817. 		rs = rset_make(1, (char*[]){pat}, xic ? REG_ICASE : 0);
+  818. 	free(pat);
+  819. 	if (!pat || !rs)
+                     ^
+  820. 		return 1;
+  821. 	xgdep++;
+
+#87
+ex.c:884: error: Dead Store
+  The value written to &s (type char*) is never used.
+  882. 	int i;
+  883. 	if (*s) {
+  884. 		s = cutword(s, tok);
+         ^
+  885. 		/* if prefix "no" before option */
+  886. 		if (tok[0] == 'n' && tok[1] == 'o') {
+
+#88
+vi.c:926: error: Null Dereference
+  pointer `sb` last assigned on line 926 could be null and is dereferenced at line 926, column 2.
+  924. 	if (r1 == r2)
+  925. 		return uc_sub(lbuf_get(lb, r1), o1, o2);
+  926. 	sbuf_make(sb, 1024)
+        ^
+  927. 	s1 = uc_sub(lbuf_get(lb, r1), o1, -1);
+  928. 	s3 = uc_sub(lbuf_get(lb, r2), 0, o2);
+
+#89
+ex.c:945: error: Null Dereference
+  pointer `xacreg->s` last assigned on line 944 could be null and is dereferenced at line 945, column 3.
+  943. 	if (*arg) {
+  944. 		sbuf_make(xacreg, 128)
+  945. 		sbufn_str(xacreg, arg)
+         ^
+  946. 	} else
+  947. 		xacreg = NULL;
+
+#90
+ex.c:944: error: Null Dereference
+  pointer `xacreg` last assigned on line 944 could be null and is dereferenced at line 944, column 3.
+  942. 		sbuf_free(xacreg)
+  943. 	if (*arg) {
+  944. 		sbuf_make(xacreg, 128)
+         ^
+  945. 		sbufn_str(xacreg, arg)
+  946. 	} else
+
+#91
+vi.c:1020: error: Null Dereference
+  pointer `sb->s` last assigned on line 1018 could be null and is dereferenced at line 1020, column 3.
+  1018. 	sbuf *sb; sbuf_make(sb, 256)
+  1019. 	while (xai && ln && (*ln == ' ' || *ln == '\t'))
+  1020. 		sbuf_chr(sb, *ln++)
+          ^
+  1021. 	sbufn_done(sb)
+  1022. }
+
+#92
+vi.c:1018: error: Null Dereference
+  pointer `sb` last assigned on line 1018 could be null and is dereferenced at line 1018, column 12.
+  1016. static char *vi_indents(char *ln)
+  1017. {
+  1018. 	sbuf *sb; sbuf_make(sb, 256)
+                   ^
+  1019. 	while (xai && ln && (*ln == ' ' || *ln == '\t'))
+  1020. 		sbuf_chr(sb, *ln++)
+
+#93
+vi.c:1108: error: Null Dereference
+  pointer `sb->s` last assigned on line 1099 could be null and is dereferenced at line 1108, column 4.
+  1106. 			ln = ln[0] == ' ' || ln[0] == '\t' ? ln + 1 : ln;
+  1107. 		else if (ln[0] != '\n' || r1 == r2)
+  1108. 			sbuf_chr(sb, '\t')
+           ^
+  1109. 		sbufn_str(sb, ln)
+  1110. 		lbuf_edit(xb, sb->s, i, i + 1);
+
+#94
+vi.c:1099: error: Null Dereference
+  pointer `sb` last assigned on line 1099 could be null and is dereferenced at line 1099, column 12.
+  1097. static void vi_shift(int r1, int r2, int dir)
+  1098. {
+  1099. 	sbuf *sb; sbuf_make(sb, 1024)
+                   ^
+  1100. 	char *ln;
+  1101. 	int i;
+
+#95
+vi.c:1227: error: Null Dereference
+  pointer `sb` last assigned on line 1227 could be null and is dereferenced at line 1227, column 12.
+  1225. 	if (!buf || !buf[0])
+  1226. 		return 1;
+  1227. 	sbuf *sb; sbuf_make(sb, 1024)
+                   ^
+  1228. 	if (lnmode) {
+  1229. 		for (i = 0; i < cnt; i++)
+
+#96
+vi.c:1277: error: Null Dereference
+  pointer `ln` last assigned on line 1276 could be null and is dereferenced by call to `strchr()` at line 1277, column 17.
+  1275. 	for (i = beg; i < end; i++) {
+  1276. 		char *ln = lbuf_get(xb, i);
+  1277. 		char *lnend = strchr(ln, '\n');
+                        ^
+  1278. 		int spaces;
+  1279. 		if (i > beg)
+
+#97
+vi.c:1274: error: Null Dereference
+  pointer `sb->s` last assigned on line 1274 could be null and is dereferenced at line 1274, column 2.
+  1272. 	if (!lbuf_get(xb, beg) || !lbuf_get(xb, end - 1))
+  1273. 		return;
+  1274. 	sbufn_make(sb, 1024)
+         ^
+  1275. 	for (i = beg; i < end; i++) {
+  1276. 		char *ln = lbuf_get(xb, i);
+
+#98
+vi.c:1286: error: Null Dereference
+  pointer `sb->s` last assigned on line 1286 could be null and is dereferenced by call to `memcpy()` at line 1286, column 3.
+  1284. 		while (spaces--)
+  1285. 			sbuf_chr(sb, ' ')
+  1286. 		sbufn_mem(sb, ln, lnend - ln)
+          ^
+  1287. 	}
+  1288. 	sbufn_chr(sb, '\n')
+
+#99
+vi.c:1274: error: Null Dereference
+  pointer `sb` last assigned on line 1274 could be null and is dereferenced at line 1274, column 2.
+  1272. 	if (!lbuf_get(xb, beg) || !lbuf_get(xb, end - 1))
+  1273. 		return;
+  1274. 	sbufn_make(sb, 1024)
+         ^
+  1275. 	for (i = beg; i < end; i++) {
+  1276. 		char *ln = lbuf_get(xb, i);
+
+Found 100 issues
+                Issue Type(ISSUED_TYPE_ID): #
+        Null Dereference(NULL_DEREFERENCE): 58
+  Uninitialized Value(UNINITIALIZED_VALUE): 38
+                    Dead Store(DEAD_STORE): 3
+              Resource Leak(RESOURCE_LEAK): 1

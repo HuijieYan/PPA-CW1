@@ -1,0 +1,1494 @@
+[80726][      debug] Loading models took 83.786ms
+[80727][      debug] Sqlite write daemon: starting up
+[80727][      debug] Sqlite write daemon: set up complete, waiting for connections
+[80726][environment] CWD = /home/rasofema/Documents/aide
+[80726][environment] No .inferconfig file found
+[80726][environment] Project root = /home/rasofema/Documents/aide
+[80726][environment] INFER_ARGS =   @/tmp/args.tmp.2dec91
+[80726][environment] command line arguments:   infer run -- make
+[80726][environment] Available memory at startup: 5628 MB
+[80726][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[80726][environment] Scheduler: file
+[80726][environment] Cores used: 2
+[80726][environment] Infer version v1.1.0
+[80726][environment] Copyright 2009 - present Facebook. All Rights Reserved.
+[80726][environment] 
+[80726][   progress] Capturing in make/cc mode...
+[80726][environment] Running command make with env:
+[80726][environment] (Extend((PATH /opt/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/wrappers:/home/rasofema/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin)(INFER_OLD_PATH /home/rasofema/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin)))
+[80726][environment] 
+
+[80736][environment] CWD = /home/rasofema/Documents/aide
+[80736][environment] No .inferconfig file found
+[80736][environment] Project root = /home/rasofema/Documents/aide
+[80736][environment] INFER_ARGS =   @/tmp/args.tmp.03d792
+[80736][environment] command line arguments:   gcc -DHAVE_CONFIG_H -I. -I./include -I. -I./include
+[80736][environment]                           -I./src -I./src -D_GNU_SOURCE -W -Wall -g -pthread
+[80736][environment]                           -g -O2 -fPIE -DPIE -Wundef
+[80736][environment]                           -Wmissing-format-attribute -Wshadow -Wlogical-op
+[80736][environment]                           -MT src/aide-aide.o -MD -MP -MF
+[80736][environment]                           src/.deps/aide-aide.Tpo -c -o src/aide-aide.o
+[80736][environment]                           src/aide.c
+[80736][environment] Available memory at startup: 5593 MB
+[80736][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[80736][      debug] 
+[80736][      debug] *** Beginning capture of file /home/rasofema/Documents/aide/src/aide.c ***
+[80736][      debug] Loading the following linters files: /opt/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[80736][      debug] src/aide.c:253:3-257:4: ERROR translating statement 'DeclStmt'
+[80736][      debug] Aborting translation of method 'read_param' in file 'src/aide.c'
+[80736][      debug] Unimplemented feature:
+[80736][      debug]   In DeclStmt found an unknown declaration type <"EnumDecl":({"pointer":8838,"source_range":({"file":"/home/rasofema/Documents/aide/src/aide.c","line":253,"column":3},{"file":"/home/rasofema/Documents/aide/src/aide.c","line":257,"column":3})},{"name":"cmdline_args","qual_name":["cmdline_args","read_param"]},8839,[<"EnumConstantDecl":({"pointer":8840,"source_range":({"file":"/home/rasofema/Documents/aide/src/aide.c","line":254,"column":7},{"file":"/home/rasofema/Documents/aide/src/aide.c","line":254,"column":25}),"is_this_declaration_referenced":true},{"name":"ARG_NO_PROGRESS","qual_name":["ARG_NO_PROGRESS","cmdline_args","read_param"]},{"type_ptr":159},{"init_expr":<"ConstantExpr":({"pointer":8841,"source_range":({"file":"/home/rasofema/Documents/aide/src/aide.c","line":254,"column":25},{"file":"/home/rasofema/Documents/aide/src/aide.c","line":254,"column":25})},[<"IntegerLiteral":({"pointer":8842,"source_range":({"file":"/home/rasofema/Documents/aide/src/aide.c","line":254,"column":25},{"file":"/home/rasofema/Documents/aide/src/aide.c","line":254,"column":25})},[],{"qual_type":{"type_ptr":159}},{"is_signed":true,"bitwidth":32,"value":"1"})>],{"qual_type":{"type_ptr":159}})>})>,<"EnumConstantDecl":({"pointer":8843,"source_range":({"file":"/home/rasofema/Documents/aide/src/aide.c","line":255,"column":7},{"file":"/home/rasofema/Documents/aide/src/aide.c","line":255,"column":25}),"is_this_declaration_referenced":true},{"name":"ARG_LIST","qual_name":["ARG_LIST","cmdline_args","read_param"]},{"type_ptr":159},{"init_expr":<"ConstantExpr":({"pointer":8844,"source_range":({"file":"/home/rasofema/Documents/aide/src/aide.c","line":255,"column":25},{"file":"/home/rasofema/Documents/aide/src/aide.c","line":255,"column":25})},[<"IntegerLiteral":({"pointer":8845,"source_range":({"file":"/home/rasofema/Documents/aide/src/aide.c","line":255,"column":25},{"file":"/home/rasofema/Documents/aide/src/aide.c","line":255,"column":25})},[],{"qual_type":{"type_ptr":159}},{"is_signed":true,"bitwidth":32,"value":"2"})>],{"qual_type":{"type_ptr":159}})>})>,<"EnumConstantDecl":({"pointer":8846,"source_range":({"file":"/home/rasofema/Documents/aide/src/aide.c","line":256,"column":7},{"file":"/home/rasofema/Documents/aide/src/aide.c","line":256,"column":25}),"is_this_declaration_referenced":true},{"name":"ARG_NO_COLOR","qual_name":["ARG_NO_COLOR","cmdline_args","read_param"]},{"type_ptr":159},{"init_expr":<"ConstantExpr":({"pointer":8847,"source_range":({"file":"/home/rasofema/Documents/aide/src/aide.c","line":256,"column":25},{"file":"/home/rasofema/Documents/aide/src/aide.c","line":256,"column":25})},[<"IntegerLiteral":({"pointer":8848,"source_range":({"file":"/home/rasofema/Documents/aide/src/aide.c","line":256,"column":25},{"file":"/home/rasofema/Documents/aide/src/aide.c","line":256,"column":25})},[],{"qual_type":{"type_ptr":159}},{"is_signed":true,"bitwidth":32,"value":"3"})>],{"qual_type":{"type_ptr":159}})>})>],{},<"TTK_Enum">,{})>
+[80736][      debug] src/aide.c:253:3-257:4: ERROR translating statement 'DeclStmt'
+[80736][      debug] Aborting translation of method 'read_param' in file 'src/aide.c'
+[80736][      debug] Unimplemented feature:
+[80736][      debug]   In DeclStmt found an unknown declaration type <"EnumDecl":({"pointer":8838,"source_range":({"file":"/home/rasofema/Documents/aide/src/aide.c","line":253,"column":3},{"file":"/home/rasofema/Documents/aide/src/aide.c","line":257,"column":3})},{"name":"cmdline_args","qual_name":["cmdline_args","read_param"]},8839,[<"EnumConstantDecl":({"pointer":8840,"source_range":({"file":"/home/rasofema/Documents/aide/src/aide.c","line":254,"column":7},{"file":"/home/rasofema/Documents/aide/src/aide.c","line":254,"column":25}),"is_this_declaration_referenced":true},{"name":"ARG_NO_PROGRESS","qual_name":["ARG_NO_PROGRESS","cmdline_args","read_param"]},{"type_ptr":159},{"init_expr":<"ConstantExpr":({"pointer":8841,"source_range":({"file":"/home/rasofema/Documents/aide/src/aide.c","line":254,"column":25},{"file":"/home/rasofema/Documents/aide/src/aide.c","line":254,"column":25})},[<"IntegerLiteral":({"pointer":8842,"source_range":({"file":"/home/rasofema/Documents/aide/src/aide.c","line":254,"column":25},{"file":"/home/rasofema/Documents/aide/src/aide.c","line":254,"column":25})},[],{"qual_type":{"type_ptr":159}},{"is_signed":true,"bitwidth":32,"value":"1"})>],{"qual_type":{"type_ptr":159}})>})>,<"EnumConstantDecl":({"pointer":8843,"source_range":({"file":"/home/rasofema/Documents/aide/src/aide.c","line":255,"column":7},{"file":"/home/rasofema/Documents/aide/src/aide.c","line":255,"column":25}),"is_this_declaration_referenced":true},{"name":"ARG_LIST","qual_name":["ARG_LIST","cmdline_args","read_param"]},{"type_ptr":159},{"init_expr":<"ConstantExpr":({"pointer":8844,"source_range":({"file":"/home/rasofema/Documents/aide/src/aide.c","line":255,"column":25},{"file":"/home/rasofema/Documents/aide/src/aide.c","line":255,"column":25})},[<"IntegerLiteral":({"pointer":8845,"source_range":({"file":"/home/rasofema/Documents/aide/src/aide.c","line":255,"column":25},{"file":"/home/rasofema/Documents/aide/src/aide.c","line":255,"column":25})},[],{"qual_type":{"type_ptr":159}},{"is_signed":true,"bitwidth":32,"value":"2"})>],{"qual_type":{"type_ptr":159}})>})>,<"EnumConstantDecl":({"pointer":8846,"source_range":({"file":"/home/rasofema/Documents/aide/src/aide.c","line":256,"column":7},{"file":"/home/rasofema/Documents/aide/src/aide.c","line":256,"column":25}),"is_this_declaration_referenced":true},{"name":"ARG_NO_COLOR","qual_name":["ARG_NO_COLOR","cmdline_args","read_param"]},{"type_ptr":159},{"init_expr":<"ConstantExpr":({"pointer":8847,"source_range":({"file":"/home/rasofema/Documents/aide/src/aide.c","line":256,"column":25},{"file":"/home/rasofema/Documents/aide/src/aide.c","line":256,"column":25})},[<"IntegerLiteral":({"pointer":8848,"source_range":({"file":"/home/rasofema/Documents/aide/src/aide.c","line":256,"column":25},{"file":"/home/rasofema/Documents/aide/src/aide.c","line":256,"column":25})},[],{"qual_type":{"type_ptr":159}},{"is_signed":true,"bitwidth":32,"value":"3"})>],{"qual_type":{"type_ptr":159}})>})>],{},<"TTK_Enum">,{})>
+[80736][      debug] Elapsed: 530ms.
+[80736][      debug] GC stats for capture:
+[80736][      debug]   minor_words: 1.42333e+07
+[80736][      debug]   promoted_words: 1.24529e+06
+[80736][      debug]   major_words: 1.31783e+06
+[80736][      debug]   minor_collections: 16
+[80736][      debug]   major_collections: 3
+[80736][      debug]   compactions: 0
+[80736][      debug]   top_heap_words: 1531904
+[80736][      debug]   
+[80736][      debug] GC stats for main_process_full:
+[80736][      debug]   minor_words: 1.56522e+07
+[80736][      debug]   promoted_words: 1.41431e+06
+[80736][      debug]   major_words: 1.5075e+06
+[80736][      debug]   minor_collections: 36
+[80736][      debug]   major_collections: 8
+[80736][      debug]   compactions: 1
+[80736][      debug]   top_heap_words: 1531904
+[80736][      debug]   
+[80736][environment] Scheduler: file
+[80736][environment] Cores used: 2
+[80736][environment] 
+[80743][environment] CWD = /home/rasofema/Documents/aide
+[80743][environment] No .inferconfig file found
+[80743][environment] Project root = /home/rasofema/Documents/aide
+[80743][environment] INFER_ARGS =   @/tmp/args.tmp.7a7071
+[80743][environment] command line arguments:   gcc -DHAVE_CONFIG_H -I. -I./include -I. -I./include
+[80743][environment]                           -I./src -I./src -D_GNU_SOURCE -W -Wall -g -pthread
+[80743][environment]                           -g -O2 -fPIE -DPIE -Wundef
+[80743][environment]                           -Wmissing-format-attribute -Wshadow -Wlogical-op
+[80743][environment]                           -MT src/aide-base64.o -MD -MP -MF
+[80743][environment]                           src/.deps/aide-base64.Tpo -c -o src/aide-base64.o
+[80743][environment]                           src/base64.c
+[80743][environment] Available memory at startup: 5595 MB
+[80743][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[80743][      debug] 
+[80743][      debug] *** Beginning capture of file /home/rasofema/Documents/aide/src/base64.c ***
+[80743][      debug] Loading the following linters files: /opt/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[80743][      debug] Elapsed: 73.635ms.
+[80743][      debug] GC stats for capture:
+[80743][      debug]   minor_words: 3.74432e+06
+[80743][      debug]   promoted_words: 452763
+[80743][      debug]   major_words: 478159
+[80743][      debug]   minor_collections: 6
+[80743][      debug]   major_collections: 1
+[80743][      debug]   compactions: 0
+[80743][      debug]   top_heap_words: 661504
+[80743][      debug]   
+[80743][      debug] GC stats for main_process_full:
+[80743][      debug]   minor_words: 5.16315e+06
+[80743][      debug]   promoted_words: 621548
+[80743][      debug]   major_words: 667596
+[80743][      debug]   minor_collections: 25
+[80743][      debug]   major_collections: 6
+[80743][      debug]   compactions: 1
+[80743][      debug]   top_heap_words: 661504
+[80743][      debug]   
+[80743][environment] Scheduler: file
+[80743][environment] Cores used: 2
+[80743][environment] 
+[80750][environment] CWD = /home/rasofema/Documents/aide
+[80750][environment] No .inferconfig file found
+[80750][environment] Project root = /home/rasofema/Documents/aide
+[80750][environment] INFER_ARGS =   @/tmp/args.tmp.b32233
+[80750][environment] command line arguments:   gcc -DHAVE_CONFIG_H -I. -I./include -I. -I./include
+[80750][environment]                           -I./src -I./src -D_GNU_SOURCE -W -Wall -g -pthread
+[80750][environment]                           -g -O2 -fPIE -DPIE -Wundef
+[80750][environment]                           -Wmissing-format-attribute -Wshadow -Wlogical-op
+[80750][environment]                           -MT src/aide-be.o -MD -MP -MF src/.deps/aide-be.Tpo
+[80750][environment]                           -c -o src/aide-be.o src/be.c
+[80750][environment] Available memory at startup: 5597 MB
+[80750][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[80750][      debug] 
+[80750][      debug] *** Beginning capture of file /home/rasofema/Documents/aide/src/be.c ***
+[80750][      debug] Loading the following linters files: /opt/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[80750][      debug] Elapsed: 82.126ms.
+[80750][      debug] GC stats for capture:
+[80750][      debug]   minor_words: 4.1441e+06
+[80750][      debug]   promoted_words: 560023
+[80750][      debug]   major_words: 588169
+[80750][      debug]   minor_collections: 6
+[80750][      debug]   major_collections: 1
+[80750][      debug]   compactions: 0
+[80750][      debug]   top_heap_words: 760832
+[80750][      debug]   
+[80750][      debug] GC stats for main_process_full:
+[80750][      debug]   minor_words: 5.56291e+06
+[80750][      debug]   promoted_words: 729044
+[80750][      debug]   major_words: 777842
+[80750][      debug]   minor_collections: 26
+[80750][      debug]   major_collections: 6
+[80750][      debug]   compactions: 1
+[80750][      debug]   top_heap_words: 760832
+[80750][      debug]   
+[80750][environment] Scheduler: file
+[80750][environment] Cores used: 2
+[80750][environment] 
+[80759][environment] CWD = /home/rasofema/Documents/aide
+[80759][environment] No .inferconfig file found
+[80759][environment] Project root = /home/rasofema/Documents/aide
+[80759][environment] INFER_ARGS =   @/tmp/args.tmp.fb6c88
+[80759][environment] command line arguments:   gcc -DHAVE_CONFIG_H -I. -I./include -I. -I./include
+[80759][environment]                           -I./src -I./src -D_GNU_SOURCE -W -Wall -g -pthread
+[80759][environment]                           -g -O2 -fPIE -DPIE -Wundef
+[80759][environment]                           -Wmissing-format-attribute -Wshadow -Wlogical-op
+[80759][environment]                           -MT src/aide-commandconf.o -MD -MP -MF
+[80759][environment]                           src/.deps/aide-commandconf.Tpo -c -o
+[80759][environment]                           src/aide-commandconf.o src/commandconf.c
+[80759][environment] Available memory at startup: 5594 MB
+[80759][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[80759][      debug] 
+[80759][      debug] *** Beginning capture of file /home/rasofema/Documents/aide/src/commandconf.c ***
+[80759][      debug] Loading the following linters files: /opt/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[80759][      debug] Elapsed: 281ms.
+[80759][      debug] GC stats for capture:
+[80759][      debug]   minor_words: 1.44898e+07
+[80759][      debug]   promoted_words: 1.43906e+06
+[80759][      debug]   major_words: 1.51771e+06
+[80759][      debug]   minor_collections: 17
+[80759][      debug]   major_collections: 3
+[80759][      debug]   compactions: 0
+[80759][      debug]   top_heap_words: 1761792
+[80759][      debug]   
+[80759][      debug] GC stats for main_process_full:
+[80759][      debug]   minor_words: 1.59086e+07
+[80759][      debug]   promoted_words: 1.60809e+06
+[80759][      debug]   major_words: 1.70739e+06
+[80759][      debug]   minor_collections: 37
+[80759][      debug]   major_collections: 8
+[80759][      debug]   compactions: 1
+[80759][      debug]   top_heap_words: 1761792
+[80759][      debug]   
+[80759][environment] Scheduler: file
+[80759][environment] Cores used: 2
+[80759][environment] 
+[80766][environment] CWD = /home/rasofema/Documents/aide
+[80766][environment] No .inferconfig file found
+[80766][environment] Project root = /home/rasofema/Documents/aide
+[80766][environment] INFER_ARGS =   @/tmp/args.tmp.578983
+[80766][environment] command line arguments:   gcc -DHAVE_CONFIG_H -I. -I./include -I. -I./include
+[80766][environment]                           -I./src -I./src -D_GNU_SOURCE -W -Wall -g -pthread
+[80766][environment]                           -g -O2 -fPIE -DPIE -Wundef
+[80766][environment]                           -Wmissing-format-attribute -Wshadow -Wlogical-op
+[80766][environment]                           -MT src/aide-attributes.o -MD -MP -MF
+[80766][environment]                           src/.deps/aide-attributes.Tpo -c -o
+[80766][environment]                           src/aide-attributes.o src/attributes.c
+[80766][environment] Available memory at startup: 5593 MB
+[80766][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[80766][      debug] 
+[80766][      debug] *** Beginning capture of file /home/rasofema/Documents/aide/src/attributes.c ***
+[80766][      debug] Loading the following linters files: /opt/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[80766][      debug] Elapsed: 65.691ms.
+[80766][      debug] GC stats for capture:
+[80766][      debug]   minor_words: 2.96249e+06
+[80766][      debug]   promoted_words: 375153
+[80766][      debug]   major_words: 396781
+[80766][      debug]   minor_collections: 4
+[80766][      debug]   major_collections: 0
+[80766][      debug]   compactions: 0
+[80766][      debug]   top_heap_words: 574976
+[80766][      debug]   
+[80766][      debug] GC stats for main_process_full:
+[80766][      debug]   minor_words: 4.38132e+06
+[80766][      debug]   promoted_words: 544182
+[80766][      debug]   major_words: 586462
+[80766][      debug]   minor_collections: 24
+[80766][      debug]   major_collections: 5
+[80766][      debug]   compactions: 1
+[80766][      debug]   top_heap_words: 574976
+[80766][      debug]   
+[80766][environment] Scheduler: file
+[80766][environment] Cores used: 2
+[80766][environment] 
+[80773][environment] CWD = /home/rasofema/Documents/aide
+[80773][environment] No .inferconfig file found
+[80773][environment] Project root = /home/rasofema/Documents/aide
+[80773][environment] INFER_ARGS =   @/tmp/args.tmp.2b64dc
+[80773][environment] command line arguments:   gcc -DHAVE_CONFIG_H -I. -I./include -I. -I./include
+[80773][environment]                           -I./src -I./src -D_GNU_SOURCE -W -Wall -g -pthread
+[80773][environment]                           -g -O2 -fPIE -DPIE -Wundef
+[80773][environment]                           -Wmissing-format-attribute -Wshadow -Wlogical-op
+[80773][environment]                           -MT src/aide-report.o -MD -MP -MF
+[80773][environment]                           src/.deps/aide-report.Tpo -c -o src/aide-report.o
+[80773][environment]                           src/report.c
+[80773][environment] Available memory at startup: 5588 MB
+[80773][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[80773][      debug] 
+[80773][      debug] *** Beginning capture of file /home/rasofema/Documents/aide/src/report.c ***
+[80773][      debug] Loading the following linters files: /opt/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[80773][      debug] Elapsed: 292ms.
+[80773][      debug] GC stats for capture:
+[80773][      debug]   minor_words: 1.7229e+07
+[80773][      debug]   promoted_words: 1.58863e+06
+[80773][      debug]   major_words: 1.68232e+06
+[80773][      debug]   minor_collections: 20
+[80773][      debug]   major_collections: 3
+[80773][      debug]   compactions: 0
+[80773][      debug]   top_heap_words: 1761792
+[80773][      debug]   
+[80773][      debug] GC stats for main_process_full:
+[80773][      debug]   minor_words: 1.86478e+07
+[80773][      debug]   promoted_words: 1.75741e+06
+[80773][      debug]   major_words: 1.87176e+06
+[80773][      debug]   minor_collections: 39
+[80773][      debug]   major_collections: 8
+[80773][      debug]   compactions: 1
+[80773][      debug]   top_heap_words: 1761792
+[80773][      debug]   
+[80773][environment] Scheduler: file
+[80773][environment] Cores used: 2
+[80773][environment] 
+[80780][environment] CWD = /home/rasofema/Documents/aide
+[80780][environment] No .inferconfig file found
+[80780][environment] Project root = /home/rasofema/Documents/aide
+[80780][environment] INFER_ARGS =   @/tmp/args.tmp.ca80d4
+[80780][environment] command line arguments:   gcc -DHAVE_CONFIG_H -I. -I./include -I. -I./include
+[80780][environment]                           -I./src -I./src -D_GNU_SOURCE -W -Wall -g -pthread
+[80780][environment]                           -g -O2 -fPIE -DPIE -Wundef
+[80780][environment]                           -Wmissing-format-attribute -Wshadow -Wlogical-op
+[80780][environment]                           -MT src/aide-report_plain.o -MD -MP -MF
+[80780][environment]                           src/.deps/aide-report_plain.Tpo -c -o
+[80780][environment]                           src/aide-report_plain.o src/report_plain.c
+[80780][environment] Available memory at startup: 5592 MB
+[80780][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[80780][      debug] 
+[80780][      debug] *** Beginning capture of file /home/rasofema/Documents/aide/src/report_plain.c ***
+[80780][      debug] Loading the following linters files: /opt/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[80780][      debug] Elapsed: 122ms.
+[80780][      debug] GC stats for capture:
+[80780][      debug]   minor_words: 6.58747e+06
+[80780][      debug]   promoted_words: 814646
+[80780][      debug]   major_words: 861814
+[80780][      debug]   minor_collections: 8
+[80780][      debug]   major_collections: 1
+[80780][      debug]   compactions: 0
+[80780][      debug]   top_heap_words: 1157632
+[80780][      debug]   
+[80780][      debug] GC stats for main_process_full:
+[80780][      debug]   minor_words: 8.00631e+06
+[80780][      debug]   promoted_words: 983676
+[80780][      debug]   major_words: 1.0515e+06
+[80780][      debug]   minor_collections: 28
+[80780][      debug]   major_collections: 6
+[80780][      debug]   compactions: 1
+[80780][      debug]   top_heap_words: 1157632
+[80780][      debug]   
+[80780][environment] Scheduler: file
+[80780][environment] Cores used: 2
+[80780][environment] 
+[80787][environment] CWD = /home/rasofema/Documents/aide
+[80787][environment] No .inferconfig file found
+[80787][environment] Project root = /home/rasofema/Documents/aide
+[80787][environment] INFER_ARGS =   @/tmp/args.tmp.db9ef3
+[80787][environment] command line arguments:   gcc -DHAVE_CONFIG_H -I. -I./include -I. -I./include
+[80787][environment]                           -I./src -I./src -D_GNU_SOURCE -W -Wall -g -pthread
+[80787][environment]                           -g -O2 -fPIE -DPIE -Wundef
+[80787][environment]                           -Wmissing-format-attribute -Wshadow -Wlogical-op
+[80787][environment]                           -MT src/aide-report_json.o -MD -MP -MF
+[80787][environment]                           src/.deps/aide-report_json.Tpo -c -o
+[80787][environment]                           src/aide-report_json.o src/report_json.c
+[80787][environment] Available memory at startup: 5592 MB
+[80787][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[80787][      debug] 
+[80787][      debug] *** Beginning capture of file /home/rasofema/Documents/aide/src/report_json.c ***
+[80787][      debug] Loading the following linters files: /opt/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[80787][      debug] Elapsed: 150ms.
+[80787][      debug] GC stats for capture:
+[80787][      debug]   minor_words: 7.43661e+06
+[80787][      debug]   promoted_words: 859176
+[80787][      debug]   major_words: 907883
+[80787][      debug]   minor_collections: 9
+[80787][      debug]   major_collections: 1
+[80787][      debug]   compactions: 0
+[80787][      debug]   top_heap_words: 1157632
+[80787][      debug]   
+[80787][      debug] GC stats for main_process_full:
+[80787][      debug]   minor_words: 8.85545e+06
+[80787][      debug]   promoted_words: 1.02821e+06
+[80787][      debug]   major_words: 1.09756e+06
+[80787][      debug]   minor_collections: 29
+[80787][      debug]   major_collections: 6
+[80787][      debug]   compactions: 1
+[80787][      debug]   top_heap_words: 1157632
+[80787][      debug]   
+[80787][environment] Scheduler: file
+[80787][environment] Cores used: 2
+[80787][environment] 
+[80794][environment] CWD = /home/rasofema/Documents/aide
+[80794][environment] No .inferconfig file found
+[80794][environment] Project root = /home/rasofema/Documents/aide
+[80794][environment] INFER_ARGS =   @/tmp/args.tmp.cd4cc9
+[80794][environment] command line arguments:   gcc -DHAVE_CONFIG_H -I. -I./include -I. -I./include
+[80794][environment]                           -I./src -I./src -D_GNU_SOURCE -W -Wall -g -pthread
+[80794][environment]                           -g -O2 -fPIE -DPIE -Wundef
+[80794][environment]                           -Wmissing-format-attribute -Wshadow -Wlogical-op
+[80794][environment]                           -MT src/aide-conf_ast.o -MD -MP -MF
+[80794][environment]                           src/.deps/aide-conf_ast.Tpo -c -o
+[80794][environment]                           src/aide-conf_ast.o src/conf_ast.c
+[80794][environment] Available memory at startup: 5594 MB
+[80794][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[80794][      debug] 
+[80794][      debug] *** Beginning capture of file /home/rasofema/Documents/aide/src/conf_ast.c ***
+[80794][      debug] Loading the following linters files: /opt/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[80794][      debug] Elapsed: 118ms.
+[80794][      debug] GC stats for capture:
+[80794][      debug]   minor_words: 5.80064e+06
+[80794][      debug]   promoted_words: 631206
+[80794][      debug]   major_words: 664795
+[80794][      debug]   minor_collections: 8
+[80794][      debug]   major_collections: 1
+[80794][      debug]   compactions: 0
+[80794][      debug]   top_heap_words: 875008
+[80794][      debug]   
+[80794][      debug] GC stats for main_process_full:
+[80794][      debug]   minor_words: 7.21947e+06
+[80794][      debug]   promoted_words: 799992
+[80794][      debug]   major_words: 854233
+[80794][      debug]   minor_collections: 27
+[80794][      debug]   major_collections: 6
+[80794][      debug]   compactions: 1
+[80794][      debug]   top_heap_words: 875008
+[80794][      debug]   
+[80794][environment] Scheduler: file
+[80794][environment] Cores used: 2
+[80794][environment] 
+[80801][environment] CWD = /home/rasofema/Documents/aide
+[80801][environment] No .inferconfig file found
+[80801][environment] Project root = /home/rasofema/Documents/aide
+[80801][environment] INFER_ARGS =   @/tmp/args.tmp.702742
+[80801][environment] command line arguments:   gcc -DHAVE_CONFIG_H -I. -I./include -I. -I./include
+[80801][environment]                           -I./src -I./src -D_GNU_SOURCE -W -Wall -g -pthread
+[80801][environment]                           -g -O2 -fPIE -DPIE -Wundef
+[80801][environment]                           -Wmissing-format-attribute -Wshadow -Wlogical-op
+[80801][environment]                           -MT src/aide-conf_eval.o -MD -MP -MF
+[80801][environment]                           src/.deps/aide-conf_eval.Tpo -c -o
+[80801][environment]                           src/aide-conf_eval.o src/conf_eval.c
+[80801][environment] Available memory at startup: 5594 MB
+[80801][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[80801][      debug] 
+[80801][      debug] *** Beginning capture of file /home/rasofema/Documents/aide/src/conf_eval.c ***
+[80801][      debug] Loading the following linters files: /opt/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[80801][      debug] Elapsed: 274ms.
+[80801][      debug] GC stats for capture:
+[80801][      debug]   minor_words: 1.57182e+07
+[80801][      debug]   promoted_words: 1.37966e+06
+[80801][      debug]   major_words: 1.46532e+06
+[80801][      debug]   minor_collections: 18
+[80801][      debug]   major_collections: 3
+[80801][      debug]   compactions: 0
+[80801][      debug]   top_heap_words: 1531904
+[80801][      debug]   
+[80801][      debug] GC stats for main_process_full:
+[80801][      debug]   minor_words: 1.7137e+07
+[80801][      debug]   promoted_words: 1.54844e+06
+[80801][      debug]   major_words: 1.65476e+06
+[80801][      debug]   minor_collections: 37
+[80801][      debug]   major_collections: 8
+[80801][      debug]   compactions: 1
+[80801][      debug]   top_heap_words: 1531904
+[80801][      debug]   
+[80801][environment] Scheduler: file
+[80801][environment] Cores used: 2
+[80801][environment] 
+[80812][environment] CWD = /home/rasofema/Documents/aide
+[80812][environment] No .inferconfig file found
+[80812][environment] Project root = /home/rasofema/Documents/aide
+[80812][environment] INFER_ARGS =   @/tmp/args.tmp.fd61a9
+[80812][environment] command line arguments:   gcc -DHAVE_CONFIG_H -I. -I./include -I. -I./include
+[80812][environment]                           -I./src -I./src -D_GNU_SOURCE -W -Wall -g -pthread
+[80812][environment]                           -g -O2 -fPIE -DPIE -Wundef
+[80812][environment]                           -Wmissing-format-attribute -Wshadow -Wlogical-op
+[80812][environment]                           -MT src/aide-conf_lex.o -MD -MP -MF
+[80812][environment]                           src/.deps/aide-conf_lex.Tpo -c -o
+[80812][environment]                           src/aide-conf_lex.o src/conf_lex.c
+[80812][environment] Available memory at startup: 5585 MB
+[80812][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[80812][      debug] 
+[80812][      debug] *** Beginning capture of file /home/rasofema/Documents/aide/src/conf_lex.c ***
+[80812][      debug] Loading the following linters files: /opt/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[80812][      debug] Elapsed: 397ms.
+[80812][      debug] GC stats for capture:
+[80812][      debug]   minor_words: 2.80916e+07
+[80812][      debug]   promoted_words: 2.05724e+06
+[80812][      debug]   major_words: 2.19485e+06
+[80812][      debug]   minor_collections: 40
+[80812][      debug]   major_collections: 6
+[80812][      debug]   compactions: 0
+[80812][      debug]   top_heap_words: 2330624
+[80812][      debug]   
+[80812][      debug] GC stats for main_process_full:
+[80812][      debug]   minor_words: 2.95104e+07
+[80812][      debug]   promoted_words: 2.22603e+06
+[80812][      debug]   major_words: 2.38428e+06
+[80812][      debug]   minor_collections: 59
+[80812][      debug]   major_collections: 11
+[80812][      debug]   compactions: 1
+[80812][      debug]   top_heap_words: 2330624
+[80812][      debug]   
+[80812][environment] Scheduler: file
+[80812][environment] Cores used: 2
+[80812][environment] 
+[80819][environment] CWD = /home/rasofema/Documents/aide
+[80819][environment] No .inferconfig file found
+[80819][environment] Project root = /home/rasofema/Documents/aide
+[80819][environment] INFER_ARGS =   @/tmp/args.tmp.ea13cb
+[80819][environment] command line arguments:   gcc -DHAVE_CONFIG_H -I. -I./include -I. -I./include
+[80819][environment]                           -I./src -I./src -D_GNU_SOURCE -W -Wall -g -pthread
+[80819][environment]                           -g -O2 -fPIE -DPIE -Wundef
+[80819][environment]                           -Wmissing-format-attribute -Wshadow -Wlogical-op
+[80819][environment]                           -MT src/aide-conf_yacc.o -MD -MP -MF
+[80819][environment]                           src/.deps/aide-conf_yacc.Tpo -c -o
+[80819][environment]                           src/aide-conf_yacc.o src/conf_yacc.c
+[80819][environment] Available memory at startup: 5581 MB
+[80819][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[80819][      debug] 
+[80819][      debug] *** Beginning capture of file /home/rasofema/Documents/aide/src/conf_yacc.c ***
+[80819][      debug] Loading the following linters files: /opt/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[80819][      debug] src/conf_yacc.c:1124:3-26: ERROR translating statement 'DeclStmt'
+[80819][      debug] Aborting translation of method 'yysyntax_error' in file 'src/conf_yacc.c'
+[80819][      debug] Unimplemented feature:
+[80819][      debug]   In DeclStmt found an unknown declaration type <"EnumDecl":({"pointer":6792,"source_range":({"file":"/home/rasofema/Documents/aide/src/conf_yacc.c","line":1124,"column":3},{"file":"/home/rasofema/Documents/aide/src/conf_yacc.c","line":1124,"column":25})},{"name":"","qual_name":["anonymous_enum_src/conf_yacc.c:1124:3","yysyntax_error"]},6793,[<"EnumConstantDecl":({"pointer":6794,"source_range":({"file":"/home/rasofema/Documents/aide/src/conf_yacc.c","line":1124,"column":10},{"file":"/home/rasofema/Documents/aide/src/conf_yacc.c","line":1124,"column":23}),"is_this_declaration_referenced":true},{"name":"YYARGS_MAX","qual_name":["YYARGS_MAX","anonymous_enum_src/conf_yacc.c:1124:3","yysyntax_error"]},{"type_ptr":10},{"init_expr":<"ConstantExpr":({"pointer":6795,"source_range":({"file":"/home/rasofema/Documents/aide/src/conf_yacc.c","line":1124,"column":23},{"file":"/home/rasofema/Documents/aide/src/conf_yacc.c","line":1124,"column":23})},[<"IntegerLiteral":({"pointer":6796,"source_range":({"file":"/home/rasofema/Documents/aide/src/conf_yacc.c","line":1124,"column":23},{"file":"/home/rasofema/Documents/aide/src/conf_yacc.c","line":1124,"column":23})},[],{"qual_type":{"type_ptr":10}},{"is_signed":true,"bitwidth":32,"value":"5"})>],{"qual_type":{"type_ptr":10}})>})>],{},<"TTK_Enum">,{})>
+[80819][      debug] src/conf_yacc.c:1124:3-26: ERROR translating statement 'DeclStmt'
+[80819][      debug] Aborting translation of method 'yysyntax_error' in file 'src/conf_yacc.c'
+[80819][      debug] Unimplemented feature:
+[80819][      debug]   In DeclStmt found an unknown declaration type <"EnumDecl":({"pointer":6792,"source_range":({"file":"/home/rasofema/Documents/aide/src/conf_yacc.c","line":1124,"column":3},{"file":"/home/rasofema/Documents/aide/src/conf_yacc.c","line":1124,"column":25})},{"name":"","qual_name":["anonymous_enum_src/conf_yacc.c:1124:3","yysyntax_error"]},6793,[<"EnumConstantDecl":({"pointer":6794,"source_range":({"file":"/home/rasofema/Documents/aide/src/conf_yacc.c","line":1124,"column":10},{"file":"/home/rasofema/Documents/aide/src/conf_yacc.c","line":1124,"column":23}),"is_this_declaration_referenced":true},{"name":"YYARGS_MAX","qual_name":["YYARGS_MAX","anonymous_enum_src/conf_yacc.c:1124:3","yysyntax_error"]},{"type_ptr":10},{"init_expr":<"ConstantExpr":({"pointer":6795,"source_range":({"file":"/home/rasofema/Documents/aide/src/conf_yacc.c","line":1124,"column":23},{"file":"/home/rasofema/Documents/aide/src/conf_yacc.c","line":1124,"column":23})},[<"IntegerLiteral":({"pointer":6796,"source_range":({"file":"/home/rasofema/Documents/aide/src/conf_yacc.c","line":1124,"column":23},{"file":"/home/rasofema/Documents/aide/src/conf_yacc.c","line":1124,"column":23})},[],{"qual_type":{"type_ptr":10}},{"is_signed":true,"bitwidth":32,"value":"5"})>],{"qual_type":{"type_ptr":10}})>})>],{},<"TTK_Enum">,{})>
+[80819][      debug] src/conf_yacc.c:1124:3-26: ERROR translating statement 'DeclStmt'
+[80819][      debug] Aborting translation of method 'yysyntax_error' in file 'src/conf_yacc.c'
+[80819][      debug] Unimplemented feature:
+[80819][      debug]   In DeclStmt found an unknown declaration type <"EnumDecl":({"pointer":6792,"source_range":({"file":"/home/rasofema/Documents/aide/src/conf_yacc.c","line":1124,"column":3},{"file":"/home/rasofema/Documents/aide/src/conf_yacc.c","line":1124,"column":25})},{"name":"","qual_name":["anonymous_enum_src/conf_yacc.c:1124:3","yysyntax_error"]},6793,[<"EnumConstantDecl":({"pointer":6794,"source_range":({"file":"/home/rasofema/Documents/aide/src/conf_yacc.c","line":1124,"column":10},{"file":"/home/rasofema/Documents/aide/src/conf_yacc.c","line":1124,"column":23}),"is_this_declaration_referenced":true},{"name":"YYARGS_MAX","qual_name":["YYARGS_MAX","anonymous_enum_src/conf_yacc.c:1124:3","yysyntax_error"]},{"type_ptr":10},{"init_expr":<"ConstantExpr":({"pointer":6795,"source_range":({"file":"/home/rasofema/Documents/aide/src/conf_yacc.c","line":1124,"column":23},{"file":"/home/rasofema/Documents/aide/src/conf_yacc.c","line":1124,"column":23})},[<"IntegerLiteral":({"pointer":6796,"source_range":({"file":"/home/rasofema/Documents/aide/src/conf_yacc.c","line":1124,"column":23},{"file":"/home/rasofema/Documents/aide/src/conf_yacc.c","line":1124,"column":23})},[],{"qual_type":{"type_ptr":10}},{"is_signed":true,"bitwidth":32,"value":"5"})>],{"qual_type":{"type_ptr":10}})>})>],{},<"TTK_Enum">,{})>
+[80819][      debug] Elapsed: 162ms.
+[80819][      debug] GC stats for capture:
+[80819][      debug]   minor_words: 1.04098e+07
+[80819][      debug]   promoted_words: 927908
+[80819][      debug]   major_words: 987916
+[80819][      debug]   minor_collections: 15
+[80819][      debug]   major_collections: 2
+[80819][      debug]   compactions: 0
+[80819][      debug]   top_heap_words: 1157632
+[80819][      debug]   
+[80819][      debug] GC stats for main_process_full:
+[80819][      debug]   minor_words: 1.18286e+07
+[80819][      debug]   promoted_words: 1.0967e+06
+[80819][      debug]   major_words: 1.17736e+06
+[80819][      debug]   minor_collections: 34
+[80819][      debug]   major_collections: 7
+[80819][      debug]   compactions: 1
+[80819][      debug]   top_heap_words: 1157632
+[80819][      debug]   
+[80819][environment] Scheduler: file
+[80819][environment] Cores used: 2
+[80819][environment] 
+[80826][environment] CWD = /home/rasofema/Documents/aide
+[80826][environment] No .inferconfig file found
+[80826][environment] Project root = /home/rasofema/Documents/aide
+[80826][environment] INFER_ARGS =   @/tmp/args.tmp.da1fb6
+[80826][environment] command line arguments:   gcc -DHAVE_CONFIG_H -I. -I./include -I. -I./include
+[80826][environment]                           -I./src -I./src -D_GNU_SOURCE -W -Wall -g -pthread
+[80826][environment]                           -g -O2 -fPIE -DPIE -Wundef
+[80826][environment]                           -Wmissing-format-attribute -Wshadow -Wlogical-op
+[80826][environment]                           -MT src/aide-db.o -MD -MP -MF src/.deps/aide-db.Tpo
+[80826][environment]                           -c -o src/aide-db.o src/db.c
+[80826][environment] Available memory at startup: 5584 MB
+[80826][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[80826][      debug] 
+[80826][      debug] *** Beginning capture of file /home/rasofema/Documents/aide/src/db.c ***
+[80826][      debug] Loading the following linters files: /opt/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[80826][      debug] Elapsed: 182ms.
+[80826][      debug] GC stats for capture:
+[80826][      debug]   minor_words: 9.61579e+06
+[80826][      debug]   promoted_words: 1.03395e+06
+[80826][      debug]   major_words: 1.09162e+06
+[80826][      debug]   minor_collections: 11
+[80826][      debug]   major_collections: 2
+[80826][      debug]   compactions: 0
+[80826][      debug]   top_heap_words: 1331712
+[80826][      debug]   
+[80826][      debug] GC stats for main_process_full:
+[80826][      debug]   minor_words: 1.10346e+07
+[80826][      debug]   promoted_words: 1.20297e+06
+[80826][      debug]   major_words: 1.28129e+06
+[80826][      debug]   minor_collections: 31
+[80826][      debug]   major_collections: 7
+[80826][      debug]   compactions: 1
+[80826][      debug]   top_heap_words: 1331712
+[80826][      debug]   
+[80826][environment] Scheduler: file
+[80826][environment] Cores used: 2
+[80826][environment] 
+[80833][environment] CWD = /home/rasofema/Documents/aide
+[80833][environment] No .inferconfig file found
+[80833][environment] Project root = /home/rasofema/Documents/aide
+[80833][environment] INFER_ARGS =   @/tmp/args.tmp.244453
+[80833][environment] command line arguments:   gcc -DHAVE_CONFIG_H -I. -I./include -I. -I./include
+[80833][environment]                           -I./src -I./src -D_GNU_SOURCE -W -Wall -g -pthread
+[80833][environment]                           -g -O2 -fPIE -DPIE -Wundef
+[80833][environment]                           -Wmissing-format-attribute -Wshadow -Wlogical-op
+[80833][environment]                           -MT src/aide-db_disk.o -MD -MP -MF
+[80833][environment]                           src/.deps/aide-db_disk.Tpo -c -o src/aide-db_disk.o
+[80833][environment]                           src/db_disk.c
+[80833][environment] Available memory at startup: 5578 MB
+[80833][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[80833][      debug] 
+[80833][      debug] *** Beginning capture of file /home/rasofema/Documents/aide/src/db_disk.c ***
+[80833][      debug] Loading the following linters files: /opt/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[80833][      debug] Elapsed: 144ms.
+[80833][      debug] GC stats for capture:
+[80833][      debug]   minor_words: 7.9691e+06
+[80833][      debug]   promoted_words: 931890
+[80833][      debug]   major_words: 982429
+[80833][      debug]   minor_collections: 10
+[80833][      debug]   major_collections: 1
+[80833][      debug]   compactions: 0
+[80833][      debug]   top_heap_words: 1157632
+[80833][      debug]   
+[80833][      debug] GC stats for main_process_full:
+[80833][      debug]   minor_words: 9.38793e+06
+[80833][      debug]   promoted_words: 1.10068e+06
+[80833][      debug]   major_words: 1.17187e+06
+[80833][      debug]   minor_collections: 29
+[80833][      debug]   major_collections: 6
+[80833][      debug]   compactions: 1
+[80833][      debug]   top_heap_words: 1157632
+[80833][      debug]   
+[80833][environment] Scheduler: file
+[80833][environment] Cores used: 2
+[80833][environment] 
+[80840][environment] CWD = /home/rasofema/Documents/aide
+[80840][environment] No .inferconfig file found
+[80840][environment] Project root = /home/rasofema/Documents/aide
+[80840][environment] INFER_ARGS =   @/tmp/args.tmp.aee1d3
+[80840][environment] command line arguments:   gcc -DHAVE_CONFIG_H -I. -I./include -I. -I./include
+[80840][environment]                           -I./src -I./src -D_GNU_SOURCE -W -Wall -g -pthread
+[80840][environment]                           -g -O2 -fPIE -DPIE -Wundef
+[80840][environment]                           -Wmissing-format-attribute -Wshadow -Wlogical-op
+[80840][environment]                           -MT src/aide-db_file.o -MD -MP -MF
+[80840][environment]                           src/.deps/aide-db_file.Tpo -c -o src/aide-db_file.o
+[80840][environment]                           src/db_file.c
+[80840][environment] Available memory at startup: 5580 MB
+[80840][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[80840][      debug] 
+[80840][      debug] *** Beginning capture of file /home/rasofema/Documents/aide/src/db_file.c ***
+[80840][      debug] Loading the following linters files: /opt/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[80840][      debug] Elapsed: 178ms.
+[80840][      debug] GC stats for capture:
+[80840][      debug]   minor_words: 1.10789e+07
+[80840][      debug]   promoted_words: 1.10814e+06
+[80840][      debug]   major_words: 1.17781e+06
+[80840][      debug]   minor_collections: 13
+[80840][      debug]   major_collections: 2
+[80840][      debug]   compactions: 0
+[80840][      debug]   top_heap_words: 1331712
+[80840][      debug]   
+[80840][      debug] GC stats for main_process_full:
+[80840][      debug]   minor_words: 1.24978e+07
+[80840][      debug]   promoted_words: 1.27692e+06
+[80840][      debug]   major_words: 1.36725e+06
+[80840][      debug]   minor_collections: 32
+[80840][      debug]   major_collections: 7
+[80840][      debug]   compactions: 1
+[80840][      debug]   top_heap_words: 1331712
+[80840][      debug]   
+[80840][environment] Scheduler: file
+[80840][environment] Cores used: 2
+[80840][environment] 
+[80851][environment] CWD = /home/rasofema/Documents/aide
+[80851][environment] No .inferconfig file found
+[80851][environment] Project root = /home/rasofema/Documents/aide
+[80851][environment] INFER_ARGS =   @/tmp/args.tmp.4c3c96
+[80851][environment] command line arguments:   gcc -DHAVE_CONFIG_H -I. -I./include -I. -I./include
+[80851][environment]                           -I./src -I./src -D_GNU_SOURCE -W -Wall -g -pthread
+[80851][environment]                           -g -O2 -fPIE -DPIE -Wundef
+[80851][environment]                           -Wmissing-format-attribute -Wshadow -Wlogical-op
+[80851][environment]                           -MT src/aide-db_lex.o -MD -MP -MF
+[80851][environment]                           src/.deps/aide-db_lex.Tpo -c -o src/aide-db_lex.o
+[80851][environment]                           src/db_lex.c
+[80851][environment] Available memory at startup: 5575 MB
+[80851][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[80851][      debug] 
+[80851][      debug] *** Beginning capture of file /home/rasofema/Documents/aide/src/db_lex.c ***
+[80851][      debug] Loading the following linters files: /opt/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[80851][      debug] Elapsed: 189ms.
+[80851][      debug] GC stats for capture:
+[80851][      debug]   minor_words: 1.28174e+07
+[80851][      debug]   promoted_words: 1.16833e+06
+[80851][      debug]   major_words: 1.24281e+06
+[80851][      debug]   minor_collections: 17
+[80851][      debug]   major_collections: 3
+[80851][      debug]   compactions: 0
+[80851][      debug]   top_heap_words: 1331712
+[80851][      debug]   
+[80851][      debug] GC stats for main_process_full:
+[80851][      debug]   minor_words: 1.42363e+07
+[80851][      debug]   promoted_words: 1.33711e+06
+[80851][      debug]   major_words: 1.43225e+06
+[80851][      debug]   minor_collections: 36
+[80851][      debug]   major_collections: 8
+[80851][      debug]   compactions: 1
+[80851][      debug]   top_heap_words: 1331712
+[80851][      debug]   
+[80851][environment] Scheduler: file
+[80851][environment] Cores used: 2
+[80851][environment] 
+[80858][environment] CWD = /home/rasofema/Documents/aide
+[80858][environment] No .inferconfig file found
+[80858][environment] Project root = /home/rasofema/Documents/aide
+[80858][environment] INFER_ARGS =   @/tmp/args.tmp.c98f06
+[80858][environment] command line arguments:   gcc -DHAVE_CONFIG_H -I. -I./include -I. -I./include
+[80858][environment]                           -I./src -I./src -D_GNU_SOURCE -W -Wall -g -pthread
+[80858][environment]                           -g -O2 -fPIE -DPIE -Wundef
+[80858][environment]                           -Wmissing-format-attribute -Wshadow -Wlogical-op
+[80858][environment]                           -MT src/aide-db_list.o -MD -MP -MF
+[80858][environment]                           src/.deps/aide-db_list.Tpo -c -o src/aide-db_list.o
+[80858][environment]                           src/db_list.c
+[80858][environment] Available memory at startup: 5577 MB
+[80858][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[80858][      debug] 
+[80858][      debug] *** Beginning capture of file /home/rasofema/Documents/aide/src/db_list.c ***
+[80858][      debug] Loading the following linters files: /opt/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[80858][      debug] Elapsed: 32.287ms.
+[80858][      debug] GC stats for capture:
+[80858][      debug]   minor_words: 1.0154e+06
+[80858][      debug]   promoted_words: 201108
+[80858][      debug]   major_words: 213136
+[80858][      debug]   minor_collections: 2
+[80858][      debug]   major_collections: 0
+[80858][      debug]   compactions: 0
+[80858][      debug]   top_heap_words: 434176
+[80858][      debug]   
+[80858][      debug] GC stats for main_process_full:
+[80858][      debug]   minor_words: 2.43423e+06
+[80858][      debug]   promoted_words: 369894
+[80858][      debug]   major_words: 402574
+[80858][      debug]   minor_collections: 21
+[80858][      debug]   major_collections: 5
+[80858][      debug]   compactions: 1
+[80858][      debug]   top_heap_words: 434176
+[80858][      debug]   
+[80858][environment] Scheduler: file
+[80858][environment] Cores used: 2
+[80858][environment] 
+[80865][environment] CWD = /home/rasofema/Documents/aide
+[80865][environment] No .inferconfig file found
+[80865][environment] Project root = /home/rasofema/Documents/aide
+[80865][environment] INFER_ARGS =   @/tmp/args.tmp.213947
+[80865][environment] command line arguments:   gcc -DHAVE_CONFIG_H -I. -I./include -I. -I./include
+[80865][environment]                           -I./src -I./src -D_GNU_SOURCE -W -Wall -g -pthread
+[80865][environment]                           -g -O2 -fPIE -DPIE -Wundef
+[80865][environment]                           -Wmissing-format-attribute -Wshadow -Wlogical-op
+[80865][environment]                           -MT src/aide-do_md.o -MD -MP -MF
+[80865][environment]                           src/.deps/aide-do_md.Tpo -c -o src/aide-do_md.o
+[80865][environment]                           src/do_md.c
+[80865][environment] Available memory at startup: 5575 MB
+[80865][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[80865][      debug] 
+[80865][      debug] *** Beginning capture of file /home/rasofema/Documents/aide/src/do_md.c ***
+[80865][      debug] Loading the following linters files: /opt/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[80865][      debug] Elapsed: 171ms.
+[80865][      debug] GC stats for capture:
+[80865][      debug]   minor_words: 7.72708e+06
+[80865][      debug]   promoted_words: 949102
+[80865][      debug]   major_words: 1.00309e+06
+[80865][      debug]   minor_collections: 10
+[80865][      debug]   major_collections: 2
+[80865][      debug]   compactions: 0
+[80865][      debug]   top_heap_words: 1157632
+[80865][      debug]   
+[80865][      debug] GC stats for main_process_full:
+[80865][      debug]   minor_words: 9.14591e+06
+[80865][      debug]   promoted_words: 1.11789e+06
+[80865][      debug]   major_words: 1.19253e+06
+[80865][      debug]   minor_collections: 29
+[80865][      debug]   major_collections: 7
+[80865][      debug]   compactions: 1
+[80865][      debug]   top_heap_words: 1157632
+[80865][      debug]   
+[80865][environment] Scheduler: file
+[80865][environment] Cores used: 2
+[80865][environment] 
+[80872][environment] CWD = /home/rasofema/Documents/aide
+[80872][environment] No .inferconfig file found
+[80872][environment] Project root = /home/rasofema/Documents/aide
+[80872][environment] INFER_ARGS =   @/tmp/args.tmp.bdfc27
+[80872][environment] command line arguments:   gcc -DHAVE_CONFIG_H -I. -I./include -I. -I./include
+[80872][environment]                           -I./src -I./src -D_GNU_SOURCE -W -Wall -g -pthread
+[80872][environment]                           -g -O2 -fPIE -DPIE -Wundef
+[80872][environment]                           -Wmissing-format-attribute -Wshadow -Wlogical-op
+[80872][environment]                           -MT src/aide-gen_list.o -MD -MP -MF
+[80872][environment]                           src/.deps/aide-gen_list.Tpo -c -o
+[80872][environment]                           src/aide-gen_list.o src/gen_list.c
+[80872][environment] Available memory at startup: 5576 MB
+[80872][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[80872][      debug] 
+[80872][      debug] *** Beginning capture of file /home/rasofema/Documents/aide/src/gen_list.c ***
+[80872][      debug] Loading the following linters files: /opt/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[80872][      debug] Elapsed: 229ms.
+[80872][      debug] GC stats for capture:
+[80872][      debug]   minor_words: 1.43276e+07
+[80872][      debug]   promoted_words: 1.36378e+06
+[80872][      debug]   major_words: 1.44454e+06
+[80872][      debug]   minor_collections: 17
+[80872][      debug]   major_collections: 3
+[80872][      debug]   compactions: 0
+[80872][      debug]   top_heap_words: 1531904
+[80872][      debug]   
+[80872][      debug] GC stats for main_process_full:
+[80872][      debug]   minor_words: 1.57465e+07
+[80872][      debug]   promoted_words: 1.53256e+06
+[80872][      debug]   major_words: 1.63398e+06
+[80872][      debug]   minor_collections: 36
+[80872][      debug]   major_collections: 8
+[80872][      debug]   compactions: 1
+[80872][      debug]   top_heap_words: 1531904
+[80872][      debug]   
+[80872][environment] Scheduler: file
+[80872][environment] Cores used: 2
+[80872][environment] 
+[80879][environment] CWD = /home/rasofema/Documents/aide
+[80879][environment] No .inferconfig file found
+[80879][environment] Project root = /home/rasofema/Documents/aide
+[80879][environment] INFER_ARGS =   @/tmp/args.tmp.bb1105
+[80879][environment] command line arguments:   gcc -DHAVE_CONFIG_H -I. -I./include -I. -I./include
+[80879][environment]                           -I./src -I./src -D_GNU_SOURCE -W -Wall -g -pthread
+[80879][environment]                           -g -O2 -fPIE -DPIE -Wundef
+[80879][environment]                           -Wmissing-format-attribute -Wshadow -Wlogical-op
+[80879][environment]                           -MT src/aide-getopt1.o -MD -MP -MF
+[80879][environment]                           src/.deps/aide-getopt1.Tpo -c -o src/aide-getopt1.o
+[80879][environment]                           src/getopt1.c
+[80879][environment] Available memory at startup: 5578 MB
+[80879][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[80879][      debug] 
+[80879][      debug] *** Beginning capture of file /home/rasofema/Documents/aide/src/getopt1.c ***
+[80879][      debug] Loading the following linters files: /opt/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[80879][      debug] Elapsed: 95.408ms.
+[80879][      debug] GC stats for capture:
+[80879][      debug]   minor_words: 4.19598e+06
+[80879][      debug]   promoted_words: 645595
+[80879][      debug]   major_words: 678279
+[80879][      debug]   minor_collections: 7
+[80879][      debug]   major_collections: 1
+[80879][      debug]   compactions: 0
+[80879][      debug]   top_heap_words: 875008
+[80879][      debug]   
+[80879][      debug] GC stats for main_process_full:
+[80879][      debug]   minor_words: 5.61482e+06
+[80879][      debug]   promoted_words: 814381
+[80879][      debug]   major_words: 867717
+[80879][      debug]   minor_collections: 26
+[80879][      debug]   major_collections: 6
+[80879][      debug]   compactions: 1
+[80879][      debug]   top_heap_words: 875008
+[80879][      debug]   
+[80879][environment] Scheduler: file
+[80879][environment] Cores used: 2
+[80879][environment] 
+[80886][environment] CWD = /home/rasofema/Documents/aide
+[80886][environment] No .inferconfig file found
+[80886][environment] Project root = /home/rasofema/Documents/aide
+[80886][environment] INFER_ARGS =   @/tmp/args.tmp.35c357
+[80886][environment] command line arguments:   gcc -DHAVE_CONFIG_H -I. -I./include -I. -I./include
+[80886][environment]                           -I./src -I./src -D_GNU_SOURCE -W -Wall -g -pthread
+[80886][environment]                           -g -O2 -fPIE -DPIE -Wundef
+[80886][environment]                           -Wmissing-format-attribute -Wshadow -Wlogical-op
+[80886][environment]                           -MT src/aide-getopt.o -MD -MP -MF
+[80886][environment]                           src/.deps/aide-getopt.Tpo -c -o src/aide-getopt.o
+[80886][environment]                           src/getopt.c
+[80886][environment] Available memory at startup: 5589 MB
+[80886][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[80886][      debug] 
+[80886][      debug] *** Beginning capture of file /home/rasofema/Documents/aide/src/getopt.c ***
+[80886][      debug] Loading the following linters files: /opt/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[80886][      debug] Elapsed: 93.856ms.
+[80886][      debug] GC stats for capture:
+[80886][      debug]   minor_words: 4.16772e+06
+[80886][      debug]   promoted_words: 643339
+[80886][      debug]   major_words: 676006
+[80886][      debug]   minor_collections: 7
+[80886][      debug]   major_collections: 1
+[80886][      debug]   compactions: 0
+[80886][      debug]   top_heap_words: 875008
+[80886][      debug]   
+[80886][      debug] GC stats for main_process_full:
+[80886][      debug]   minor_words: 5.58655e+06
+[80886][      debug]   promoted_words: 812124
+[80886][      debug]   major_words: 865443
+[80886][      debug]   minor_collections: 26
+[80886][      debug]   major_collections: 6
+[80886][      debug]   compactions: 1
+[80886][      debug]   top_heap_words: 875008
+[80886][      debug]   
+[80886][environment] Scheduler: file
+[80886][environment] Cores used: 2
+[80886][environment] 
+[80893][environment] CWD = /home/rasofema/Documents/aide
+[80893][environment] No .inferconfig file found
+[80893][environment] Project root = /home/rasofema/Documents/aide
+[80893][environment] INFER_ARGS =   @/tmp/args.tmp.c774a5
+[80893][environment] command line arguments:   gcc -DHAVE_CONFIG_H -I. -I./include -I. -I./include
+[80893][environment]                           -I./src -I./src -D_GNU_SOURCE -W -Wall -g -pthread
+[80893][environment]                           -g -O2 -fPIE -DPIE -Wundef
+[80893][environment]                           -Wmissing-format-attribute -Wshadow -Wlogical-op
+[80893][environment]                           -MT src/aide-hashsum.o -MD -MP -MF
+[80893][environment]                           src/.deps/aide-hashsum.Tpo -c -o src/aide-hashsum.o
+[80893][environment]                           src/hashsum.c
+[80893][environment] Available memory at startup: 5589 MB
+[80893][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[80893][      debug] 
+[80893][      debug] *** Beginning capture of file /home/rasofema/Documents/aide/src/hashsum.c ***
+[80893][      debug] Loading the following linters files: /opt/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[80893][      debug] Elapsed: 75.625ms.
+[80893][      debug] GC stats for capture:
+[80893][      debug]   minor_words: 3.16533e+06
+[80893][      debug]   promoted_words: 509151
+[80893][      debug]   major_words: 531903
+[80893][      debug]   minor_collections: 6
+[80893][      debug]   major_collections: 1
+[80893][      debug]   compactions: 0
+[80893][      debug]   top_heap_words: 760832
+[80893][      debug]   
+[80893][      debug] GC stats for main_process_full:
+[80893][      debug]   minor_words: 4.58416e+06
+[80893][      debug]   promoted_words: 677937
+[80893][      debug]   major_words: 721341
+[80893][      debug]   minor_collections: 25
+[80893][      debug]   major_collections: 6
+[80893][      debug]   compactions: 1
+[80893][      debug]   top_heap_words: 760832
+[80893][      debug]   
+[80893][environment] Scheduler: file
+[80893][environment] Cores used: 2
+[80893][environment] 
+[80900][environment] CWD = /home/rasofema/Documents/aide
+[80900][environment] No .inferconfig file found
+[80900][environment] Project root = /home/rasofema/Documents/aide
+[80900][environment] INFER_ARGS =   @/tmp/args.tmp.c735ac
+[80900][environment] command line arguments:   gcc -DHAVE_CONFIG_H -I. -I./include -I. -I./include
+[80900][environment]                           -I./src -I./src -D_GNU_SOURCE -W -Wall -g -pthread
+[80900][environment]                           -g -O2 -fPIE -DPIE -Wundef
+[80900][environment]                           -Wmissing-format-attribute -Wshadow -Wlogical-op
+[80900][environment]                           -MT src/aide-rx_rule.o -MD -MP -MF
+[80900][environment]                           src/.deps/aide-rx_rule.Tpo -c -o src/aide-rx_rule.o
+[80900][environment]                           src/rx_rule.c
+[80900][environment] Available memory at startup: 5583 MB
+[80900][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[80900][      debug] 
+[80900][      debug] *** Beginning capture of file /home/rasofema/Documents/aide/src/rx_rule.c ***
+[80900][      debug] Loading the following linters files: /opt/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[80900][      debug] Elapsed: 79.449ms.
+[80900][      debug] GC stats for capture:
+[80900][      debug]   minor_words: 3.35516e+06
+[80900][      debug]   promoted_words: 481208
+[80900][      debug]   major_words: 506950
+[80900][      debug]   minor_collections: 6
+[80900][      debug]   major_collections: 1
+[80900][      debug]   compactions: 0
+[80900][      debug]   top_heap_words: 760832
+[80900][      debug]   
+[80900][      debug] GC stats for main_process_full:
+[80900][      debug]   minor_words: 4.77399e+06
+[80900][      debug]   promoted_words: 649994
+[80900][      debug]   major_words: 696388
+[80900][      debug]   minor_collections: 25
+[80900][      debug]   major_collections: 6
+[80900][      debug]   compactions: 1
+[80900][      debug]   top_heap_words: 760832
+[80900][      debug]   
+[80900][environment] Scheduler: file
+[80900][environment] Cores used: 2
+[80900][environment] 
+[80907][environment] CWD = /home/rasofema/Documents/aide
+[80907][environment] No .inferconfig file found
+[80907][environment] Project root = /home/rasofema/Documents/aide
+[80907][environment] INFER_ARGS =   @/tmp/args.tmp.42e90c
+[80907][environment] command line arguments:   gcc -DHAVE_CONFIG_H -I. -I./include -I. -I./include
+[80907][environment]                           -I./src -I./src -D_GNU_SOURCE -W -Wall -g -pthread
+[80907][environment]                           -g -O2 -fPIE -DPIE -Wundef
+[80907][environment]                           -Wmissing-format-attribute -Wshadow -Wlogical-op
+[80907][environment]                           -MT src/aide-list.o -MD -MP -MF
+[80907][environment]                           src/.deps/aide-list.Tpo -c -o src/aide-list.o
+[80907][environment]                           src/list.c
+[80907][environment] Available memory at startup: 5584 MB
+[80907][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[80907][      debug] 
+[80907][      debug] *** Beginning capture of file /home/rasofema/Documents/aide/src/list.c ***
+[80907][      debug] Loading the following linters files: /opt/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[80907][      debug] Elapsed: 63.143ms.
+[80907][      debug] GC stats for capture:
+[80907][      debug]   minor_words: 2.51591e+06
+[80907][      debug]   promoted_words: 370858
+[80907][      debug]   major_words: 390696
+[80907][      debug]   minor_collections: 4
+[80907][      debug]   major_collections: 0
+[80907][      debug]   compactions: 0
+[80907][      debug]   top_heap_words: 574976
+[80907][      debug]   
+[80907][      debug] GC stats for main_process_full:
+[80907][      debug]   minor_words: 3.93473e+06
+[80907][      debug]   promoted_words: 539880
+[80907][      debug]   major_words: 580370
+[80907][      debug]   minor_collections: 24
+[80907][      debug]   major_collections: 5
+[80907][      debug]   compactions: 1
+[80907][      debug]   top_heap_words: 574976
+[80907][      debug]   
+[80907][environment] Scheduler: file
+[80907][environment] Cores used: 2
+[80907][environment] 
+[80914][environment] CWD = /home/rasofema/Documents/aide
+[80914][environment] No .inferconfig file found
+[80914][environment] Project root = /home/rasofema/Documents/aide
+[80914][environment] INFER_ARGS =   @/tmp/args.tmp.c7e32e
+[80914][environment] command line arguments:   gcc -DHAVE_CONFIG_H -I. -I./include -I. -I./include
+[80914][environment]                           -I./src -I./src -D_GNU_SOURCE -W -Wall -g -pthread
+[80914][environment]                           -g -O2 -fPIE -DPIE -Wundef
+[80914][environment]                           -Wmissing-format-attribute -Wshadow -Wlogical-op
+[80914][environment]                           -MT src/aide-log.o -MD -MP -MF
+[80914][environment]                           src/.deps/aide-log.Tpo -c -o src/aide-log.o
+[80914][environment]                           src/log.c
+[80914][environment] Available memory at startup: 5586 MB
+[80914][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[80914][      debug] 
+[80914][      debug] *** Beginning capture of file /home/rasofema/Documents/aide/src/log.c ***
+[80914][      debug] Loading the following linters files: /opt/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[80914][      debug] Elapsed: 89.296ms.
+[80914][      debug] GC stats for capture:
+[80914][      debug]   minor_words: 3.95995e+06
+[80914][      debug]   promoted_words: 509538
+[80914][      debug]   major_words: 536255
+[80914][      debug]   minor_collections: 5
+[80914][      debug]   major_collections: 0
+[80914][      debug]   compactions: 0
+[80914][      debug]   top_heap_words: 760832
+[80914][      debug]   
+[80914][      debug] GC stats for main_process_full:
+[80914][      debug]   minor_words: 5.37877e+06
+[80914][      debug]   promoted_words: 678560
+[80914][      debug]   major_words: 725929
+[80914][      debug]   minor_collections: 25
+[80914][      debug]   major_collections: 5
+[80914][      debug]   compactions: 1
+[80914][      debug]   top_heap_words: 760832
+[80914][      debug]   
+[80914][environment] Scheduler: file
+[80914][environment] Cores used: 2
+[80914][environment] 
+[80921][environment] CWD = /home/rasofema/Documents/aide
+[80921][environment] No .inferconfig file found
+[80921][environment] Project root = /home/rasofema/Documents/aide
+[80921][environment] INFER_ARGS =   @/tmp/args.tmp.17772e
+[80921][environment] command line arguments:   gcc -DHAVE_CONFIG_H -I. -I./include -I. -I./include
+[80921][environment]                           -I./src -I./src -D_GNU_SOURCE -W -Wall -g -pthread
+[80921][environment]                           -g -O2 -fPIE -DPIE -Wundef
+[80921][environment]                           -Wmissing-format-attribute -Wshadow -Wlogical-op
+[80921][environment]                           -MT src/aide-md.o -MD -MP -MF src/.deps/aide-md.Tpo
+[80921][environment]                           -c -o src/aide-md.o src/md.c
+[80921][environment] Available memory at startup: 5588 MB
+[80921][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[80921][      debug] 
+[80921][      debug] *** Beginning capture of file /home/rasofema/Documents/aide/src/md.c ***
+[80921][      debug] Loading the following linters files: /opt/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[80921][      debug] Elapsed: 125ms.
+[80921][      debug] GC stats for capture:
+[80921][      debug]   minor_words: 5.67587e+06
+[80921][      debug]   promoted_words: 787349
+[80921][      debug]   major_words: 830599
+[80921][      debug]   minor_collections: 7
+[80921][      debug]   major_collections: 1
+[80921][      debug]   compactions: 0
+[80921][      debug]   top_heap_words: 1006592
+[80921][      debug]   
+[80921][      debug] GC stats for main_process_full:
+[80921][      debug]   minor_words: 7.09468e+06
+[80921][      debug]   promoted_words: 956370
+[80921][      debug]   major_words: 1.02027e+06
+[80921][      debug]   minor_collections: 27
+[80921][      debug]   major_collections: 6
+[80921][      debug]   compactions: 1
+[80921][      debug]   top_heap_words: 1006592
+[80921][      debug]   
+[80921][environment] Scheduler: file
+[80921][environment] Cores used: 2
+[80921][environment] 
+[80928][environment] CWD = /home/rasofema/Documents/aide
+[80928][environment] No .inferconfig file found
+[80928][environment] Project root = /home/rasofema/Documents/aide
+[80928][environment] INFER_ARGS =   @/tmp/args.tmp.8cd1f0
+[80928][environment] command line arguments:   gcc -DHAVE_CONFIG_H -I. -I./include -I. -I./include
+[80928][environment]                           -I./src -I./src -D_GNU_SOURCE -W -Wall -g -pthread
+[80928][environment]                           -g -O2 -fPIE -DPIE -Wundef
+[80928][environment]                           -Wmissing-format-attribute -Wshadow -Wlogical-op
+[80928][environment]                           -MT src/aide-queue.o -MD -MP -MF
+[80928][environment]                           src/.deps/aide-queue.Tpo -c -o src/aide-queue.o
+[80928][environment]                           src/queue.c
+[80928][environment] Available memory at startup: 5592 MB
+[80928][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[80928][      debug] 
+[80928][      debug] *** Beginning capture of file /home/rasofema/Documents/aide/src/queue.c ***
+[80928][      debug] Loading the following linters files: /opt/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[80928][      debug] Elapsed: 85.853ms.
+[80928][      debug] GC stats for capture:
+[80928][      debug]   minor_words: 3.73634e+06
+[80928][      debug]   promoted_words: 471264
+[80928][      debug]   major_words: 495631
+[80928][      debug]   minor_collections: 6
+[80928][      debug]   major_collections: 1
+[80928][      debug]   compactions: 0
+[80928][      debug]   top_heap_words: 661504
+[80928][      debug]   
+[80928][      debug] GC stats for main_process_full:
+[80928][      debug]   minor_words: 5.15517e+06
+[80928][      debug]   promoted_words: 640049
+[80928][      debug]   major_words: 685068
+[80928][      debug]   minor_collections: 25
+[80928][      debug]   major_collections: 6
+[80928][      debug]   compactions: 1
+[80928][      debug]   top_heap_words: 661504
+[80928][      debug]   
+[80928][environment] Scheduler: file
+[80928][environment] Cores used: 2
+[80928][environment] 
+[80935][environment] CWD = /home/rasofema/Documents/aide
+[80935][environment] No .inferconfig file found
+[80935][environment] Project root = /home/rasofema/Documents/aide
+[80935][environment] INFER_ARGS =   @/tmp/args.tmp.dd007d
+[80935][environment] command line arguments:   gcc -DHAVE_CONFIG_H -I. -I./include -I. -I./include
+[80935][environment]                           -I./src -I./src -D_GNU_SOURCE -W -Wall -g -pthread
+[80935][environment]                           -g -O2 -fPIE -DPIE -Wundef
+[80935][environment]                           -Wmissing-format-attribute -Wshadow -Wlogical-op
+[80935][environment]                           -MT src/aide-progress.o -MD -MP -MF
+[80935][environment]                           src/.deps/aide-progress.Tpo -c -o
+[80935][environment]                           src/aide-progress.o src/progress.c
+[80935][environment] Available memory at startup: 5592 MB
+[80935][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[80935][      debug] 
+[80935][      debug] *** Beginning capture of file /home/rasofema/Documents/aide/src/progress.c ***
+[80935][      debug] Loading the following linters files: /opt/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[80935][      debug] Elapsed: 140ms.
+[80935][      debug] GC stats for capture:
+[80935][      debug]   minor_words: 6.79087e+06
+[80935][      debug]   promoted_words: 855836
+[80935][      debug]   major_words: 903597
+[80935][      debug]   minor_collections: 9
+[80935][      debug]   major_collections: 1
+[80935][      debug]   compactions: 0
+[80935][      debug]   top_heap_words: 1157632
+[80935][      debug]   
+[80935][      debug] GC stats for main_process_full:
+[80935][      debug]   minor_words: 8.2097e+06
+[80935][      debug]   promoted_words: 1.02462e+06
+[80935][      debug]   major_words: 1.09304e+06
+[80935][      debug]   minor_collections: 28
+[80935][      debug]   major_collections: 6
+[80935][      debug]   compactions: 1
+[80935][      debug]   top_heap_words: 1157632
+[80935][      debug]   
+[80935][environment] Scheduler: file
+[80935][environment] Cores used: 2
+[80935][environment] 
+[80942][environment] CWD = /home/rasofema/Documents/aide
+[80942][environment] No .inferconfig file found
+[80942][environment] Project root = /home/rasofema/Documents/aide
+[80942][environment] INFER_ARGS =   @/tmp/args.tmp.148e5f
+[80942][environment] command line arguments:   gcc -DHAVE_CONFIG_H -I. -I./include -I. -I./include
+[80942][environment]                           -I./src -I./src -D_GNU_SOURCE -W -Wall -g -pthread
+[80942][environment]                           -g -O2 -fPIE -DPIE -Wundef
+[80942][environment]                           -Wmissing-format-attribute -Wshadow -Wlogical-op
+[80942][environment]                           -MT src/aide-seltree.o -MD -MP -MF
+[80942][environment]                           src/.deps/aide-seltree.Tpo -c -o src/aide-seltree.o
+[80942][environment]                           src/seltree.c
+[80942][environment] Available memory at startup: 5593 MB
+[80942][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[80942][      debug] 
+[80942][      debug] *** Beginning capture of file /home/rasofema/Documents/aide/src/seltree.c ***
+[80942][      debug] Loading the following linters files: /opt/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[80942][      debug] Elapsed: 148ms.
+[80942][      debug] GC stats for capture:
+[80942][      debug]   minor_words: 8.01246e+06
+[80942][      debug]   promoted_words: 818605
+[80942][      debug]   major_words: 863790
+[80942][      debug]   minor_collections: 11
+[80942][      debug]   major_collections: 2
+[80942][      debug]   compactions: 0
+[80942][      debug]   top_heap_words: 1006592
+[80942][      debug]   
+[80942][      debug] GC stats for main_process_full:
+[80942][      debug]   minor_words: 9.43129e+06
+[80942][      debug]   promoted_words: 987391
+[80942][      debug]   major_words: 1.05323e+06
+[80942][      debug]   minor_collections: 30
+[80942][      debug]   major_collections: 7
+[80942][      debug]   compactions: 1
+[80942][      debug]   top_heap_words: 1006592
+[80942][      debug]   
+[80942][environment] Scheduler: file
+[80942][environment] Cores used: 2
+[80942][environment] 
+[80949][environment] CWD = /home/rasofema/Documents/aide
+[80949][environment] No .inferconfig file found
+[80949][environment] Project root = /home/rasofema/Documents/aide
+[80949][environment] INFER_ARGS =   @/tmp/args.tmp.cf7bbe
+[80949][environment] command line arguments:   gcc -DHAVE_CONFIG_H -I. -I./include -I. -I./include
+[80949][environment]                           -I./src -I./src -D_GNU_SOURCE -W -Wall -g -pthread
+[80949][environment]                           -g -O2 -fPIE -DPIE -Wundef
+[80949][environment]                           -Wmissing-format-attribute -Wshadow -Wlogical-op
+[80949][environment]                           -MT src/aide-symboltable.o -MD -MP -MF
+[80949][environment]                           src/.deps/aide-symboltable.Tpo -c -o
+[80949][environment]                           src/aide-symboltable.o src/symboltable.c
+[80949][environment] Available memory at startup: 5592 MB
+[80949][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[80949][      debug] 
+[80949][      debug] *** Beginning capture of file /home/rasofema/Documents/aide/src/symboltable.c ***
+[80949][      debug] Loading the following linters files: /opt/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[80949][      debug] Elapsed: 43.347ms.
+[80949][      debug] GC stats for capture:
+[80949][      debug]   minor_words: 1.32596e+06
+[80949][      debug]   promoted_words: 270265
+[80949][      debug]   major_words: 282797
+[80949][      debug]   minor_collections: 3
+[80949][      debug]   major_collections: 0
+[80949][      debug]   compactions: 0
+[80949][      debug]   top_heap_words: 499712
+[80949][      debug]   
+[80949][      debug] GC stats for main_process_full:
+[80949][      debug]   minor_words: 2.74479e+06
+[80949][      debug]   promoted_words: 439295
+[80949][      debug]   major_words: 472479
+[80949][      debug]   minor_collections: 23
+[80949][      debug]   major_collections: 5
+[80949][      debug]   compactions: 1
+[80949][      debug]   top_heap_words: 499712
+[80949][      debug]   
+[80949][environment] Scheduler: file
+[80949][environment] Cores used: 2
+[80949][environment] 
+[80956][environment] CWD = /home/rasofema/Documents/aide
+[80956][environment] No .inferconfig file found
+[80956][environment] Project root = /home/rasofema/Documents/aide
+[80956][environment] INFER_ARGS =   @/tmp/args.tmp.564c02
+[80956][environment] command line arguments:   gcc -DHAVE_CONFIG_H -I. -I./include -I. -I./include
+[80956][environment]                           -I./src -I./src -D_GNU_SOURCE -W -Wall -g -pthread
+[80956][environment]                           -g -O2 -fPIE -DPIE -Wundef
+[80956][environment]                           -Wmissing-format-attribute -Wshadow -Wlogical-op
+[80956][environment]                           -MT src/aide-tree.o -MD -MP -MF
+[80956][environment]                           src/.deps/aide-tree.Tpo -c -o src/aide-tree.o
+[80956][environment]                           src/tree.c
+[80956][environment] Available memory at startup: 5591 MB
+[80956][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[80956][      debug] 
+[80956][      debug] *** Beginning capture of file /home/rasofema/Documents/aide/src/tree.c ***
+[80956][      debug] Loading the following linters files: /opt/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[80956][      debug] Elapsed: 61.01ms.
+[80956][      debug] GC stats for capture:
+[80956][      debug]   minor_words: 2.48866e+06
+[80956][      debug]   promoted_words: 366059
+[80956][      debug]   major_words: 385111
+[80956][      debug]   minor_collections: 4
+[80956][      debug]   major_collections: 0
+[80956][      debug]   compactions: 0
+[80956][      debug]   top_heap_words: 574976
+[80956][      debug]   
+[80956][      debug] GC stats for main_process_full:
+[80956][      debug]   minor_words: 3.90748e+06
+[80956][      debug]   promoted_words: 535081
+[80956][      debug]   major_words: 574785
+[80956][      debug]   minor_collections: 24
+[80956][      debug]   major_collections: 5
+[80956][      debug]   compactions: 1
+[80956][      debug]   top_heap_words: 574976
+[80956][      debug]   
+[80956][environment] Scheduler: file
+[80956][environment] Cores used: 2
+[80956][environment] 
+[80963][environment] CWD = /home/rasofema/Documents/aide
+[80963][environment] No .inferconfig file found
+[80963][environment] Project root = /home/rasofema/Documents/aide
+[80963][environment] INFER_ARGS =   @/tmp/args.tmp.647216
+[80963][environment] command line arguments:   gcc -DHAVE_CONFIG_H -I. -I./include -I. -I./include
+[80963][environment]                           -I./src -I./src -D_GNU_SOURCE -W -Wall -g -pthread
+[80963][environment]                           -g -O2 -fPIE -DPIE -Wundef
+[80963][environment]                           -Wmissing-format-attribute -Wshadow -Wlogical-op
+[80963][environment]                           -MT src/aide-url.o -MD -MP -MF
+[80963][environment]                           src/.deps/aide-url.Tpo -c -o src/aide-url.o
+[80963][environment]                           src/url.c
+[80963][environment] Available memory at startup: 5587 MB
+[80963][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[80963][      debug] 
+[80963][      debug] *** Beginning capture of file /home/rasofema/Documents/aide/src/url.c ***
+[80963][      debug] Loading the following linters files: /opt/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[80963][      debug] Elapsed: 35.282ms.
+[80963][      debug] GC stats for capture:
+[80963][      debug]   minor_words: 707818
+[80963][      debug]   promoted_words: 200127
+[80963][      debug]   major_words: 209858
+[80963][      debug]   minor_collections: 1
+[80963][      debug]   major_collections: 0
+[80963][      debug]   compactions: 0
+[80963][      debug]   top_heap_words: 434176
+[80963][      debug]   
+[80963][      debug] GC stats for main_process_full:
+[80963][      debug]   minor_words: 2.12664e+06
+[80963][      debug]   promoted_words: 369149
+[80963][      debug]   major_words: 399532
+[80963][      debug]   minor_collections: 21
+[80963][      debug]   major_collections: 5
+[80963][      debug]   compactions: 1
+[80963][      debug]   top_heap_words: 434176
+[80963][      debug]   
+[80963][environment] Scheduler: file
+[80963][environment] Cores used: 2
+[80963][environment] 
+[80970][environment] CWD = /home/rasofema/Documents/aide
+[80970][environment] No .inferconfig file found
+[80970][environment] Project root = /home/rasofema/Documents/aide
+[80970][environment] INFER_ARGS =   @/tmp/args.tmp.7f3c39
+[80970][environment] command line arguments:   gcc -DHAVE_CONFIG_H -I. -I./include -I. -I./include
+[80970][environment]                           -I./src -I./src -D_GNU_SOURCE -W -Wall -g -pthread
+[80970][environment]                           -g -O2 -fPIE -DPIE -Wundef
+[80970][environment]                           -Wmissing-format-attribute -Wshadow -Wlogical-op
+[80970][environment]                           -MT src/aide-util.o -MD -MP -MF
+[80970][environment]                           src/.deps/aide-util.Tpo -c -o src/aide-util.o
+[80970][environment]                           src/util.c
+[80970][environment] Available memory at startup: 5585 MB
+[80970][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[80970][      debug] 
+[80970][      debug] *** Beginning capture of file /home/rasofema/Documents/aide/src/util.c ***
+[80970][      debug] Loading the following linters files: /opt/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[80970][      debug] Elapsed: 177ms.
+[80970][      debug] GC stats for capture:
+[80970][      debug]   minor_words: 8.6117e+06
+[80970][      debug]   promoted_words: 1.00384e+06
+[80970][      debug]   major_words: 1.05738e+06
+[80970][      debug]   minor_collections: 10
+[80970][      debug]   major_collections: 2
+[80970][      debug]   compactions: 0
+[80970][      debug]   top_heap_words: 1331712
+[80970][      debug]   
+[80970][      debug] GC stats for main_process_full:
+[80970][      debug]   minor_words: 1.00305e+07
+[80970][      debug]   promoted_words: 1.17287e+06
+[80970][      debug]   major_words: 1.24705e+06
+[80970][      debug]   minor_collections: 30
+[80970][      debug]   major_collections: 7
+[80970][      debug]   compactions: 1
+[80970][      debug]   top_heap_words: 1331712
+[80970][      debug]   
+[80970][environment] Scheduler: file
+[80970][environment] Cores used: 2
+[80970][environment] 
+[80978][environment] CWD = /home/rasofema/Documents/aide
+[80978][environment] No .inferconfig file found
+[80978][environment] Project root = /home/rasofema/Documents/aide
+[80978][environment] INFER_ARGS =   @/tmp/args.tmp.f2d67c
+[80978][environment] command line arguments:   gcc -D_GNU_SOURCE -W -Wall -g -pthread -g -O2 -fPIE
+[80978][environment]                           -DPIE -Wundef -Wmissing-format-attribute -Wshadow
+[80978][environment]                           -Wlogical-op -Wl,-z,relro -Wl,-z,now -pie -o aide
+[80978][environment]                           src/aide-aide.o src/aide-base64.o src/aide-be.o
+[80978][environment]                           src/aide-commandconf.o src/aide-attributes.o
+[80978][environment]                           src/aide-report.o src/aide-report_plain.o
+[80978][environment]                           src/aide-report_json.o src/aide-conf_ast.o
+[80978][environment]                           src/aide-conf_eval.o src/aide-conf_lex.o
+[80978][environment]                           src/aide-conf_yacc.o src/aide-db.o
+[80978][environment]                           src/aide-db_disk.o src/aide-db_file.o
+[80978][environment]                           src/aide-db_lex.o src/aide-db_list.o
+[80978][environment]                           src/aide-do_md.o src/aide-gen_list.o
+[80978][environment]                           src/aide-getopt1.o src/aide-getopt.o
+[80978][environment]                           src/aide-hashsum.o src/aide-rx_rule.o
+[80978][environment]                           src/aide-list.o src/aide-log.o src/aide-md.o
+[80978][environment]                           src/aide-queue.o src/aide-progress.o
+[80978][environment]                           src/aide-seltree.o src/aide-symboltable.o
+[80978][environment]                           src/aide-tree.o src/aide-url.o src/aide-util.o -lm
+[80978][environment]                           -lpcre2-8 -lz -lmhash -lpthread
+[80978][environment] Available memory at startup: 5583 MB
+[80978][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[80978][      debug] GC stats for capture:
+[80978][      debug]   minor_words: 11948
+[80978][      debug]   promoted_words: 153054
+[80978][      debug]   major_words: 153054
+[80978][      debug]   minor_collections: 1
+[80978][      debug]   major_collections: 0
+[80978][      debug]   compactions: 0
+[80978][      debug]   top_heap_words: 372736
+[80978][      debug]   
+[80978][      debug] GC stats for main_process_full:
+[80978][      debug]   minor_words: 1.43429e+06
+[80978][      debug]   promoted_words: 322137
+[80978][      debug]   major_words: 342789
+[80978][      debug]   minor_collections: 20
+[80978][      debug]   major_collections: 5
+[80978][      debug]   compactions: 1
+[80978][      debug]   top_heap_words: 372736
+[80978][      debug]   
+[80978][environment] Scheduler: file
+[80978][environment] Cores used: 2
+[80978][environment] [80726][      debug] GC stats for capture:
+[80726][      debug]   minor_words: 1530
+[80726][      debug]   promoted_words: 0
+[80726][      debug]   major_words: 0
+[80726][      debug]   minor_collections: 0
+[80726][      debug]   major_collections: 0
+[80726][      debug]   compactions: 0
+[80726][      debug]   top_heap_words: 760832
+[80726][      debug]   
+[80726][environment] Parallel jobs: 2
+[80726][   progress] Found 33 source files to analyze in /home/rasofema/Documents/aide/infer-out
+[80983][   progress] src/db_file.c starting
+[80984][   progress] src/conf_yacc.c starting
+[80984][   progress] src/conf_yacc.c DONE
+[80984][   progress] src/report_json.c starting
+[80983][   progress] src/db_file.c DONE
+[80983][   progress] src/report_plain.c starting
+[80983][   progress] src/report_plain.c DONE
+[80983][   progress] src/db_disk.c starting
+[80984][   progress] src/report_json.c DONE
+[80984][   progress] src/md.c starting
+[80984][   progress] src/md.c DONE
+[80984][   progress] src/base64.c starting
+[80984][   progress] src/base64.c DONE
+[80984][   progress] src/commandconf.c starting
+[80983][   progress] src/db_disk.c DONE
+[80983][   progress] src/conf_lex.c starting
+[80984][   progress] src/commandconf.c DONE
+[80984][   progress] src/util.c starting
+[80984][   progress] src/util.c DONE
+[80984][   progress] src/conf_ast.c starting
+[80984][   progress] src/conf_ast.c DONE
+[80984][   progress] src/progress.c starting
+[80984][   progress] src/progress.c DONE
+[80984][   progress] src/queue.c starting
+[80984][   progress] src/queue.c DONE
+[80984][   progress] src/url.c starting
+[80984][   progress] src/url.c DONE
+[80984][   progress] src/attributes.c starting
+[80984][   progress] src/attributes.c DONE
+[80984][   progress] src/be.c starting
+[80984][   progress] src/be.c DONE
+[80984][   progress] src/db_lex.c starting
+[80984][   progress] src/db_lex.c DONE
+[80984][   progress] src/do_md.c starting
+[80984][   progress] src/do_md.c DONE
+[80984][   progress] src/report.c starting
+[80984][   progress] src/report.c DONE
+[80984][   progress] src/rx_rule.c starting
+[80984][   progress] src/rx_rule.c DONE
+[80984][   progress] src/log.c starting
+[80984][   progress] src/log.c DONE
+[80984][   progress] src/db_list.c starting
+[80984][   progress] src/db_list.c DONE
+[80984][   progress] src/aide.c starting
+[80984][   progress] src/aide.c DONE
+[80984][   progress] src/db.c starting
+[80984][   progress] src/db.c DONE
+[80984][   progress] src/list.c starting
+[80984][   progress] src/list.c DONE
+[80984][   progress] src/hashsum.c starting
+[80984][   progress] src/hashsum.c DONE
+[80984][   progress] src/conf_eval.c starting
+[80984][   progress] src/conf_eval.c DONE
+[80984][   progress] src/gen_list.c starting
+[80984][   progress] src/gen_list.c DONE
+[80984][   progress] src/seltree.c starting
+[80984][   progress] src/seltree.c DONE
+[80984][   progress] src/getopt.c starting
+[80984][   progress] src/getopt.c DONE
+[80984][   progress] src/symboltable.c starting
+[80984][   progress] src/symboltable.c DONE
+[80984][   progress] src/tree.c starting
+[80984][   progress] src/tree.c DONE
+[80984][   progress] src/getopt1.c starting
+[80984][   progress] src/getopt1.c DONE
+[80983][   progress] src/conf_lex.c DONE
+[80726][      debug] Backend stats:
+[80726][      debug]   summary_file_try_load= 5254
+[80726][      debug]   summary_read_from_disk= 200
+[80726][      debug]   summary_cache_hits= 45708 (89%)
+[80726][      debug]   summary_cache_misses= 5254
+[80726][      debug]   ondemand_procs_analyzed= 469
+[80726][      debug]   ondemand_local_cache_hits= 17456 (95%)
+[80726][      debug]   ondemand_local_cache_misses= 735
+[80726][      debug]   proc_locker_lock_time_user= 0.00000000
+[80726][      debug]   proc_locker_lock_time_sys= 0.00000000
+[80726][      debug]   proc_locker_lock_time_wall= 0.00000000
+[80726][      debug]   proc_locker_unlock_time_user= 0.00000000
+[80726][      debug]   proc_locker_unlock_time_sys= 0.00000000
+[80726][      debug]   proc_locker_unlock_time_wall= 0.00000000
+[80726][      debug]   restart_scheduler_useful_time_user= 0.00000000
+[80726][      debug]   restart_scheduler_useful_time_sys= 0.00000000
+[80726][      debug]   restart_scheduler_useful_time_wall= 0.00000000
+[80726][      debug]   restart_scheduler_total_time_user= 0.00000000
+[80726][      debug]   restart_scheduler_total_time_sys= 0.00000000
+[80726][      debug]   restart_scheduler_total_time_wall= 0.00000000
+[80726][      debug]   
+[80726][      debug] GC stats for backend_stats.gc_stats_add.:
+[80726][      debug]   minor_words: 3.33753e+10
+[80726][      debug]   promoted_words: 6.94819e+08
+[80726][      debug]   major_words: 7.29428e+08
+[80726][      debug]   minor_collections: 32077
+[80726][      debug]   major_collections: 577
+[80726][      debug]   compactions: 0
+[80726][      debug]   top_heap_words: 15634432
+[80726][      debug]   
+[80726][      debug] GC stats for backend_stats.gc_stats_max.:
+[80726][      debug]   minor_words: 2.01215e+10
+[80726][      debug]   promoted_words: 6.15442e+08
+[80726][      debug]   major_words: 6.29729e+08
+[80726][      debug]   minor_collections: 19374
+[80726][      debug]   major_collections: 435
+[80726][      debug]   compactions: 0
+[80726][      debug]   top_heap_words: 9432576
+[80726][      debug]   
+[80726][      debug] Average over 2 processes
+[80726][      debug] GC stats for backend_stats.gc_stats_average.:
+[80726][      debug]   minor_words: 1.66877e+10
+[80726][      debug]   promoted_words: 3.47409e+08
+[80726][      debug]   major_words: 3.64714e+08
+[80726][      debug]   minor_collections: 16038
+[80726][      debug]   major_collections: 288
+[80726][      debug]   compactions: 0
+[80726][      debug]   top_heap_words: 7817216
+[80726][      debug]   
+[80726][      debug] Analysis phase finished in 1min6s
+[80726][      debug] backend_stats.scheduler_process_analysis_time_user= 0.31545500
+[80726][      debug] backend_stats.scheduler_process_analysis_time_sys= 0.08587200
+[80726][      debug] backend_stats.scheduler_process_analysis_time_wall= 66.80653921
+[80726][      debug] GC stats for analysis_scheduler:
+[80726][      debug]   minor_words: 2.90378e+07
+[80726][      debug]   promoted_words: 165906
+[80726][      debug]   major_words: 174612
+[80726][      debug]   minor_collections: 33
+[80726][      debug]   major_collections: 9
+[80726][      debug]   compactions: 1
+[80726][      debug]   top_heap_words: 875008
+[80726][      debug]   
+[80726][      debug] GC stats for report:
+[80726][      debug]   minor_words: 521255
+[80726][      debug]   promoted_words: 22011
+[80726][      debug]   major_words: 36487
+[80726][      debug]   minor_collections: 1
+[80726][      debug]   major_collections: 1
+[80726][      debug]   compactions: 0
+[80726][      debug]   top_heap_words: 875008
+[80726][      debug]   
+[80726][      debug] GC stats for main_process_full:
+[80726][      debug]   minor_words: 3.12349e+07
+[80726][      debug]   promoted_words: 356447
+[80726][      debug]   major_words: 905670
+[80726][      debug]   minor_collections: 53
+[80726][      debug]   major_collections: 15
+[80726][      debug]   compactions: 2
+[80726][      debug]   top_heap_words: 875008
+[80726][      debug]   
+[80727][      debug] Sqlite write daemon: terminating

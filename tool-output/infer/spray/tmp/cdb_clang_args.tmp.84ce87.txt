@@ -1,0 +1,15 @@
+'-fsanitize=address'
+-g
+-Werror
+-Wall
+-Wextra
+-pedantic-errors
+-Wno-gnu-designator
+'-std=gnu11'
+-Isrc
+-Idependencies/linenoise
+-Idependencies/hashmap.c
+-c
+-o
+build/history.o
+src/history.c

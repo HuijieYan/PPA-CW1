@@ -1,0 +1,145 @@
+[25247][      debug] Loading models took 104ms
+[25248][      debug] Sqlite write daemon: starting up
+[25248][      debug] Sqlite write daemon: set up complete, waiting for connections
+[25247][environment] CWD = /home/rasofema/Documents/hash
+[25247][environment] No .inferconfig file found
+[25247][environment] Project root = /home/rasofema/Documents/hash
+[25247][environment] INFER_ARGS =   @/tmp/args.tmp.ec666f
+[25247][environment] command line arguments:   infer run -- make
+[25247][environment] Available memory at startup: 5090 MB
+[25247][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[25247][environment] Scheduler: file
+[25247][environment] Cores used: 2
+[25247][environment] Infer version v1.1.0
+[25247][environment] Copyright 2009 - present Facebook. All Rights Reserved.
+[25247][environment] 
+[25247][   progress] Capturing in make/cc mode...
+[25247][environment] Running command make with env:
+[25247][environment] (Extend((PATH /opt/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/wrappers:/home/rasofema/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin)(INFER_OLD_PATH /home/rasofema/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin)))
+[25247][environment] 
+
+[25250][environment] CWD = /home/rasofema/Documents/hash
+[25250][environment] No .inferconfig file found
+[25250][environment] Project root = /home/rasofema/Documents/hash
+[25250][environment] INFER_ARGS =   @/tmp/args.tmp.50fbbc
+[25250][environment] command line arguments:   cc -std=c99 -DTEST_HASH hash.c -o test
+[25250][environment] Available memory at startup: 5061 MB
+[25250][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[25250][      debug] 
+[25250][      debug] *** Beginning capture of file /home/rasofema/Documents/hash/hash.c ***
+[25250][      debug] Loading the following linters files: /opt/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[25250][      debug] Elapsed: 107ms.
+[25250][      debug] GC stats for capture:
+[25250][      debug]   minor_words: 5.31523e+06
+[25250][      debug]   promoted_words: 506909
+[25250][      debug]   major_words: 536108
+[25250][      debug]   minor_collections: 8
+[25250][      debug]   major_collections: 1
+[25250][      debug]   compactions: 0
+[25250][      debug]   top_heap_words: 760832
+[25250][      debug]   
+[25250][      debug] GC stats for main_process_full:
+[25250][      debug]   minor_words: 6.72686e+06
+[25250][      debug]   promoted_words: 675474
+[25250][      debug]   major_words: 725325
+[25250][      debug]   minor_collections: 27
+[25250][      debug]   major_collections: 6
+[25250][      debug]   compactions: 1
+[25250][      debug]   top_heap_words: 760832
+[25250][      debug]   
+[25250][environment] Scheduler: file
+[25250][environment] Cores used: 2
+[25250][environment] [25247][      debug] GC stats for capture:
+[25247][      debug]   minor_words: 1530
+[25247][      debug]   promoted_words: 0
+[25247][      debug]   major_words: 0
+[25247][      debug]   minor_collections: 0
+[25247][      debug]   major_collections: 0
+[25247][      debug]   compactions: 0
+[25247][      debug]   top_heap_words: 760832
+[25247][      debug]   
+[25247][environment] Parallel jobs: 2
+[25247][   progress] Found 1 source file to analyze in /home/rasofema/Documents/hash/infer-out
+[25258][   progress] hash.c starting
+[25258][   progress] hash.c DONE
+[25247][      debug] Backend stats:
+[25247][      debug]   summary_file_try_load= 163
+[25247][      debug]   summary_read_from_disk= 0
+[25247][      debug]   summary_cache_hits= 1013 (86%)
+[25247][      debug]   summary_cache_misses= 163
+[25247][      debug]   ondemand_procs_analyzed= 23
+[25247][      debug]   ondemand_local_cache_hits= 542 (94%)
+[25247][      debug]   ondemand_local_cache_misses= 32
+[25247][      debug]   proc_locker_lock_time_user= 0.00000000
+[25247][      debug]   proc_locker_lock_time_sys= 0.00000000
+[25247][      debug]   proc_locker_lock_time_wall= 0.00000000
+[25247][      debug]   proc_locker_unlock_time_user= 0.00000000
+[25247][      debug]   proc_locker_unlock_time_sys= 0.00000000
+[25247][      debug]   proc_locker_unlock_time_wall= 0.00000000
+[25247][      debug]   restart_scheduler_useful_time_user= 0.00000000
+[25247][      debug]   restart_scheduler_useful_time_sys= 0.00000000
+[25247][      debug]   restart_scheduler_useful_time_wall= 0.00000000
+[25247][      debug]   restart_scheduler_total_time_user= 0.00000000
+[25247][      debug]   restart_scheduler_total_time_sys= 0.00000000
+[25247][      debug]   restart_scheduler_total_time_wall= 0.00000000
+[25247][      debug]   
+[25247][      debug] GC stats for backend_stats.gc_stats_add.:
+[25247][      debug]   minor_words: 4.03162e+08
+[25247][      debug]   promoted_words: 1.98124e+06
+[25247][      debug]   major_words: 2.48652e+06
+[25247][      debug]   minor_collections: 389
+[25247][      debug]   major_collections: 10
+[25247][      debug]   compactions: 0
+[25247][      debug]   top_heap_words: 2032640
+[25247][      debug]   
+[25247][      debug] GC stats for backend_stats.gc_stats_max.:
+[25247][      debug]   minor_words: 4.03162e+08
+[25247][      debug]   promoted_words: 1.98124e+06
+[25247][      debug]   major_words: 2.48652e+06
+[25247][      debug]   minor_collections: 389
+[25247][      debug]   major_collections: 10
+[25247][      debug]   compactions: 0
+[25247][      debug]   top_heap_words: 1157632
+[25247][      debug]   
+[25247][      debug] Average over 2 processes
+[25247][      debug] GC stats for backend_stats.gc_stats_average.:
+[25247][      debug]   minor_words: 2.01581e+08
+[25247][      debug]   promoted_words: 990620
+[25247][      debug]   major_words: 1.24326e+06
+[25247][      debug]   minor_collections: 194
+[25247][      debug]   major_collections: 5
+[25247][      debug]   compactions: 0
+[25247][      debug]   top_heap_words: 1016320
+[25247][      debug]   
+[25247][      debug] Analysis phase finished in 1.087s
+[25247][      debug] backend_stats.scheduler_process_analysis_time_user= 0.02842100
+[25247][      debug] backend_stats.scheduler_process_analysis_time_sys= 0.01762300
+[25247][      debug] backend_stats.scheduler_process_analysis_time_wall= 1.08664600
+[25247][      debug] GC stats for analysis_scheduler:
+[25247][      debug]   minor_words: 1.04578e+06
+[25247][      debug]   promoted_words: 153343
+[25247][      debug]   major_words: 162049
+[25247][      debug]   minor_collections: 2
+[25247][      debug]   major_collections: 2
+[25247][      debug]   compactions: 1
+[25247][      debug]   top_heap_words: 875008
+[25247][      debug]   
+[25247][      debug] GC stats for report:
+[25247][      debug]   minor_words: 223221
+[25247][      debug]   promoted_words: 2443
+[25247][      debug]   major_words: 8991
+[25247][      debug]   minor_collections: 1
+[25247][      debug]   major_collections: 0
+[25247][      debug]   compactions: 0
+[25247][      debug]   top_heap_words: 875008
+[25247][      debug]   
+[25247][      debug] GC stats for main_process_full:
+[25247][      debug]   minor_words: 2.94358e+06
+[25247][      debug]   promoted_words: 324316
+[25247][      debug]   major_words: 865611
+[25247][      debug]   minor_collections: 22
+[25247][      debug]   major_collections: 7
+[25247][      debug]   compactions: 2
+[25247][      debug]   top_heap_words: 875008
+[25247][      debug]   
+[25248][      debug] Sqlite write daemon: terminating

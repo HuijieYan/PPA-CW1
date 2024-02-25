@@ -1,0 +1,566 @@
+#0
+deps/wildcardcmp/wildcardcmp.c:21: error: Null Dereference
+  pointer `s` last assigned on line 8 could be null and is dereferenced at line 21, column 12.
+  19.         continue;
+  20.       }
+  21.       if (!*s) return 0;
+                 ^
+  22.       string = s++;
+  23.       pattern = w;
+
+#1
+deps/str-flatten/str-flatten.c:29: error: Uninitialized Value
+  The value read from lengths[_] was never initialized.
+  27. 
+  28.   for (int i = start, j = 0; i < (end - 1); ++i, ++j) {
+  29.     memcpy(str + pos + j
+          ^
+  30.       // current index
+  31.       , array[i]
+
+#2
+deps/str-flatten/str-flatten.c:37: error: Uninitialized Value
+  The value read from lengths[_] was never initialized.
+  35.     str[pos + lengths[j] + j] = ' ';
+  36.     // bump `pos`
+  37.     pos += lengths[j];
+          ^
+  38.   }
+  39. 
+
+#3
+deps/str-flatten/str-flatten.c:40: error: Uninitialized Value
+  The value read from lengths[_] was never initialized.
+  38.   }
+  39. 
+  40.   memcpy(str + pos + count - 1
+        ^
+  41.     , array[end - 1]
+  42.     , lengths[count - 1]);
+
+#4
+deps/hash/hash.h:15: error: Uninitialized Value
+  The value read from val was never initialized.
+  13. // pointer hash
+  14. 
+  15. KHASH_MAP_INIT_STR(ptr, void *);
+      ^
+  16. 
+  17. /*
+
+#5
+deps/http-get/http-get.c:38: error: Null Dereference
+  pointer `res->data` last assigned on line 23 could be null and is dereferenced at line 38, column 3.
+  36.   memcpy(res->data + res->size, contents, realsize);
+  37.   res->size += realsize;
+  38.   res->data[res->size] = 0;
+        ^
+  39. 
+  40.   return realsize;
+
+#6
+deps/path-join/path-join.c:47: error: Dead Store
+  The value written to &filecopy (type char*) is never used.
+  45.     }
+  46.     strcat(buf, ++filecopy);
+  47.     free(--filecopy);
+               ^
+  48.   } else {
+  49.     strcat(buf, file);
+
+#7
+deps/rimraf/rimraf.c:39: error: Resource Leak
+  resource acquired to `return` by call to `opendir()` at line 30, column 14 is not released after line 39, column 20.
+  37. 
+  38.     char *f = path_join(path, dp->d_name);
+  39.     if (NULL == f) return -1;
+                         ^
+  40. 
+  41.     struct stat s;
+
+#8
+deps/rimraf/rimraf.c:42: error: Resource Leak
+  resource acquired to `return` by call to `opendir()` at line 30, column 14 is not released after line 42, column 27.
+  40. 
+  41.     struct stat s;
+  42.     if (0 != stat(f, &s)) return -1;
+                                ^
+  43.     if (s.st_mode & S_IFDIR) {
+  44.       // rimraf dirs
+
+#9
+deps/rimraf/rimraf.c:45: error: Resource Leak
+  resource acquired to `return` by call to `opendir()` at line 30, column 14 is not released after line 45, column 28.
+  43.     if (s.st_mode & S_IFDIR) {
+  44.       // rimraf dirs
+  45.       if (-1 == rimraf(f)) return -1;
+                                 ^
+  46.     } else {
+  47.       // unlink files
+
+#10
+deps/rimraf/rimraf.c:48: error: Resource Leak
+  resource acquired to `return` by call to `opendir()` at line 30, column 14 is not released after line 48, column 28.
+  46.     } else {
+  47.       // unlink files
+  48.       if (-1 == unlink(f)) return -1;
+                                 ^
+  49.     }
+  50.     free(f);
+
+#11
+deps/http-get/http-get.c:47: error: Null Dereference
+  pointer `res` last assigned on line 46 could be null and is dereferenced by call to `memset()` at line 47, column 3.
+  45. 
+  46.   http_get_response_t *res = malloc(sizeof(http_get_response_t));
+  47.   memset(res, 0, sizeof(http_get_response_t));
+        ^
+  48. 
+  49.   if (share) {
+
+#12
+deps/fs/fs.c:49: error: Null Dereference
+  pointer `stats` last assigned on line 48 could be null and is dereferenced by call to `stat()` at line 49, column 11.
+  47. fs_stat (const char *path) {
+  48.   fs_stats *stats = (fs_stats*) malloc(sizeof(fs_stats));
+  49.   int e = stat(path, stats);
+                ^
+  50.   if (-1 == e) {
+  51.     free(stats);
+
+#13
+deps/fs/fs.c:63: error: Null Dereference
+  pointer `stats` last assigned on line 61 could be null and is dereferenced by call to `fstat()` at line 63, column 11.
+  61.   fs_stats *stats = (fs_stats*) malloc(sizeof(fs_stats));
+  62.   int fd = fileno(file);
+  63.   int e = fstat(fd, stats);
+                ^
+  64.   if (-1 == e) {
+  65.     free(stats);
+
+#14
+deps/wiki-registry/wiki-registry.c:102: error: Null Dereference
+  pointer `h2s` last assigned on line 100 could be null and is dereferenced by call to `list_iterator_new()` at line 102, column 41.
+  100.     list_t *h2s = gumbo_get_elements_by_tag_name("h2", body);
+  101.     list_node_t *heading_node;
+  102.     list_iterator_t *heading_iterator = list_iterator_new(h2s, LIST_HEAD);
+                                               ^
+  103.     while ((heading_node = list_iterator_next(heading_iterator))) {
+  104.       GumboNode *heading = (GumboNode *) heading_node->val;
+
+#15
+deps/wiki-registry/wiki-registry.c:103: error: Null Dereference
+  pointer `heading_iterator` last assigned on line 102 could be null and is dereferenced by call to `list_iterator_next()` at line 103, column 28.
+  101.     list_node_t *heading_node;
+  102.     list_iterator_t *heading_iterator = list_iterator_new(h2s, LIST_HEAD);
+  103.     while ((heading_node = list_iterator_next(heading_iterator))) {
+                                  ^
+  104.       GumboNode *heading = (GumboNode *) heading_node->val;
+  105.       char *category = gumbo_text_content(heading);
+
+#16
+src/clib-init.c:104: error: Null Dereference
+  pointer `package` last assigned on line 102 could be null and is dereferenced by call to `strlen()` at line 104, column 45.
+  102.   char *package = json_serialize_to_string_pretty(pkg);
+  103. 
+  104.   if (0 != write_to_file(manifest, package, strlen(package))) {
+                                                   ^
+  105.     logger_error("Failed to write to %s", manifest);
+  106.     rc = 1;
+
+#17
+src/clib-configure.c:249: error: Dead Store
+  The value written to &rc (type int) is never used.
+  247. 
+  248.     debug(&debugger, "system: %s", command);
+  249.     rc = system(command);
+           ^
+  250.     free(command);
+  251.     command = 0;
+
+#18
+src/clib-configure.c:307: error: Uninitialized Value
+  The value read from threads[_] was never initialized.
+  305.       if (++i >= opts.concurrency) {
+  306.         for (int j = 0; j < i; ++j) {
+  307.           pthread_join(threads[j], 0);
+                 ^
+  308.           free((void *)wraps[j].dir);
+  309.         }
+
+#19
+src/clib-configure.c:336: error: Uninitialized Value
+  The value read from threads[_] was never initialized.
+  334. #ifdef HAVE_PTHREADS
+  335.     for (int j = 0; j < i; ++j) {
+  336.       pthread_join(threads[j], 0);
+             ^
+  337.       free((void *)wraps[j].dir);
+  338.     }
+
+#20
+src/clib-configure.c:378: error: Uninitialized Value
+  The value read from threads[_] was never initialized.
+  376.       if (++i >= opts.concurrency) {
+  377.         for (int j = 0; j < i; ++j) {
+  378.           pthread_join(threads[j], 0);
+                 ^
+  379.           free((void *)wraps[j].dir);
+  380.         }
+
+#21
+src/clib-configure.c:407: error: Uninitialized Value
+  The value read from threads[_] was never initialized.
+  405. #ifdef HAVE_PTHREADS
+  406.     for (int j = 0; j < i; ++j) {
+  407.       pthread_join(threads[j], 0);
+             ^
+  408.       free((void *)wraps[j].dir);
+  409.     }
+
+#22
+src/clib-build.c:251: error: Dead Store
+  The value written to &rc (type int) is never used.
+  249. 
+  250.     debug(&debugger, "system: %s", command);
+  251.     rc = system(command);
+           ^
+  252.     free(command);
+  253. 
+
+#23
+src/clib-build.c:330: error: Uninitialized Value
+  The value read from threads[_] was never initialized.
+  328.       if (++i >= opts.concurrency) {
+  329.         for (int j = 0; j < i; ++j) {
+  330.           pthread_join(threads[j], 0);
+                 ^
+  331.           free((void *)wraps[j].dir);
+  332.         }
+
+#24
+src/clib-build.c:352: error: Uninitialized Value
+  The value read from threads[_] was never initialized.
+  350. #ifdef HAVE_PTHREADS
+  351.     for (int j = 0; j < i; ++j) {
+  352.       pthread_join(threads[j], 0);
+             ^
+  353.       free((void *)wraps[j].dir);
+  354.     }
+
+#25
+src/clib-build.c:394: error: Uninitialized Value
+  The value read from threads[_] was never initialized.
+  392.       if (++i >= opts.concurrency) {
+  393.         for (int j = 0; j < i; ++j) {
+  394.           pthread_join(threads[j], 0);
+                 ^
+  395.           free((void *)wraps[j].dir);
+  396.         }
+
+#26
+src/clib-build.c:421: error: Uninitialized Value
+  The value read from threads[_] was never initialized.
+  419. #ifdef HAVE_PTHREADS
+  420.     for (int j = 0; j < i; ++j) {
+  421.       pthread_join(threads[j], 0);
+             ^
+  422.       free((void *)wraps[j].dir);
+  423.     }
+
+#27
+deps/list/list.c:142: error: Null Dereference
+  pointer `it` last assigned on line 139 could be null and is dereferenced by call to `list_iterator_next()` at line 142, column 18.
+  140.   list_node_t *node;
+  141. 
+  142.   while ((node = list_iterator_next(it))) {
+                        ^
+  143.     if (self->match) {
+  144.       if (self->match(val, node->val)) {
+
+#28
+deps/list/list.c:175: error: Null Dereference
+  pointer `it` last assigned on line 174 could be null and is dereferenced by call to `list_iterator_next()` at line 175, column 25.
+  173.   if ((unsigned)index < self->len) {
+  174.     list_iterator_t *it = list_iterator_new(self, direction);
+  175.     list_node_t *node = list_iterator_next(it);
+                               ^
+  176.     while (index--) node = list_iterator_next(it);
+  177.     list_iterator_destroy(it);
+
+#29
+src/clib-update.c:201: error: Dead Store
+  The value written to &slug (type char const *) is never used.
+  199.       char dir[path_max];
+  200.       realpath(slug, dir);
+  201.       slug = dir;
+             ^
+  202.       return install_local_packages();
+  203.     }
+
+#30
+deps/fs/fs.c:200: error: Null Dereference
+  pointer `buffer` last assigned on line 198 could be null and is dereferenced at line 200, column 3.
+  198.   char *buffer = (char*) malloc(sizeof(char) * (len + 1));
+  199.   size_t n = fread(buffer, 1, len, file);
+  200.   buffer[n] = '\0';
+         ^
+  201.   return buffer;
+  202. }
+
+#31
+src/clib-install.c:268: error: Dead Store
+  The value written to &slug (type char const *) is never used.
+  266.       char dir[path_max];
+  267.       realpath(slug, dir);
+  268.       slug = dir;
+             ^
+  269.       return install_local_packages();
+  270.     }
+
+#32
+src/common/clib-package.c:387: error: Null Dereference
+  pointer `freelist` last assigned on line 367 could be null and is dereferenced by call to `list_rpush()` at line 387, column 5.
+  385.       goto loop_cleanup;
+  386. 
+  387.     list_rpush(freelist, list_node_new(pkg));
+           ^
+  388.     error = 0;
+  389. 
+
+#33
+deps/parson/parson.c:802: error: Dead Store
+  The value written to &buf (type char*) is never used.
+  800.                 return -1;
+  801.             if (buf != NULL)
+  802.                 buf += written;
+                       ^
+  803.             written_total += written;
+  804.             return written_total;
+
+#34
+deps/parson/parson.c:822: error: Dead Store
+  The value written to &buf (type char*) is never used.
+  820.                 return -1;
+  821.             if (buf != NULL)
+  822.                 buf += written;
+                       ^
+  823.             written_total += written;
+  824.             return written_total;
+
+#35
+deps/parson/parson.c:733: error: Dead Store
+  The value written to &written (type int) is never used.
+  731.     size_t i = 0, count = 0;
+  732.     double num = 0.0;
+  733.     int written = -1, written_total = 0;
+           ^
+  734. 
+  735.     switch (json_value_get_type(value)) {
+
+#36
+deps/parson/parson.c:838: error: Dead Store
+  The value written to &written (type int) is never used.
+  836.     size_t i = 0, len = strlen(string);
+  837.     char c = '\0';
+  838.     int written = -1, written_total = 0;
+           ^
+  839.     APPEND_STRING("\"");
+  840.     for (i = 0; i < len; i++) {
+
+#37
+deps/parson/parson.c:865: error: Dead Store
+  The value written to &written (type int) is never used.
+  863. static int append_indent(char *buf, int level) {
+  864.     int i;
+  865.     int written = -1, written_total = 0;
+           ^
+  866.     for (i = 0; i < level; i++) {
+  867.         APPEND_STRING("  ");
+
+#38
+src/common/clib-package.c:1028: error: Null Dereference
+  pointer `status` last assigned on line 1025 could be null and is dereferenced at line 1028, column 3.
+  1026.   int rc =
+  1027.       fetch_package_file_work(data->pkg, data->dir, data->file, data->verbose);
+  1028.   *status = rc;
+          ^
+  1029.   (void)data->pkg->refs--;
+  1030.   pthread_exit((void *)status);
+
+#39
+src/common/clib-package.c:1197: error: Dead Store
+  The value written to &configure (type char const *) is never used.
+  1195. 
+  1196.   if (0 == configure) {
+  1197.     configure = ":";
+            ^
+  1198.   }
+  1199. 
+
+#40
+deps/parson/parson.c:1220: error: Dead Store
+  The value written to &written (type int) is never used.
+  1218. 
+  1219. JSON_Status json_serialize_to_buffer(const JSON_Value *value, char *buf, size_t buf_size_in_bytes) {
+  1220.     int written = -1;
+            ^
+  1221.     size_t needed_size_in_bytes = json_serialization_size(value);
+  1222.     if (needed_size_in_bytes == 0 || buf_size_in_bytes < needed_size_in_bytes) {
+
+#41
+deps/parson/parson.c:1252: error: Dead Store
+  The value written to &serialization_result (type int) is never used.
+  1250. 
+  1251. char * json_serialize_to_string(const JSON_Value *value) {
+  1252.     JSON_Status serialization_result = JSONFailure;
+            ^
+  1253.     size_t buf_size_bytes = json_serialization_size(value);
+  1254.     char *buf = NULL;
+
+#42
+deps/parson/parson.c:1276: error: Dead Store
+  The value written to &written (type int) is never used.
+  1274. 
+  1275. JSON_Status json_serialize_to_buffer_pretty(const JSON_Value *value, char *buf, size_t buf_size_in_bytes) {
+  1276.     int written = -1;
+            ^
+  1277.     size_t needed_size_in_bytes = json_serialization_size_pretty(value);
+  1278.     if (needed_size_in_bytes == 0 || buf_size_in_bytes < needed_size_in_bytes)
+
+#43
+deps/parson/parson.c:1307: error: Dead Store
+  The value written to &serialization_result (type int) is never used.
+  1305. 
+  1306. char * json_serialize_to_string_pretty(const JSON_Value *value) {
+  1307.     JSON_Status serialization_result = JSONFailure;
+            ^
+  1308.     size_t buf_size_bytes = json_serialization_size_pretty(value);
+  1309.     char *buf = NULL;
+
+#44
+deps/gumbo-parser/parser.c:1485: error: Null Dereference
+  pointer `node` last assigned on line 1484 could be null and is dereferenced by call to `node_tag_is()` at line 1485, column 11.
+  1483. 
+  1484.   GumboNode* node = pop_current_node(parser);
+  1485.   while (!node_tag_is(node, GUMBO_TAG_TABLE)) {
+                  ^
+  1486.     node = pop_current_node(parser);
+  1487.   }
+
+#45
+deps/parson/parson.c:1510: error: Null Dereference
+  pointer `current_name` last assigned on line 1502 could be null and is dereferenced by call to `json_object_add()` at line 1510, column 17.
+  1508.                 return JSONFailure;
+  1509.             }
+  1510.             if (json_object_add(object, current_name, new_value) == JSONFailure) {
+                        ^
+  1511.                 json_value_free(new_value);
+  1512.                 parson_free(current_name);
+
+#46
+deps/gumbo-parser/parser.c:1530: error: Null Dereference
+  pointer `node` last assigned on line 1529 could be null and is dereferenced by call to `node_tag_is()` at line 1530, column 11.
+  1528. static void close_current_select(GumboParser* parser) {
+  1529.   GumboNode* node = pop_current_node(parser);
+  1530.   while (!node_tag_is(node, GUMBO_TAG_SELECT)) {
+                  ^
+  1531.     node = pop_current_node(parser);
+  1532.   }
+
+#47
+deps/parson/parson.c:1621: error: Dead Store
+  The value written to &schema_type (type int) is never used.
+  1619.     JSON_Array *schema_array = NULL, *value_array = NULL;
+  1620.     JSON_Object *schema_object = NULL, *value_object = NULL;
+  1621.     JSON_Value_Type schema_type = JSONError, value_type = JSONError;
+            ^
+  1622.     const char *key = NULL;
+  1623.     size_t i = 0, count = 0;
+
+#48
+deps/parson/parson.c:1621: error: Dead Store
+  The value written to &value_type (type int) is never used.
+  1619.     JSON_Array *schema_array = NULL, *value_array = NULL;
+  1620.     JSON_Object *schema_object = NULL, *value_object = NULL;
+  1621.     JSON_Value_Type schema_type = JSONError, value_type = JSONError;
+            ^
+  1622.     const char *key = NULL;
+  1623.     size_t i = 0, count = 0;
+
+#49
+deps/gumbo-parser/parser.c:2180: error: Null Dereference
+  pointer `node` last assigned on line 2179 could be null and is dereferenced by call to `node_tag_is()` at line 2180, column 5.
+  2178.   } else {
+  2179.     const GumboNode* node = pop_current_node(parser);
+  2180.     assert(node_tag_is(node, GUMBO_TAG_HEAD));
+            ^
+  2181.     AVOID_UNUSED_VARIABLE_WARNING(node);
+  2182.     set_insertion_mode(parser, GUMBO_INSERTION_MODE_AFTER_HEAD);
+
+#50
+deps/gumbo-parser/parser.c:2219: error: Null Dereference
+  pointer `node` last assigned on line 2218 could be null and is dereferenced by call to `node_tag_is()` at line 2219, column 5.
+  2217.     add_parse_error(parser, token);
+  2218.     const GumboNode* node = pop_current_node(parser);
+  2219.     assert(node_tag_is(node, GUMBO_TAG_NOSCRIPT));
+            ^
+  2220.     AVOID_UNUSED_VARIABLE_WARNING(node);
+  2221.     set_insertion_mode(parser, GUMBO_INSERTION_MODE_IN_HEAD);
+
+#51
+deps/gumbo-parser/parser.c:3842: error: Uninitialized Value
+  The value read from token.type was never initialized.
+  3840.     const char* token_type = "text";
+  3841.     switch (token.type) {
+  3842.       case GUMBO_TOKEN_DOCTYPE:
+              ^
+  3843.         token_type = "doctype";
+  3844.         break;
+
+#52
+deps/gumbo-parser/parser.c:3845: error: Uninitialized Value
+  The value read from token.type was never initialized.
+  3843.         token_type = "doctype";
+  3844.         break;
+  3845.       case GUMBO_TOKEN_START_TAG:
+              ^
+  3846.         token_type = gumbo_normalized_tagname(token.v.start_tag.tag);
+  3847.         break;
+
+#53
+deps/gumbo-parser/parser.c:3848: error: Uninitialized Value
+  The value read from token.type was never initialized.
+  3846.         token_type = gumbo_normalized_tagname(token.v.start_tag.tag);
+  3847.         break;
+  3848.       case GUMBO_TOKEN_END_TAG:
+              ^
+  3849.         token_type = gumbo_normalized_tagname(token.v.end_tag);
+  3850.         break;
+
+#54
+deps/gumbo-parser/parser.c:3851: error: Uninitialized Value
+  The value read from token.type was never initialized.
+  3849.         token_type = gumbo_normalized_tagname(token.v.end_tag);
+  3850.         break;
+  3851.       case GUMBO_TOKEN_COMMENT:
+              ^
+  3852.         token_type = "comment";
+  3853.         break;
+
+#55
+deps/gumbo-parser/parser.c:3863: error: Uninitialized Value
+  The value read from token.type was never initialized.
+  3861.     state->_current_token = &token;
+  3862.     state->_self_closing_flag_acknowledged =
+  3863.         !(token.type == GUMBO_TOKEN_START_TAG &&
+                  ^
+  3864.           token.v.start_tag.is_self_closing);
+  3865. 
+
+Found 56 issues
+                Issue Type(ISSUED_TYPE_ID): #
+        Null Dereference(NULL_DEREFERENCE): 18
+  Uninitialized Value(UNINITIALIZED_VALUE): 17
+                    Dead Store(DEAD_STORE): 17
+              Resource Leak(RESOURCE_LEAK): 4

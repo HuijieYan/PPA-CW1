@@ -1,0 +1,65 @@
+#0
+src/history.c:36: error: Null Dereference
+  pointer `history->command` last assigned on line 35 could be null and is dereferenced by call to `strcpy()` at line 36, column 3.
+  34. 
+  35.   history->command = (char *) realloc (history->command, strlen (line) + 1);
+  36.   strcpy (history->command, line);
+        ^
+  37. }
+  38. 
+
+#1
+dependencies/linenoise/linenoise.c:275: error: Uninitialized Value
+  The value read from buf[_] was never initialized.
+  273.     while (i < sizeof(buf)-1) {
+  274.         if (read(ifd,buf+i,1) != 1) break;
+  275.         if (buf[i] == 'R') break;
+                   ^
+  276.         i++;
+  277.     }
+
+#2
+dependencies/hashmap.c/hashmap.c:607: error: Dead Store
+  The value written to &h3 (type unsigned int) is never used.
+  605.     FMIX32(h1); FMIX32(h2); FMIX32(h3); FMIX32(h4);
+  606.     h1 += h2; h1 += h3; h1 += h4;
+  607.     h2 += h1; h3 += h1; h4 += h1;
+                     ^
+  608.     return (((uint64_t)h2)<<32)|h1;
+  609. }
+
+#3
+dependencies/hashmap.c/hashmap.c:607: error: Dead Store
+  The value written to &h4 (type unsigned int) is never used.
+  605.     FMIX32(h1); FMIX32(h2); FMIX32(h3); FMIX32(h4);
+  606.     h1 += h2; h1 += h3; h1 += h4;
+  607.     h2 += h1; h3 += h1; h4 += h1;
+                               ^
+  608.     return (((uint64_t)h2)<<32)|h1;
+  609. }
+
+#4
+src/debugger.c:757: error: Dead Store
+  The value written to &res (type int) is never used.
+  755. 
+  756.   uint64_t value_after = 0;
+  757.   SprayResult res = SP_ERR;
+         ^
+  758. 
+  759.   /* Is this location a memory address? */
+
+#5
+src/spray_dwarf.c:3543: error: Null Dereference
+  pointer `filepaths` last assigned on line 3542 could be null and is dereferenced at line 3543, column 22.
+  3541. 
+  3542.   char **filepaths = sd_get_filepaths (dbg);
+  3543.   for (size_t j = 0; filepaths[j] != NULL; j++)
+                             ^
+  3544.     {
+  3545.       LineTable line_table = sd_get_line_table (dbg, filepaths[j]);
+
+Found 6 issues
+                Issue Type(ISSUED_TYPE_ID): #
+                    Dead Store(DEAD_STORE): 3
+        Null Dereference(NULL_DEREFERENCE): 2
+  Uninitialized Value(UNINITIALIZED_VALUE): 1

@@ -1,0 +1,686 @@
+[33582][      debug] Loading models took 102ms
+[33587][      debug] Sqlite write daemon: starting up
+[33587][      debug] Sqlite write daemon: set up complete, waiting for connections
+[33582][environment] CWD = /home/rasofema/Documents/lightdm-gtk-greeter
+[33582][environment] No .inferconfig file found
+[33582][environment] Project root = /home/rasofema/Documents/lightdm-gtk-greeter
+[33582][environment] INFER_ARGS =   @/tmp/args.tmp.4d17c6
+[33582][environment] command line arguments:   infer run -- make
+[33582][environment] Available memory at startup: 4990 MB
+[33582][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[33582][environment] Scheduler: file
+[33582][environment] Cores used: 2
+[33582][environment] Infer version v1.1.0
+[33582][environment] Copyright 2009 - present Facebook. All Rights Reserved.
+[33582][environment] 
+[33582][   progress] Capturing in make/cc mode...
+[33582][environment] Running command make with env:
+[33582][environment] (Extend((PATH /opt/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/wrappers:/home/rasofema/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin)(INFER_OLD_PATH /home/rasofema/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin)))
+[33582][environment] 
+
+[33612][environment] CWD = /home/rasofema/Documents/lightdm-gtk-greeter/src
+[33612][environment] No .inferconfig file found
+[33612][environment] Project root = /home/rasofema/Documents/lightdm-gtk-greeter
+[33612][environment] INFER_ARGS =   @/tmp/args.tmp.697cef
+[33612][environment] command line arguments:   gcc -DHAVE_CONFIG_H -I. -I.. -I.. -DHAVE_CONFIG_H
+[33612][environment]                           -DGETTEXT_PACKAGE="lightdm-gtk-greeter"
+[33612][environment]                           -DLOCALEDIR="/usr/local/share/locale"
+[33612][environment]                           -DGREETER_DATA_DIR="/usr/local/share/lightdm-gtk-greeter"
+[33612][environment]                           -DCONFIG_FILE="/usr/local/etc/lightdm/lightdm-gtk-greeter.conf"
+[33612][environment]                           -DINDICATOR_DIR="" -DUNITY_INDICATOR_DIR=""
+[33612][environment]                           -DAYATANA_INDICATOR_DIR=""
+[33612][environment]                           -DSYSTEMD_SERVICE_DIR="/usr/lib/systemd/user"
+[33612][environment]                           -pthread -I/usr/include/gtk-3.0
+[33612][environment]                           -I/usr/include/at-spi2-atk/2.0
+[33612][environment]                           -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0
+[33612][environment]                           -I/usr/lib/x86_64-linux-gnu/dbus-1.0/include
+[33612][environment]                           -I/usr/include/gtk-3.0 -I/usr/include/gio-unix-2.0
+[33612][environment]                           -I/usr/include/cairo -I/usr/include/pango-1.0
+[33612][environment]                           -I/usr/include/harfbuzz -I/usr/include/pango-1.0
+[33612][environment]                           -I/usr/include/fribidi -I/usr/include/harfbuzz
+[33612][environment]                           -I/usr/include/atk-1.0 -I/usr/include/cairo
+[33612][environment]                           -I/usr/include/pixman-1 -I/usr/include/uuid
+[33612][environment]                           -I/usr/include/freetype2
+[33612][environment]                           -I/usr/include/gdk-pixbuf-2.0
+[33612][environment]                           -I/usr/include/libpng16
+[33612][environment]                           -I/usr/include/x86_64-linux-gnu
+[33612][environment]                           -I/usr/include/libmount -I/usr/include/blkid
+[33612][environment]                           -I/usr/include/glib-2.0
+[33612][environment]                           -I/usr/lib/x86_64-linux-gnu/glib-2.0/include
+[33612][environment]                           -pthread -I/usr/include/glib-2.0
+[33612][environment]                           -I/usr/lib/x86_64-linux-gnu/glib-2.0/include
+[33612][environment]                           -pthread -I/usr/include/lightdm-gobject-1
+[33612][environment]                           -I/usr/include/gio-unix-2.0 -I/usr/include/libmount
+[33612][environment]                           -I/usr/include/blkid -I/usr/include/glib-2.0
+[33612][environment]                           -I/usr/lib/x86_64-linux-gnu/glib-2.0/include
+[33612][environment]                           -I/usr/include/libxml2 -g -O2 -MT
+[33612][environment]                           lightdm_gtk_greeter-lightdm-gtk-greeter.o -MD -MP
+[33612][environment]                           -MF
+[33612][environment]                           .deps/lightdm_gtk_greeter-lightdm-gtk-greeter.Tpo
+[33612][environment]                           -c -o lightdm_gtk_greeter-lightdm-gtk-greeter.o
+[33612][environment]                           lightdm-gtk-greeter.c
+[33612][environment] Available memory at startup: 4951 MB
+[33612][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[33612][      debug] 
+[33612][      debug] *** Beginning capture of file /home/rasofema/Documents/lightdm-gtk-greeter/src/lightdm-gtk-greeter.c ***
+[33612][      debug] Loading the following linters files: /opt/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[33612][      debug] Elapsed: 2.264s.
+[33612][      debug] GC stats for capture:
+[33612][      debug]   minor_words: 9.52078e+07
+[33612][      debug]   promoted_words: 1.01346e+07
+[33612][      debug]   major_words: 1.06227e+07
+[33612][      debug]   minor_collections: 96
+[33612][      debug]   major_collections: 10
+[33612][      debug]   compactions: 0
+[33612][      debug]   top_heap_words: 10847744
+[33612][      debug]   
+[33612][      debug] GC stats for main_process_full:
+[33612][      debug]   minor_words: 9.66396e+07
+[33612][      debug]   promoted_words: 1.03041e+07
+[33612][      debug]   major_words: 1.08129e+07
+[33612][      debug]   minor_collections: 116
+[33612][      debug]   major_collections: 15
+[33612][      debug]   compactions: 1
+[33612][      debug]   top_heap_words: 10847744
+[33612][      debug]   
+[33612][environment] Scheduler: file
+[33612][environment] Cores used: 2
+[33612][environment] 
+[33619][environment] CWD = /home/rasofema/Documents/lightdm-gtk-greeter/src
+[33619][environment] No .inferconfig file found
+[33619][environment] Project root = /home/rasofema/Documents/lightdm-gtk-greeter
+[33619][environment] INFER_ARGS =   @/tmp/args.tmp.78b910
+[33619][environment] command line arguments:   gcc -DHAVE_CONFIG_H -I. -I.. -I.. -DHAVE_CONFIG_H
+[33619][environment]                           -DGETTEXT_PACKAGE="lightdm-gtk-greeter"
+[33619][environment]                           -DLOCALEDIR="/usr/local/share/locale"
+[33619][environment]                           -DGREETER_DATA_DIR="/usr/local/share/lightdm-gtk-greeter"
+[33619][environment]                           -DCONFIG_FILE="/usr/local/etc/lightdm/lightdm-gtk-greeter.conf"
+[33619][environment]                           -DINDICATOR_DIR="" -DUNITY_INDICATOR_DIR=""
+[33619][environment]                           -DAYATANA_INDICATOR_DIR=""
+[33619][environment]                           -DSYSTEMD_SERVICE_DIR="/usr/lib/systemd/user"
+[33619][environment]                           -pthread -I/usr/include/gtk-3.0
+[33619][environment]                           -I/usr/include/at-spi2-atk/2.0
+[33619][environment]                           -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0
+[33619][environment]                           -I/usr/lib/x86_64-linux-gnu/dbus-1.0/include
+[33619][environment]                           -I/usr/include/gtk-3.0 -I/usr/include/gio-unix-2.0
+[33619][environment]                           -I/usr/include/cairo -I/usr/include/pango-1.0
+[33619][environment]                           -I/usr/include/harfbuzz -I/usr/include/pango-1.0
+[33619][environment]                           -I/usr/include/fribidi -I/usr/include/harfbuzz
+[33619][environment]                           -I/usr/include/atk-1.0 -I/usr/include/cairo
+[33619][environment]                           -I/usr/include/pixman-1 -I/usr/include/uuid
+[33619][environment]                           -I/usr/include/freetype2
+[33619][environment]                           -I/usr/include/gdk-pixbuf-2.0
+[33619][environment]                           -I/usr/include/libpng16
+[33619][environment]                           -I/usr/include/x86_64-linux-gnu
+[33619][environment]                           -I/usr/include/libmount -I/usr/include/blkid
+[33619][environment]                           -I/usr/include/glib-2.0
+[33619][environment]                           -I/usr/lib/x86_64-linux-gnu/glib-2.0/include
+[33619][environment]                           -pthread -I/usr/include/glib-2.0
+[33619][environment]                           -I/usr/lib/x86_64-linux-gnu/glib-2.0/include
+[33619][environment]                           -pthread -I/usr/include/lightdm-gobject-1
+[33619][environment]                           -I/usr/include/gio-unix-2.0 -I/usr/include/libmount
+[33619][environment]                           -I/usr/include/blkid -I/usr/include/glib-2.0
+[33619][environment]                           -I/usr/lib/x86_64-linux-gnu/glib-2.0/include
+[33619][environment]                           -I/usr/include/libxml2 -g -O2 -MT
+[33619][environment]                           lightdm_gtk_greeter-greeterbackground.o -MD -MP -MF
+[33619][environment]                           .deps/lightdm_gtk_greeter-greeterbackground.Tpo -c
+[33619][environment]                           -o lightdm_gtk_greeter-greeterbackground.o
+[33619][environment]                           greeterbackground.c
+[33619][environment] Available memory at startup: 4950 MB
+[33619][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[33619][      debug] 
+[33619][      debug] *** Beginning capture of file /home/rasofema/Documents/lightdm-gtk-greeter/src/greeterbackground.c ***
+[33619][      debug] Loading the following linters files: /opt/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[33619][      debug] src/greeterbackground.c:215:1: ERROR translating statement 'DeclStmt'
+[33619][      debug] Aborting translation of method 'greeter_background_get_type' in file 'src/greeterbackground.c'
+[33619][      debug] Unimplemented feature:
+[33619][      debug]   In DeclStmt found an unknown declaration type <"StaticAssertDecl":({"pointer":120635,"source_range":({"file":"/home/rasofema/Documents/lightdm-gtk-greeter/src/greeterbackground.c","line":215,"column":1},{"file":"/home/rasofema/Documents/lightdm-gtk-greeter/src/greeterbackground.c","line":215,"column":1})})>
+[33619][      debug] src/greeterbackground.c:215:1: ERROR translating statement 'DeclStmt'
+[33619][      debug] Aborting translation of method 'greeter_background_get_type' in file 'src/greeterbackground.c'
+[33619][      debug] Unimplemented feature:
+[33619][      debug]   In DeclStmt found an unknown declaration type <"StaticAssertDecl":({"pointer":120635,"source_range":({"file":"/home/rasofema/Documents/lightdm-gtk-greeter/src/greeterbackground.c","line":215,"column":1},{"file":"/home/rasofema/Documents/lightdm-gtk-greeter/src/greeterbackground.c","line":215,"column":1})})>
+[33619][      debug] src/greeterbackground.c:215:1: ERROR translating statement 'DeclStmt'
+[33619][      debug] Aborting translation of method 'greeter_background_get_type' in file 'src/greeterbackground.c'
+[33619][      debug] Unimplemented feature:
+[33619][      debug]   In DeclStmt found an unknown declaration type <"StaticAssertDecl":({"pointer":120635,"source_range":({"file":"/home/rasofema/Documents/lightdm-gtk-greeter/src/greeterbackground.c","line":215,"column":1},{"file":"/home/rasofema/Documents/lightdm-gtk-greeter/src/greeterbackground.c","line":215,"column":1})})>
+[33619][      debug] src/greeterbackground.c:215:1: ERROR translating statement 'DeclStmt'
+[33619][      debug] Aborting translation of method 'greeter_background_get_type' in file 'src/greeterbackground.c'
+[33619][      debug] Unimplemented feature:
+[33619][      debug]   In DeclStmt found an unknown declaration type <"StaticAssertDecl":({"pointer":120635,"source_range":({"file":"/home/rasofema/Documents/lightdm-gtk-greeter/src/greeterbackground.c","line":215,"column":1},{"file":"/home/rasofema/Documents/lightdm-gtk-greeter/src/greeterbackground.c","line":215,"column":1})})>
+[33619][      debug] src/greeterbackground.c:215:1: ERROR translating statement 'DeclStmt'
+[33619][      debug] Aborting translation of method 'greeter_background_get_type' in file 'src/greeterbackground.c'
+[33619][      debug] Unimplemented feature:
+[33619][      debug]   In DeclStmt found an unknown declaration type <"StaticAssertDecl":({"pointer":120635,"source_range":({"file":"/home/rasofema/Documents/lightdm-gtk-greeter/src/greeterbackground.c","line":215,"column":1},{"file":"/home/rasofema/Documents/lightdm-gtk-greeter/src/greeterbackground.c","line":215,"column":1})})>
+[33619][      debug] src/greeterbackground.c:215:1: ERROR translating statement 'DeclStmt'
+[33619][      debug] Aborting translation of method 'greeter_background_get_type' in file 'src/greeterbackground.c'
+[33619][      debug] Unimplemented feature:
+[33619][      debug]   In DeclStmt found an unknown declaration type <"StaticAssertDecl":({"pointer":120635,"source_range":({"file":"/home/rasofema/Documents/lightdm-gtk-greeter/src/greeterbackground.c","line":215,"column":1},{"file":"/home/rasofema/Documents/lightdm-gtk-greeter/src/greeterbackground.c","line":215,"column":1})})>
+[33619][      debug] src/greeterbackground.c:215:1: ERROR translating statement 'DeclStmt'
+[33619][      debug] Aborting translation of method 'greeter_background_get_type' in file 'src/greeterbackground.c'
+[33619][      debug] Unimplemented feature:
+[33619][      debug]   In DeclStmt found an unknown declaration type <"StaticAssertDecl":({"pointer":120635,"source_range":({"file":"/home/rasofema/Documents/lightdm-gtk-greeter/src/greeterbackground.c","line":215,"column":1},{"file":"/home/rasofema/Documents/lightdm-gtk-greeter/src/greeterbackground.c","line":215,"column":1})})>
+[33619][      debug] src/greeterbackground.c:215:1: ERROR translating statement 'DeclStmt'
+[33619][      debug] Aborting translation of method 'greeter_background_get_type' in file 'src/greeterbackground.c'
+[33619][      debug] Unimplemented feature:
+[33619][      debug]   In DeclStmt found an unknown declaration type <"StaticAssertDecl":({"pointer":120635,"source_range":({"file":"/home/rasofema/Documents/lightdm-gtk-greeter/src/greeterbackground.c","line":215,"column":1},{"file":"/home/rasofema/Documents/lightdm-gtk-greeter/src/greeterbackground.c","line":215,"column":1})})>
+[33619][      debug] src/greeterbackground.c:964:5: ERROR translating statement 'DeclStmt'
+[33619][      debug] Aborting translation of method 'greeter_background_stop_dbus' in file 'src/greeterbackground.c'
+[33619][      debug] Unimplemented feature:
+[33619][      debug]   In DeclStmt found an unknown declaration type <"StaticAssertDecl":({"pointer":125089,"source_range":({"file":"/home/rasofema/Documents/lightdm-gtk-greeter/src/greeterbackground.c","line":964,"column":5},{"file":"/home/rasofema/Documents/lightdm-gtk-greeter/src/greeterbackground.c","line":964,"column":5})})>
+[33619][      debug] src/greeterbackground.c:215:1: ERROR translating statement 'DeclStmt'
+[33619][      debug] Aborting translation of method 'greeter_background_get_type' in file 'src/greeterbackground.c'
+[33619][      debug] Unimplemented feature:
+[33619][      debug]   In DeclStmt found an unknown declaration type <"StaticAssertDecl":({"pointer":120635,"source_range":({"file":"/home/rasofema/Documents/lightdm-gtk-greeter/src/greeterbackground.c","line":215,"column":1},{"file":"/home/rasofema/Documents/lightdm-gtk-greeter/src/greeterbackground.c","line":215,"column":1})})>
+[33619][      debug] src/greeterbackground.c:964:5: ERROR translating statement 'DeclStmt'
+[33619][      debug] Aborting translation of method 'greeter_background_stop_dbus' in file 'src/greeterbackground.c'
+[33619][      debug] Unimplemented feature:
+[33619][      debug]   In DeclStmt found an unknown declaration type <"StaticAssertDecl":({"pointer":125089,"source_range":({"file":"/home/rasofema/Documents/lightdm-gtk-greeter/src/greeterbackground.c","line":964,"column":5},{"file":"/home/rasofema/Documents/lightdm-gtk-greeter/src/greeterbackground.c","line":964,"column":5})})>
+[33619][      debug] src/greeterbackground.c:964:5: ERROR translating statement 'DeclStmt'
+[33619][      debug] Aborting translation of method 'greeter_background_stop_dbus' in file 'src/greeterbackground.c'
+[33619][      debug] Unimplemented feature:
+[33619][      debug]   In DeclStmt found an unknown declaration type <"StaticAssertDecl":({"pointer":125089,"source_range":({"file":"/home/rasofema/Documents/lightdm-gtk-greeter/src/greeterbackground.c","line":964,"column":5},{"file":"/home/rasofema/Documents/lightdm-gtk-greeter/src/greeterbackground.c","line":964,"column":5})})>
+[33619][      debug] src/greeterbackground.c:1302:13: ERROR translating statement 'DeclStmt'
+[33619][      debug] Aborting translation of method 'background_finalize' in file 'src/greeterbackground.c'
+[33619][      debug] Unimplemented feature:
+[33619][      debug]   In DeclStmt found an unknown declaration type <"StaticAssertDecl":({"pointer":126923,"source_range":({"file":"/home/rasofema/Documents/lightdm-gtk-greeter/src/greeterbackground.c","line":1302,"column":13},{"file":"/home/rasofema/Documents/lightdm-gtk-greeter/src/greeterbackground.c","line":1302,"column":13})})>
+[33619][      debug] src/greeterbackground.c:215:1: ERROR translating statement 'DeclStmt'
+[33619][      debug] Aborting translation of method 'greeter_background_get_type' in file 'src/greeterbackground.c'
+[33619][      debug] Unimplemented feature:
+[33619][      debug]   In DeclStmt found an unknown declaration type <"StaticAssertDecl":({"pointer":120635,"source_range":({"file":"/home/rasofema/Documents/lightdm-gtk-greeter/src/greeterbackground.c","line":215,"column":1},{"file":"/home/rasofema/Documents/lightdm-gtk-greeter/src/greeterbackground.c","line":215,"column":1})})>
+[33619][      debug] src/greeterbackground.c:215:1: ERROR translating statement 'DeclStmt'
+[33619][      debug] Aborting translation of method 'greeter_background_get_type' in file 'src/greeterbackground.c'
+[33619][      debug] Unimplemented feature:
+[33619][      debug]   In DeclStmt found an unknown declaration type <"StaticAssertDecl":({"pointer":120635,"source_range":({"file":"/home/rasofema/Documents/lightdm-gtk-greeter/src/greeterbackground.c","line":215,"column":1},{"file":"/home/rasofema/Documents/lightdm-gtk-greeter/src/greeterbackground.c","line":215,"column":1})})>
+[33619][      debug] src/greeterbackground.c:964:5: ERROR translating statement 'DeclStmt'
+[33619][      debug] Aborting translation of method 'greeter_background_stop_dbus' in file 'src/greeterbackground.c'
+[33619][      debug] Unimplemented feature:
+[33619][      debug]   In DeclStmt found an unknown declaration type <"StaticAssertDecl":({"pointer":125089,"source_range":({"file":"/home/rasofema/Documents/lightdm-gtk-greeter/src/greeterbackground.c","line":964,"column":5},{"file":"/home/rasofema/Documents/lightdm-gtk-greeter/src/greeterbackground.c","line":964,"column":5})})>
+[33619][      debug] src/greeterbackground.c:215:1: ERROR translating statement 'DeclStmt'
+[33619][      debug] Aborting translation of method 'greeter_background_get_type' in file 'src/greeterbackground.c'
+[33619][      debug] Unimplemented feature:
+[33619][      debug]   In DeclStmt found an unknown declaration type <"StaticAssertDecl":({"pointer":120635,"source_range":({"file":"/home/rasofema/Documents/lightdm-gtk-greeter/src/greeterbackground.c","line":215,"column":1},{"file":"/home/rasofema/Documents/lightdm-gtk-greeter/src/greeterbackground.c","line":215,"column":1})})>
+[33619][      debug] src/greeterbackground.c:215:1: ERROR translating statement 'DeclStmt'
+[33619][      debug] Aborting translation of method 'greeter_background_get_type' in file 'src/greeterbackground.c'
+[33619][      debug] Unimplemented feature:
+[33619][      debug]   In DeclStmt found an unknown declaration type <"StaticAssertDecl":({"pointer":120635,"source_range":({"file":"/home/rasofema/Documents/lightdm-gtk-greeter/src/greeterbackground.c","line":215,"column":1},{"file":"/home/rasofema/Documents/lightdm-gtk-greeter/src/greeterbackground.c","line":215,"column":1})})>
+[33619][      debug] src/greeterbackground.c:215:1: ERROR translating statement 'DeclStmt'
+[33619][      debug] Aborting translation of method 'greeter_background_get_type' in file 'src/greeterbackground.c'
+[33619][      debug] Unimplemented feature:
+[33619][      debug]   In DeclStmt found an unknown declaration type <"StaticAssertDecl":({"pointer":120635,"source_range":({"file":"/home/rasofema/Documents/lightdm-gtk-greeter/src/greeterbackground.c","line":215,"column":1},{"file":"/home/rasofema/Documents/lightdm-gtk-greeter/src/greeterbackground.c","line":215,"column":1})})>
+[33619][      debug] src/greeterbackground.c:215:1: ERROR translating statement 'DeclStmt'
+[33619][      debug] Aborting translation of method 'greeter_background_get_type' in file 'src/greeterbackground.c'
+[33619][      debug] Unimplemented feature:
+[33619][      debug]   In DeclStmt found an unknown declaration type <"StaticAssertDecl":({"pointer":120635,"source_range":({"file":"/home/rasofema/Documents/lightdm-gtk-greeter/src/greeterbackground.c","line":215,"column":1},{"file":"/home/rasofema/Documents/lightdm-gtk-greeter/src/greeterbackground.c","line":215,"column":1})})>
+[33619][      debug] src/greeterbackground.c:1302:13: ERROR translating statement 'DeclStmt'
+[33619][      debug] Aborting translation of method 'background_finalize' in file 'src/greeterbackground.c'
+[33619][      debug] Unimplemented feature:
+[33619][      debug]   In DeclStmt found an unknown declaration type <"StaticAssertDecl":({"pointer":126923,"source_range":({"file":"/home/rasofema/Documents/lightdm-gtk-greeter/src/greeterbackground.c","line":1302,"column":13},{"file":"/home/rasofema/Documents/lightdm-gtk-greeter/src/greeterbackground.c","line":1302,"column":13})})>
+[33619][      debug] Elapsed: 1.828s.
+[33619][      debug] GC stats for capture:
+[33619][      debug]   minor_words: 8.44155e+07
+[33619][      debug]   promoted_words: 9.6199e+06
+[33619][      debug]   major_words: 1.00714e+07
+[33619][      debug]   minor_collections: 86
+[33619][      debug]   major_collections: 10
+[33619][      debug]   compactions: 0
+[33619][      debug]   top_heap_words: 10847744
+[33619][      debug]   
+[33619][      debug] GC stats for main_process_full:
+[33619][      debug]   minor_words: 8.58472e+07
+[33619][      debug]   promoted_words: 9.78945e+06
+[33619][      debug]   major_words: 1.02616e+07
+[33619][      debug]   minor_collections: 106
+[33619][      debug]   major_collections: 15
+[33619][      debug]   compactions: 1
+[33619][      debug]   top_heap_words: 10847744
+[33619][      debug]   
+[33619][environment] Scheduler: file
+[33619][environment] Cores used: 2
+[33619][environment] 
+[33626][environment] CWD = /home/rasofema/Documents/lightdm-gtk-greeter/src
+[33626][environment] No .inferconfig file found
+[33626][environment] Project root = /home/rasofema/Documents/lightdm-gtk-greeter
+[33626][environment] INFER_ARGS =   @/tmp/args.tmp.f16ed9
+[33626][environment] command line arguments:   gcc -DHAVE_CONFIG_H -I. -I.. -I.. -DHAVE_CONFIG_H
+[33626][environment]                           -DGETTEXT_PACKAGE="lightdm-gtk-greeter"
+[33626][environment]                           -DLOCALEDIR="/usr/local/share/locale"
+[33626][environment]                           -DGREETER_DATA_DIR="/usr/local/share/lightdm-gtk-greeter"
+[33626][environment]                           -DCONFIG_FILE="/usr/local/etc/lightdm/lightdm-gtk-greeter.conf"
+[33626][environment]                           -DINDICATOR_DIR="" -DUNITY_INDICATOR_DIR=""
+[33626][environment]                           -DAYATANA_INDICATOR_DIR=""
+[33626][environment]                           -DSYSTEMD_SERVICE_DIR="/usr/lib/systemd/user"
+[33626][environment]                           -pthread -I/usr/include/gtk-3.0
+[33626][environment]                           -I/usr/include/at-spi2-atk/2.0
+[33626][environment]                           -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0
+[33626][environment]                           -I/usr/lib/x86_64-linux-gnu/dbus-1.0/include
+[33626][environment]                           -I/usr/include/gtk-3.0 -I/usr/include/gio-unix-2.0
+[33626][environment]                           -I/usr/include/cairo -I/usr/include/pango-1.0
+[33626][environment]                           -I/usr/include/harfbuzz -I/usr/include/pango-1.0
+[33626][environment]                           -I/usr/include/fribidi -I/usr/include/harfbuzz
+[33626][environment]                           -I/usr/include/atk-1.0 -I/usr/include/cairo
+[33626][environment]                           -I/usr/include/pixman-1 -I/usr/include/uuid
+[33626][environment]                           -I/usr/include/freetype2
+[33626][environment]                           -I/usr/include/gdk-pixbuf-2.0
+[33626][environment]                           -I/usr/include/libpng16
+[33626][environment]                           -I/usr/include/x86_64-linux-gnu
+[33626][environment]                           -I/usr/include/libmount -I/usr/include/blkid
+[33626][environment]                           -I/usr/include/glib-2.0
+[33626][environment]                           -I/usr/lib/x86_64-linux-gnu/glib-2.0/include
+[33626][environment]                           -pthread -I/usr/include/glib-2.0
+[33626][environment]                           -I/usr/lib/x86_64-linux-gnu/glib-2.0/include
+[33626][environment]                           -pthread -I/usr/include/lightdm-gobject-1
+[33626][environment]                           -I/usr/include/gio-unix-2.0 -I/usr/include/libmount
+[33626][environment]                           -I/usr/include/blkid -I/usr/include/glib-2.0
+[33626][environment]                           -I/usr/lib/x86_64-linux-gnu/glib-2.0/include
+[33626][environment]                           -I/usr/include/libxml2 -g -O2 -MT
+[33626][environment]                           lightdm_gtk_greeter-greeteruserimage.o -MD -MP -MF
+[33626][environment]                           .deps/lightdm_gtk_greeter-greeteruserimage.Tpo -c
+[33626][environment]                           -o lightdm_gtk_greeter-greeteruserimage.o
+[33626][environment]                           greeteruserimage.c
+[33626][environment] Available memory at startup: 4946 MB
+[33626][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[33626][      debug] 
+[33626][      debug] *** Beginning capture of file /home/rasofema/Documents/lightdm-gtk-greeter/src/greeteruserimage.c ***
+[33626][      debug] Loading the following linters files: /opt/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[33626][      debug] Elapsed: 1.55s.
+[33626][      debug] GC stats for capture:
+[33626][      debug]   minor_words: 6.63771e+07
+[33626][      debug]   promoted_words: 8.36447e+06
+[33626][      debug]   major_words: 8.77036e+06
+[33626][      debug]   minor_collections: 69
+[33626][      debug]   major_collections: 10
+[33626][      debug]   compactions: 0
+[33626][      debug]   top_heap_words: 9432576
+[33626][      debug]   
+[33626][      debug] GC stats for main_process_full:
+[33626][      debug]   minor_words: 6.78088e+07
+[33626][      debug]   promoted_words: 8.53403e+06
+[33626][      debug]   major_words: 8.96057e+06
+[33626][      debug]   minor_collections: 89
+[33626][      debug]   major_collections: 15
+[33626][      debug]   compactions: 1
+[33626][      debug]   top_heap_words: 9432576
+[33626][      debug]   
+[33626][environment] Scheduler: file
+[33626][environment] Cores used: 2
+[33626][environment] 
+[33633][environment] CWD = /home/rasofema/Documents/lightdm-gtk-greeter/src
+[33633][environment] No .inferconfig file found
+[33633][environment] Project root = /home/rasofema/Documents/lightdm-gtk-greeter
+[33633][environment] INFER_ARGS =   @/tmp/args.tmp.3073b5
+[33633][environment] command line arguments:   gcc -DHAVE_CONFIG_H -I. -I.. -I.. -DHAVE_CONFIG_H
+[33633][environment]                           -DGETTEXT_PACKAGE="lightdm-gtk-greeter"
+[33633][environment]                           -DLOCALEDIR="/usr/local/share/locale"
+[33633][environment]                           -DGREETER_DATA_DIR="/usr/local/share/lightdm-gtk-greeter"
+[33633][environment]                           -DCONFIG_FILE="/usr/local/etc/lightdm/lightdm-gtk-greeter.conf"
+[33633][environment]                           -DINDICATOR_DIR="" -DUNITY_INDICATOR_DIR=""
+[33633][environment]                           -DAYATANA_INDICATOR_DIR=""
+[33633][environment]                           -DSYSTEMD_SERVICE_DIR="/usr/lib/systemd/user"
+[33633][environment]                           -pthread -I/usr/include/gtk-3.0
+[33633][environment]                           -I/usr/include/at-spi2-atk/2.0
+[33633][environment]                           -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0
+[33633][environment]                           -I/usr/lib/x86_64-linux-gnu/dbus-1.0/include
+[33633][environment]                           -I/usr/include/gtk-3.0 -I/usr/include/gio-unix-2.0
+[33633][environment]                           -I/usr/include/cairo -I/usr/include/pango-1.0
+[33633][environment]                           -I/usr/include/harfbuzz -I/usr/include/pango-1.0
+[33633][environment]                           -I/usr/include/fribidi -I/usr/include/harfbuzz
+[33633][environment]                           -I/usr/include/atk-1.0 -I/usr/include/cairo
+[33633][environment]                           -I/usr/include/pixman-1 -I/usr/include/uuid
+[33633][environment]                           -I/usr/include/freetype2
+[33633][environment]                           -I/usr/include/gdk-pixbuf-2.0
+[33633][environment]                           -I/usr/include/libpng16
+[33633][environment]                           -I/usr/include/x86_64-linux-gnu
+[33633][environment]                           -I/usr/include/libmount -I/usr/include/blkid
+[33633][environment]                           -I/usr/include/glib-2.0
+[33633][environment]                           -I/usr/lib/x86_64-linux-gnu/glib-2.0/include
+[33633][environment]                           -pthread -I/usr/include/glib-2.0
+[33633][environment]                           -I/usr/lib/x86_64-linux-gnu/glib-2.0/include
+[33633][environment]                           -pthread -I/usr/include/lightdm-gobject-1
+[33633][environment]                           -I/usr/include/gio-unix-2.0 -I/usr/include/libmount
+[33633][environment]                           -I/usr/include/blkid -I/usr/include/glib-2.0
+[33633][environment]                           -I/usr/lib/x86_64-linux-gnu/glib-2.0/include
+[33633][environment]                           -I/usr/include/libxml2 -g -O2 -MT
+[33633][environment]                           lightdm_gtk_greeter-greeterconfiguration.o -MD -MP
+[33633][environment]                           -MF
+[33633][environment]                           .deps/lightdm_gtk_greeter-greeterconfiguration.Tpo
+[33633][environment]                           -c -o lightdm_gtk_greeter-greeterconfiguration.o
+[33633][environment]                           greeterconfiguration.c
+[33633][environment] Available memory at startup: 4956 MB
+[33633][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[33633][      debug] 
+[33633][      debug] *** Beginning capture of file /home/rasofema/Documents/lightdm-gtk-greeter/src/greeterconfiguration.c ***
+[33633][      debug] Loading the following linters files: /opt/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[33633][      debug] Elapsed: 303ms.
+[33633][      debug] GC stats for capture:
+[33633][      debug]   minor_words: 1.38411e+07
+[33633][      debug]   promoted_words: 1.64951e+06
+[33633][      debug]   major_words: 1.74257e+06
+[33633][      debug]   minor_collections: 16
+[33633][      debug]   major_collections: 3
+[33633][      debug]   compactions: 0
+[33633][      debug]   top_heap_words: 2026496
+[33633][      debug]   
+[33633][      debug] GC stats for main_process_full:
+[33633][      debug]   minor_words: 1.52728e+07
+[33633][      debug]   promoted_words: 1.81907e+06
+[33633][      debug]   major_words: 1.93279e+06
+[33633][      debug]   minor_collections: 36
+[33633][      debug]   major_collections: 8
+[33633][      debug]   compactions: 1
+[33633][      debug]   top_heap_words: 2026496
+[33633][      debug]   
+[33633][environment] Scheduler: file
+[33633][environment] Cores used: 2
+[33633][environment] 
+[33640][environment] CWD = /home/rasofema/Documents/lightdm-gtk-greeter/src
+[33640][environment] No .inferconfig file found
+[33640][environment] Project root = /home/rasofema/Documents/lightdm-gtk-greeter
+[33640][environment] INFER_ARGS =   @/tmp/args.tmp.63de25
+[33640][environment] command line arguments:   gcc -DHAVE_CONFIG_H -I. -I.. -I.. -DHAVE_CONFIG_H
+[33640][environment]                           -DGETTEXT_PACKAGE="lightdm-gtk-greeter"
+[33640][environment]                           -DLOCALEDIR="/usr/local/share/locale"
+[33640][environment]                           -DGREETER_DATA_DIR="/usr/local/share/lightdm-gtk-greeter"
+[33640][environment]                           -DCONFIG_FILE="/usr/local/etc/lightdm/lightdm-gtk-greeter.conf"
+[33640][environment]                           -DINDICATOR_DIR="" -DUNITY_INDICATOR_DIR=""
+[33640][environment]                           -DAYATANA_INDICATOR_DIR=""
+[33640][environment]                           -DSYSTEMD_SERVICE_DIR="/usr/lib/systemd/user"
+[33640][environment]                           -pthread -I/usr/include/gtk-3.0
+[33640][environment]                           -I/usr/include/at-spi2-atk/2.0
+[33640][environment]                           -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0
+[33640][environment]                           -I/usr/lib/x86_64-linux-gnu/dbus-1.0/include
+[33640][environment]                           -I/usr/include/gtk-3.0 -I/usr/include/gio-unix-2.0
+[33640][environment]                           -I/usr/include/cairo -I/usr/include/pango-1.0
+[33640][environment]                           -I/usr/include/harfbuzz -I/usr/include/pango-1.0
+[33640][environment]                           -I/usr/include/fribidi -I/usr/include/harfbuzz
+[33640][environment]                           -I/usr/include/atk-1.0 -I/usr/include/cairo
+[33640][environment]                           -I/usr/include/pixman-1 -I/usr/include/uuid
+[33640][environment]                           -I/usr/include/freetype2
+[33640][environment]                           -I/usr/include/gdk-pixbuf-2.0
+[33640][environment]                           -I/usr/include/libpng16
+[33640][environment]                           -I/usr/include/x86_64-linux-gnu
+[33640][environment]                           -I/usr/include/libmount -I/usr/include/blkid
+[33640][environment]                           -I/usr/include/glib-2.0
+[33640][environment]                           -I/usr/lib/x86_64-linux-gnu/glib-2.0/include
+[33640][environment]                           -pthread -I/usr/include/glib-2.0
+[33640][environment]                           -I/usr/lib/x86_64-linux-gnu/glib-2.0/include
+[33640][environment]                           -pthread -I/usr/include/lightdm-gobject-1
+[33640][environment]                           -I/usr/include/gio-unix-2.0 -I/usr/include/libmount
+[33640][environment]                           -I/usr/include/blkid -I/usr/include/glib-2.0
+[33640][environment]                           -I/usr/lib/x86_64-linux-gnu/glib-2.0/include
+[33640][environment]                           -I/usr/include/libxml2 -g -O2 -MT
+[33640][environment]                           lightdm_gtk_greeter-greetermenubar.o -MD -MP -MF
+[33640][environment]                           .deps/lightdm_gtk_greeter-greetermenubar.Tpo -c -o
+[33640][environment]                           lightdm_gtk_greeter-greetermenubar.o
+[33640][environment]                           greetermenubar.c
+[33640][environment] Available memory at startup: 4955 MB
+[33640][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[33640][      debug] 
+[33640][      debug] *** Beginning capture of file /home/rasofema/Documents/lightdm-gtk-greeter/src/greetermenubar.c ***
+[33640][      debug] Loading the following linters files: /opt/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[33640][      debug] src/greetermenubar.c:17:1: ERROR translating statement 'DeclStmt'
+[33640][      debug] Aborting translation of method 'greeter_menu_bar_get_type' in file 'src/greetermenubar.c'
+[33640][      debug] Unimplemented feature:
+[33640][      debug]   In DeclStmt found an unknown declaration type <"StaticAssertDecl":({"pointer":112392,"source_range":({"file":"/home/rasofema/Documents/lightdm-gtk-greeter/src/greetermenubar.c","line":17,"column":1},{"file":"/home/rasofema/Documents/lightdm-gtk-greeter/src/greetermenubar.c","line":17,"column":1})})>
+[33640][      debug] src/greetermenubar.c:17:1: ERROR translating statement 'DeclStmt'
+[33640][      debug] Aborting translation of method 'greeter_menu_bar_get_type' in file 'src/greetermenubar.c'
+[33640][      debug] Unimplemented feature:
+[33640][      debug]   In DeclStmt found an unknown declaration type <"StaticAssertDecl":({"pointer":112392,"source_range":({"file":"/home/rasofema/Documents/lightdm-gtk-greeter/src/greetermenubar.c","line":17,"column":1},{"file":"/home/rasofema/Documents/lightdm-gtk-greeter/src/greetermenubar.c","line":17,"column":1})})>
+[33640][      debug] src/greetermenubar.c:17:1: ERROR translating statement 'DeclStmt'
+[33640][      debug] Aborting translation of method 'greeter_menu_bar_get_type' in file 'src/greetermenubar.c'
+[33640][      debug] Unimplemented feature:
+[33640][      debug]   In DeclStmt found an unknown declaration type <"StaticAssertDecl":({"pointer":112392,"source_range":({"file":"/home/rasofema/Documents/lightdm-gtk-greeter/src/greetermenubar.c","line":17,"column":1},{"file":"/home/rasofema/Documents/lightdm-gtk-greeter/src/greetermenubar.c","line":17,"column":1})})>
+[33640][      debug] Elapsed: 1.528s.
+[33640][      debug] GC stats for capture:
+[33640][      debug]   minor_words: 6.6885e+07
+[33640][      debug]   promoted_words: 8.40862e+06
+[33640][      debug]   major_words: 8.81783e+06
+[33640][      debug]   minor_collections: 70
+[33640][      debug]   major_collections: 10
+[33640][      debug]   compactions: 0
+[33640][      debug]   top_heap_words: 9432576
+[33640][      debug]   
+[33640][      debug] GC stats for main_process_full:
+[33640][      debug]   minor_words: 6.83167e+07
+[33640][      debug]   promoted_words: 8.57818e+06
+[33640][      debug]   major_words: 9.00804e+06
+[33640][      debug]   minor_collections: 90
+[33640][      debug]   major_collections: 15
+[33640][      debug]   compactions: 1
+[33640][      debug]   top_heap_words: 9432576
+[33640][      debug]   
+[33640][environment] Scheduler: file
+[33640][environment] Cores used: 2
+[33640][environment] 
+[33647][environment] CWD = /home/rasofema/Documents/lightdm-gtk-greeter/src
+[33647][environment] No .inferconfig file found
+[33647][environment] Project root = /home/rasofema/Documents/lightdm-gtk-greeter
+[33647][environment] INFER_ARGS =   @/tmp/args.tmp.f2691c
+[33647][environment] command line arguments:   gcc -DHAVE_CONFIG_H -I. -I.. -I.. -DHAVE_CONFIG_H
+[33647][environment]                           -DGETTEXT_PACKAGE="lightdm-gtk-greeter"
+[33647][environment]                           -DLOCALEDIR="/usr/local/share/locale"
+[33647][environment]                           -DGREETER_DATA_DIR="/usr/local/share/lightdm-gtk-greeter"
+[33647][environment]                           -DCONFIG_FILE="/usr/local/etc/lightdm/lightdm-gtk-greeter.conf"
+[33647][environment]                           -DINDICATOR_DIR="" -DUNITY_INDICATOR_DIR=""
+[33647][environment]                           -DAYATANA_INDICATOR_DIR=""
+[33647][environment]                           -DSYSTEMD_SERVICE_DIR="/usr/lib/systemd/user"
+[33647][environment]                           -pthread -I/usr/include/gtk-3.0
+[33647][environment]                           -I/usr/include/at-spi2-atk/2.0
+[33647][environment]                           -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0
+[33647][environment]                           -I/usr/lib/x86_64-linux-gnu/dbus-1.0/include
+[33647][environment]                           -I/usr/include/gtk-3.0 -I/usr/include/gio-unix-2.0
+[33647][environment]                           -I/usr/include/cairo -I/usr/include/pango-1.0
+[33647][environment]                           -I/usr/include/harfbuzz -I/usr/include/pango-1.0
+[33647][environment]                           -I/usr/include/fribidi -I/usr/include/harfbuzz
+[33647][environment]                           -I/usr/include/atk-1.0 -I/usr/include/cairo
+[33647][environment]                           -I/usr/include/pixman-1 -I/usr/include/uuid
+[33647][environment]                           -I/usr/include/freetype2
+[33647][environment]                           -I/usr/include/gdk-pixbuf-2.0
+[33647][environment]                           -I/usr/include/libpng16
+[33647][environment]                           -I/usr/include/x86_64-linux-gnu
+[33647][environment]                           -I/usr/include/libmount -I/usr/include/blkid
+[33647][environment]                           -I/usr/include/glib-2.0
+[33647][environment]                           -I/usr/lib/x86_64-linux-gnu/glib-2.0/include
+[33647][environment]                           -pthread -I/usr/include/glib-2.0
+[33647][environment]                           -I/usr/lib/x86_64-linux-gnu/glib-2.0/include
+[33647][environment]                           -pthread -I/usr/include/lightdm-gobject-1
+[33647][environment]                           -I/usr/include/gio-unix-2.0 -I/usr/include/libmount
+[33647][environment]                           -I/usr/include/blkid -I/usr/include/glib-2.0
+[33647][environment]                           -I/usr/lib/x86_64-linux-gnu/glib-2.0/include
+[33647][environment]                           -I/usr/include/libxml2 -g -O2 -MT
+[33647][environment]                           lightdm_gtk_greeter-greeterdeprecated.o -MD -MP -MF
+[33647][environment]                           .deps/lightdm_gtk_greeter-greeterdeprecated.Tpo -c
+[33647][environment]                           -o lightdm_gtk_greeter-greeterdeprecated.o
+[33647][environment]                           greeterdeprecated.c
+[33647][environment] Available memory at startup: 4949 MB
+[33647][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[33647][      debug] 
+[33647][      debug] *** Beginning capture of file /home/rasofema/Documents/lightdm-gtk-greeter/src/greeterdeprecated.c ***
+[33647][      debug] Loading the following linters files: /opt/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[33647][      debug] Elapsed: 1.487s.
+[33647][      debug] GC stats for capture:
+[33647][      debug]   minor_words: 6.49865e+07
+[33647][      debug]   promoted_words: 8.26881e+06
+[33647][      debug]   major_words: 8.67055e+06
+[33647][      debug]   minor_collections: 68
+[33647][      debug]   major_collections: 10
+[33647][      debug]   compactions: 0
+[33647][      debug]   top_heap_words: 9432576
+[33647][      debug]   
+[33647][      debug] GC stats for main_process_full:
+[33647][      debug]   minor_words: 6.64182e+07
+[33647][      debug]   promoted_words: 8.43837e+06
+[33647][      debug]   major_words: 8.86076e+06
+[33647][      debug]   minor_collections: 88
+[33647][      debug]   major_collections: 15
+[33647][      debug]   compactions: 1
+[33647][      debug]   top_heap_words: 9432576
+[33647][      debug]   
+[33647][environment] Scheduler: file
+[33647][environment] Cores used: 2
+[33647][environment] 
+[33686][environment] CWD = /home/rasofema/Documents/lightdm-gtk-greeter/src
+[33686][environment] No .inferconfig file found
+[33686][environment] Project root = /home/rasofema/Documents/lightdm-gtk-greeter
+[33686][environment] INFER_ARGS =   @/tmp/args.tmp.7c2be2
+[33686][environment] command line arguments:   gcc -pthread -I/usr/include/gtk-3.0
+[33686][environment]                           -I/usr/include/at-spi2-atk/2.0
+[33686][environment]                           -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0
+[33686][environment]                           -I/usr/lib/x86_64-linux-gnu/dbus-1.0/include
+[33686][environment]                           -I/usr/include/gtk-3.0 -I/usr/include/gio-unix-2.0
+[33686][environment]                           -I/usr/include/cairo -I/usr/include/pango-1.0
+[33686][environment]                           -I/usr/include/harfbuzz -I/usr/include/pango-1.0
+[33686][environment]                           -I/usr/include/fribidi -I/usr/include/harfbuzz
+[33686][environment]                           -I/usr/include/atk-1.0 -I/usr/include/cairo
+[33686][environment]                           -I/usr/include/pixman-1 -I/usr/include/uuid
+[33686][environment]                           -I/usr/include/freetype2
+[33686][environment]                           -I/usr/include/gdk-pixbuf-2.0
+[33686][environment]                           -I/usr/include/libpng16
+[33686][environment]                           -I/usr/include/x86_64-linux-gnu
+[33686][environment]                           -I/usr/include/libmount -I/usr/include/blkid
+[33686][environment]                           -I/usr/include/glib-2.0
+[33686][environment]                           -I/usr/lib/x86_64-linux-gnu/glib-2.0/include
+[33686][environment]                           -pthread -I/usr/include/glib-2.0
+[33686][environment]                           -I/usr/lib/x86_64-linux-gnu/glib-2.0/include
+[33686][environment]                           -pthread -I/usr/include/lightdm-gobject-1
+[33686][environment]                           -I/usr/include/gio-unix-2.0 -I/usr/include/libmount
+[33686][environment]                           -I/usr/include/blkid -I/usr/include/glib-2.0
+[33686][environment]                           -I/usr/lib/x86_64-linux-gnu/glib-2.0/include
+[33686][environment]                           -I/usr/include/libxml2 -g -O2 -o
+[33686][environment]                           lightdm-gtk-greeter
+[33686][environment]                           lightdm_gtk_greeter-lightdm-gtk-greeter.o
+[33686][environment]                           lightdm_gtk_greeter-greeterbackground.o
+[33686][environment]                           lightdm_gtk_greeter-greeteruserimage.o
+[33686][environment]                           lightdm_gtk_greeter-greeterconfiguration.o
+[33686][environment]                           lightdm_gtk_greeter-greetermenubar.o
+[33686][environment]                           lightdm_gtk_greeter-greeterdeprecated.o
+[33686][environment]                           -Wl,--export-dynamic -pthread -lgtk-3 -lgdk-3
+[33686][environment]                           -lpangocairo-1.0 -lpango-1.0 -lharfbuzz -latk-1.0
+[33686][environment]                           -lcairo-gobject -lcairo -lgdk_pixbuf-2.0 -lgio-2.0
+[33686][environment]                           -lgobject-2.0 -lgmodule-2.0 -lglib-2.0
+[33686][environment]                           -llightdm-gobject-1 -lX11 -lm -pthread
+[33686][environment] Available memory at startup: 4940 MB
+[33686][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[33686][      debug] GC stats for capture:
+[33686][      debug]   minor_words: 11921
+[33686][      debug]   promoted_words: 0
+[33686][      debug]   major_words: 0
+[33686][      debug]   minor_collections: 0
+[33686][      debug]   major_collections: 0
+[33686][      debug]   compactions: 0
+[33686][      debug]   top_heap_words: 188416
+[33686][      debug]   
+[33686][      debug] GC stats for main_process_full:
+[33686][      debug]   minor_words: 1.44374e+06
+[33686][      debug]   promoted_words: 169573
+[33686][      debug]   major_words: 190225
+[33686][      debug]   minor_collections: 20
+[33686][      debug]   major_collections: 5
+[33686][      debug]   compactions: 1
+[33686][      debug]   top_heap_words: 188416
+[33686][      debug]   
+[33686][environment] Scheduler: file
+[33686][environment] Cores used: 2
+[33686][environment] [33582][      debug] GC stats for capture:
+[33582][      debug]   minor_words: 1530
+[33582][      debug]   promoted_words: 0
+[33582][      debug]   major_words: 0
+[33582][      debug]   minor_collections: 0
+[33582][      debug]   major_collections: 0
+[33582][      debug]   compactions: 0
+[33582][      debug]   top_heap_words: 760832
+[33582][      debug]   
+[33582][environment] Parallel jobs: 2
+[33582][   progress] Found 6 source files to analyze in /home/rasofema/Documents/lightdm-gtk-greeter/infer-out
+[33695][   progress] src/greeteruserimage.c starting
+[33694][   progress] src/greetermenubar.c starting
+[33694][   progress] src/greetermenubar.c DONE
+[33694][   progress] src/greeterconfiguration.c starting
+[33695][   progress] src/greeteruserimage.c DONE
+[33695][   progress] src/lightdm-gtk-greeter.c starting
+[33694][   progress] src/greeterconfiguration.c DONE
+[33694][   progress] src/greeterbackground.c starting
+[33694][   progress] src/greeterbackground.c DONE
+[33694][   progress] src/greeterdeprecated.c starting
+[33694][   progress] src/greeterdeprecated.c DONE
+[33695][   progress] src/lightdm-gtk-greeter.c DONE
+[33582][      debug] Backend stats:
+[33582][      debug]   summary_file_try_load= 21954
+[33582][      debug]   summary_read_from_disk= 34
+[33582][      debug]   summary_cache_hits= 7973 (26%)
+[33582][      debug]   summary_cache_misses= 21954
+[33582][      debug]   ondemand_procs_analyzed= 219
+[33582][      debug]   ondemand_local_cache_hits= 12121 (93%)
+[33582][      debug]   ondemand_local_cache_misses= 777
+[33582][      debug]   proc_locker_lock_time_user= 0.00000000
+[33582][      debug]   proc_locker_lock_time_sys= 0.00000000
+[33582][      debug]   proc_locker_lock_time_wall= 0.00000000
+[33582][      debug]   proc_locker_unlock_time_user= 0.00000000
+[33582][      debug]   proc_locker_unlock_time_sys= 0.00000000
+[33582][      debug]   proc_locker_unlock_time_wall= 0.00000000
+[33582][      debug]   restart_scheduler_useful_time_user= 0.00000000
+[33582][      debug]   restart_scheduler_useful_time_sys= 0.00000000
+[33582][      debug]   restart_scheduler_useful_time_wall= 0.00000000
+[33582][      debug]   restart_scheduler_total_time_user= 0.00000000
+[33582][      debug]   restart_scheduler_total_time_sys= 0.00000000
+[33582][      debug]   restart_scheduler_total_time_wall= 0.00000000
+[33582][      debug]   
+[33582][      debug] GC stats for backend_stats.gc_stats_add.:
+[33582][      debug]   minor_words: 7.42753e+09
+[33582][      debug]   promoted_words: 4.63252e+07
+[33582][      debug]   major_words: 5.77967e+07
+[33582][      debug]   minor_collections: 7133
+[33582][      debug]   major_collections: 114
+[33582][      debug]   compactions: 0
+[33582][      debug]   top_heap_words: 6165504
+[33582][      debug]   
+[33582][      debug] GC stats for backend_stats.gc_stats_max.:
+[33582][      debug]   minor_words: 5.3205e+09
+[33582][      debug]   promoted_words: 3.11921e+07
+[33582][      debug]   major_words: 3.76125e+07
+[33582][      debug]   minor_collections: 5104
+[33582][      debug]   major_collections: 70
+[33582][      debug]   compactions: 0
+[33582][      debug]   top_heap_words: 3082752
+[33582][      debug]   
+[33582][      debug] Average over 2 processes
+[33582][      debug] GC stats for backend_stats.gc_stats_average.:
+[33582][      debug]   minor_words: 3.71376e+09
+[33582][      debug]   promoted_words: 2.31626e+07
+[33582][      debug]   major_words: 2.88983e+07
+[33582][      debug]   minor_collections: 3566
+[33582][      debug]   major_collections: 57
+[33582][      debug]   compactions: 0
+[33582][      debug]   top_heap_words: 3082752
+[33582][      debug]   
+[33582][      debug] Analysis phase finished in 14.547s
+[33582][      debug] backend_stats.scheduler_process_analysis_time_user= 0.10933300
+[33582][      debug] backend_stats.scheduler_process_analysis_time_sys= 0.02834700
+[33582][      debug] backend_stats.scheduler_process_analysis_time_wall= 14.54657316
+[33582][      debug] GC stats for analysis_scheduler:
+[33582][      debug]   minor_words: 9.0396e+06
+[33582][      debug]   promoted_words: 157228
+[33582][      debug]   major_words: 165934
+[33582][      debug]   minor_collections: 11
+[33582][      debug]   major_collections: 4
+[33582][      debug]   compactions: 1
+[33582][      debug]   top_heap_words: 875008
+[33582][      debug]   
+[33582][      debug] GC stats for report:
+[33582][      debug]   minor_words: 177417
+[33582][      debug]   promoted_words: 0
+[33582][      debug]   major_words: 821
+[33582][      debug]   minor_collections: 0
+[33582][      debug]   major_collections: 0
+[33582][      debug]   compactions: 0
+[33582][      debug]   top_heap_words: 875008
+[33582][      debug]   
+[33582][      debug] GC stats for main_process_full:
+[33582][      debug]   minor_words: 1.08931e+07
+[33582][      debug]   promoted_words: 325777
+[33582][      debug]   major_words: 861345
+[33582][      debug]   minor_collections: 30
+[33582][      debug]   major_collections: 9
+[33582][      debug]   compactions: 2
+[33582][      debug]   top_heap_words: 875008
+[33582][      debug]   
+[33587][      debug] Sqlite write daemon: terminating

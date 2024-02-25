@@ -1,0 +1,677 @@
+[16007][      debug] Loading models took 191ms
+[16008][      debug] Sqlite write daemon: starting up
+[16008][      debug] Sqlite write daemon: set up complete, waiting for connections
+[16007][environment] CWD = /home/rasofema/Documents/spray
+[16007][environment] No .inferconfig file found
+[16007][environment] Project root = /home/rasofema/Documents/spray
+[16007][environment] INFER_ARGS =   @/tmp/args.tmp.7749ea
+[16007][environment] command line arguments:   infer run --compilation-database
+[16007][environment]                           compile_commands.json
+[16007][environment] Available memory at startup: 5241 MB
+[16007][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[16007][environment] Scheduler: file
+[16007][environment] Cores used: 2
+[16007][environment] Infer version v1.1.0
+[16007][environment] Copyright 2009 - present Facebook. All Rights Reserved.
+[16007][environment] 
+[16007][   progress] Capturing using compilation database...
+[16007][      debug] parsing compilation database from /home/rasofema/Documents/spray/compile_commands.json
+[16007][      debug] created database with 15 entries
+[16007][      debug] Starting linting, translating 15 files
+[16007][      debug] 
+[16007][   progress] Starting linting, translating 15 files
+[16007][   progress] 
+
+
+[16012][environment] CWD = /home/rasofema/Documents/spray
+[16012][environment] No .inferconfig file found
+[16012][environment] Project root = /home/rasofema/Documents/spray
+[16012][environment] INFER_ARGS =   @/tmp/args.tmp.910b9e
+[16012][environment] command line arguments:   /opt/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/wrappers/clang
+[16012][environment]                           @/home/rasofema/Documents/spray/infer-out/tmp/cdb_clang_args.tmp.7d839f.txt
+[16012][environment]                           -fsyntax-only
+[16012][environment] Available memory at startup: 5169 MB
+[16012][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+
+[16011][environment] CWD = /home/rasofema/Documents/spray
+[16011][environment] No .inferconfig file found
+[16011][environment] Project root = /home/rasofema/Documents/spray
+[16011][environment] INFER_ARGS =   @/tmp/args.tmp.fba48b
+[16011][environment] command line arguments:   /opt/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/wrappers/clang
+[16011][environment]                           @/home/rasofema/Documents/spray/infer-out/tmp/cdb_clang_args.tmp.0f6c0d.txt
+[16011][environment]                           -fsyntax-only
+[16011][environment] Available memory at startup: 5167 MB
+[16011][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[16012][      debug] 
+[16012][      debug] *** Beginning capture of file /home/rasofema/Documents/spray/dependencies/hashmap.c/hashmap.c ***
+[16012][      debug] Loading the following linters files: /opt/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[16012][      debug] Elapsed: 158ms.
+[16012][      debug] GC stats for capture:
+[16012][      debug]   minor_words: 9.71803e+06
+[16012][      debug]   promoted_words: 820769
+[16012][      debug]   major_words: 876614
+[16012][      debug]   minor_collections: 12
+[16012][      debug]   major_collections: 2
+[16012][      debug]   compactions: 0
+[16012][      debug]   top_heap_words: 1006592
+[16012][      debug]   
+[16012][      debug] GC stats for main_process_full:
+[16012][      debug]   minor_words: 1.11291e+07
+[16012][      debug]   promoted_words: 989354
+[16012][      debug]   major_words: 1.06585e+06
+[16012][      debug]   minor_collections: 31
+[16012][      debug]   major_collections: 7
+[16012][      debug]   compactions: 1
+[16012][      debug]   top_heap_words: 1006592
+[16012][      debug]   
+[16012][environment] Scheduler: file
+[16012][environment] Cores used: 2
+[16012][environment] [16011][      debug] 
+[16011][      debug] *** Beginning capture of file /home/rasofema/Documents/spray/dependencies/linenoise/linenoise.c ***
+[16011][      debug] Loading the following linters files: /opt/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[16011][      debug] Elapsed: 200ms.
+[16011][      debug] GC stats for capture:
+[16011][      debug]   minor_words: 1.10103e+07
+[16011][      debug]   promoted_words: 911654
+[16011][      debug]   major_words: 974659
+[16011][      debug]   minor_collections: 14
+[16011][      debug]   major_collections: 2
+[16011][      debug]   compactions: 0
+[16011][      debug]   top_heap_words: 1157632
+[16011][      debug]   
+[16011][      debug] GC stats for main_process_full:
+[16011][      debug]   minor_words: 1.24214e+07
+[16011][      debug]   promoted_words: 1.08024e+06
+[16011][      debug]   major_words: 1.1639e+06
+[16011][      debug]   minor_collections: 33
+[16011][      debug]   major_collections: 7
+[16011][      debug]   compactions: 1
+[16011][      debug]   top_heap_words: 1157632
+[16011][      debug]   
+[16011][environment] Scheduler: file
+[16011][environment] Cores used: 2
+[16011][environment] 
+[16021][environment] CWD = /home/rasofema/Documents/spray
+[16021][environment] No .inferconfig file found
+[16021][environment] Project root = /home/rasofema/Documents/spray
+[16021][environment] INFER_ARGS =   @/tmp/args.tmp.8cd7ce
+[16021][environment] command line arguments:   /opt/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/wrappers/clang
+[16021][environment]                           @/home/rasofema/Documents/spray/infer-out/tmp/cdb_clang_args.tmp.0f63e2.txt
+[16021][environment]                           -fsyntax-only
+[16021][environment] Available memory at startup: 5181 MB
+[16021][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+
+[16022][environment] CWD = /home/rasofema/Documents/spray
+[16022][environment] No .inferconfig file found
+[16022][environment] Project root = /home/rasofema/Documents/spray
+[16022][environment] INFER_ARGS =   @/tmp/args.tmp.36869c
+[16022][environment] command line arguments:   /opt/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/wrappers/clang
+[16022][environment]                           @/home/rasofema/Documents/spray/infer-out/tmp/cdb_clang_args.tmp.a51d86.txt
+[16022][environment]                           -fsyntax-only
+[16022][environment] Available memory at startup: 5158 MB
+[16022][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[16021][      debug] 
+[16021][      debug] *** Beginning capture of file /home/rasofema/Documents/spray/src/args.c ***
+[16021][      debug] Loading the following linters files: /opt/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[16021][      debug] Elapsed: 61.377ms.
+[16021][      debug] GC stats for capture:
+[16021][      debug]   minor_words: 2.46122e+06
+[16021][      debug]   promoted_words: 369117
+[16021][      debug]   major_words: 388047
+[16021][      debug]   minor_collections: 5
+[16021][      debug]   major_collections: 0
+[16021][      debug]   compactions: 0
+[16021][      debug]   top_heap_words: 574976
+[16021][      debug]   
+[16021][      debug] GC stats for main_process_full:
+[16021][      debug]   minor_words: 3.87229e+06
+[16021][      debug]   promoted_words: 537702
+[16021][      debug]   major_words: 577284
+[16021][      debug]   minor_collections: 24
+[16021][      debug]   major_collections: 5
+[16021][      debug]   compactions: 1
+[16021][      debug]   top_heap_words: 574976
+[16021][      debug]   
+[16021][environment] Scheduler: file
+[16021][environment] Cores used: 2
+[16021][environment] [16022][      debug] 
+[16022][      debug] *** Beginning capture of file /home/rasofema/Documents/spray/src/backtrace.c ***
+[16022][      debug] Loading the following linters files: /opt/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[16022][      debug] Elapsed: 78.69ms.
+[16022][      debug] GC stats for capture:
+[16022][      debug]   minor_words: 2.95534e+06
+[16022][      debug]   promoted_words: 436250
+[16022][      debug]   major_words: 456819
+[16022][      debug]   minor_collections: 6
+[16022][      debug]   major_collections: 1
+[16022][      debug]   compactions: 0
+[16022][      debug]   top_heap_words: 661504
+[16022][      debug]   
+[16022][      debug] GC stats for main_process_full:
+[16022][      debug]   minor_words: 4.36642e+06
+[16022][      debug]   promoted_words: 604835
+[16022][      debug]   major_words: 646056
+[16022][      debug]   minor_collections: 25
+[16022][      debug]   major_collections: 6
+[16022][      debug]   compactions: 1
+[16022][      debug]   top_heap_words: 661504
+[16022][      debug]   
+[16022][environment] Scheduler: file
+[16022][environment] Cores used: 2
+[16022][environment] 
+[16031][environment] CWD = /home/rasofema/Documents/spray
+[16031][environment] No .inferconfig file found
+[16031][environment] Project root = /home/rasofema/Documents/spray
+[16031][environment] INFER_ARGS =   @/tmp/args.tmp.e79a08
+[16031][environment] command line arguments:   /opt/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/wrappers/clang
+[16031][environment]                           @/home/rasofema/Documents/spray/infer-out/tmp/cdb_clang_args.tmp.42a09e.txt
+[16031][environment]                           -fsyntax-only
+[16031][environment] Available memory at startup: 5157 MB
+[16031][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+
+[16032][environment] CWD = /home/rasofema/Documents/spray
+[16032][environment] No .inferconfig file found
+[16032][environment] Project root = /home/rasofema/Documents/spray
+[16032][environment] INFER_ARGS =   @/tmp/args.tmp.582446
+[16032][environment] command line arguments:   /opt/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/wrappers/clang
+[16032][environment]                           @/home/rasofema/Documents/spray/infer-out/tmp/cdb_clang_args.tmp.91f970.txt
+[16032][environment]                           -fsyntax-only
+[16032][environment] Available memory at startup: 5157 MB
+[16032][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[16031][      debug] 
+[16031][      debug] *** Beginning capture of file /home/rasofema/Documents/spray/src/breakpoints.c ***
+[16031][      debug] Loading the following linters files: /opt/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[16031][      debug] Elapsed: 76.378ms.
+[16031][      debug] GC stats for capture:
+[16031][      debug]   minor_words: 3.21494e+06
+[16031][      debug]   promoted_words: 452973
+[16031][      debug]   major_words: 473023
+[16031][      debug]   minor_collections: 6
+[16031][      debug]   major_collections: 1
+[16031][      debug]   compactions: 0
+[16031][      debug]   top_heap_words: 661504
+[16031][      debug]   
+[16031][      debug] GC stats for main_process_full:
+[16031][      debug]   minor_words: 4.62602e+06
+[16031][      debug]   promoted_words: 621558
+[16031][      debug]   major_words: 662260
+[16031][      debug]   minor_collections: 25
+[16031][      debug]   major_collections: 6
+[16031][      debug]   compactions: 1
+[16031][      debug]   top_heap_words: 661504
+[16031][      debug]   
+[16031][environment] Scheduler: file
+[16031][environment] Cores used: 2
+[16031][environment] 
+[16041][environment] CWD = /home/rasofema/Documents/spray
+[16041][environment] No .inferconfig file found
+[16041][environment] Project root = /home/rasofema/Documents/spray
+[16041][environment] INFER_ARGS =   @/tmp/args.tmp.e3b0b2
+[16041][environment] command line arguments:   /opt/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/wrappers/clang
+[16041][environment]                           @/home/rasofema/Documents/spray/infer-out/tmp/cdb_clang_args.tmp.84ce87.txt
+[16041][environment]                           -fsyntax-only
+[16041][environment] Available memory at startup: 5155 MB
+[16041][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[16041][      debug] 
+[16041][      debug] *** Beginning capture of file /home/rasofema/Documents/spray/src/history.c ***
+[16041][      debug] Loading the following linters files: /opt/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[16041][      debug] Elapsed: 62.31ms.
+[16041][      debug] GC stats for capture:
+[16041][      debug]   minor_words: 2.15989e+06
+[16041][      debug]   promoted_words: 331139
+[16041][      debug]   major_words: 347734
+[16041][      debug]   minor_collections: 4
+[16041][      debug]   major_collections: 0
+[16041][      debug]   compactions: 0
+[16041][      debug]   top_heap_words: 574976
+[16041][      debug]   
+[16041][      debug] GC stats for main_process_full:
+[16041][      debug]   minor_words: 3.57097e+06
+[16041][      debug]   promoted_words: 499724
+[16041][      debug]   major_words: 536971
+[16041][      debug]   minor_collections: 23
+[16041][      debug]   major_collections: 5
+[16041][      debug]   compactions: 1
+[16041][      debug]   top_heap_words: 574976
+[16041][      debug]   
+[16041][environment] Scheduler: file
+[16041][environment] Cores used: 2
+[16041][environment] 
+[16046][environment] CWD = /home/rasofema/Documents/spray
+[16046][environment] No .inferconfig file found
+[16046][environment] Project root = /home/rasofema/Documents/spray
+[16046][environment] INFER_ARGS =   @/tmp/args.tmp.cab7a6
+[16046][environment] command line arguments:   /opt/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/wrappers/clang
+[16046][environment]                           @/home/rasofema/Documents/spray/infer-out/tmp/cdb_clang_args.tmp.68571c.txt
+[16046][environment]                           -fsyntax-only
+[16046][environment] Available memory at startup: 5143 MB
+[16046][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[16032][      debug] 
+[16032][      debug] *** Beginning capture of file /home/rasofema/Documents/spray/src/debugger.c ***
+[16032][      debug] Loading the following linters files: /opt/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[16032][      debug] src/debugger.c:1080:3-1081:23: ERROR translating statement 'DeclStmt'
+[16032][      debug] Aborting translation of method 'get_command_tokens' in file 'src/debugger.c'
+[16032][      debug] Unimplemented feature:
+[16032][      debug]   In DeclStmt found an unknown declaration type <"EnumDecl":({"pointer":9906,"source_range":({"file":"/home/rasofema/Documents/spray/src/debugger.c","line":1080,"column":3},{"file":"/home/rasofema/Documents/spray/src/debugger.c","line":1081,"column":22})},{"name":"","qual_name":["anonymous_enum_src/debugger.c:1080:3","get_command_tokens"]},9907,[<"EnumConstantDecl":({"pointer":9908,"source_range":({"file":"/home/rasofema/Documents/spray/src/debugger.c","line":1081,"column":5},{"file":"/home/rasofema/Documents/spray/src/debugger.c","line":1081,"column":20}),"is_this_declaration_referenced":true},{"name":"TOKENS_ALLOC","qual_name":["TOKENS_ALLOC","anonymous_enum_src/debugger.c:1080:3","get_command_tokens"]},{"type_ptr":23},{"init_expr":<"ConstantExpr":({"pointer":9909,"source_range":({"file":"/home/rasofema/Documents/spray/src/debugger.c","line":1081,"column":20},{"file":"/home/rasofema/Documents/spray/src/debugger.c","line":1081,"column":20})},[<"IntegerLiteral":({"pointer":9910,"source_range":({"file":"/home/rasofema/Documents/spray/src/debugger.c","line":1081,"column":20},{"file":"/home/rasofema/Documents/spray/src/debugger.c","line":1081,"column":20})},[],{"qual_type":{"type_ptr":23}},{"is_signed":true,"bitwidth":32,"value":"8"})>],{"qual_type":{"type_ptr":23}})>})>],{},<"TTK_Enum">,{})>
+[16032][      debug] src/debugger.c:1080:3-1081:23: ERROR translating statement 'DeclStmt'
+[16032][      debug] Aborting translation of method 'get_command_tokens' in file 'src/debugger.c'
+[16032][      debug] Unimplemented feature:
+[16032][      debug]   In DeclStmt found an unknown declaration type <"EnumDecl":({"pointer":9906,"source_range":({"file":"/home/rasofema/Documents/spray/src/debugger.c","line":1080,"column":3},{"file":"/home/rasofema/Documents/spray/src/debugger.c","line":1081,"column":22})},{"name":"","qual_name":["anonymous_enum_src/debugger.c:1080:3","get_command_tokens"]},9907,[<"EnumConstantDecl":({"pointer":9908,"source_range":({"file":"/home/rasofema/Documents/spray/src/debugger.c","line":1081,"column":5},{"file":"/home/rasofema/Documents/spray/src/debugger.c","line":1081,"column":20}),"is_this_declaration_referenced":true},{"name":"TOKENS_ALLOC","qual_name":["TOKENS_ALLOC","anonymous_enum_src/debugger.c:1080:3","get_command_tokens"]},{"type_ptr":23},{"init_expr":<"ConstantExpr":({"pointer":9909,"source_range":({"file":"/home/rasofema/Documents/spray/src/debugger.c","line":1081,"column":20},{"file":"/home/rasofema/Documents/spray/src/debugger.c","line":1081,"column":20})},[<"IntegerLiteral":({"pointer":9910,"source_range":({"file":"/home/rasofema/Documents/spray/src/debugger.c","line":1081,"column":20},{"file":"/home/rasofema/Documents/spray/src/debugger.c","line":1081,"column":20})},[],{"qual_type":{"type_ptr":23}},{"is_signed":true,"bitwidth":32,"value":"8"})>],{"qual_type":{"type_ptr":23}})>})>],{},<"TTK_Enum">,{})>
+[16032][      debug] src/debugger.c:1080:3-1081:23: ERROR translating statement 'DeclStmt'
+[16032][      debug] Aborting translation of method 'get_command_tokens' in file 'src/debugger.c'
+[16032][      debug] Unimplemented feature:
+[16032][      debug]   In DeclStmt found an unknown declaration type <"EnumDecl":({"pointer":9906,"source_range":({"file":"/home/rasofema/Documents/spray/src/debugger.c","line":1080,"column":3},{"file":"/home/rasofema/Documents/spray/src/debugger.c","line":1081,"column":22})},{"name":"","qual_name":["anonymous_enum_src/debugger.c:1080:3","get_command_tokens"]},9907,[<"EnumConstantDecl":({"pointer":9908,"source_range":({"file":"/home/rasofema/Documents/spray/src/debugger.c","line":1081,"column":5},{"file":"/home/rasofema/Documents/spray/src/debugger.c","line":1081,"column":20}),"is_this_declaration_referenced":true},{"name":"TOKENS_ALLOC","qual_name":["TOKENS_ALLOC","anonymous_enum_src/debugger.c:1080:3","get_command_tokens"]},{"type_ptr":23},{"init_expr":<"ConstantExpr":({"pointer":9909,"source_range":({"file":"/home/rasofema/Documents/spray/src/debugger.c","line":1081,"column":20},{"file":"/home/rasofema/Documents/spray/src/debugger.c","line":1081,"column":20})},[<"IntegerLiteral":({"pointer":9910,"source_range":({"file":"/home/rasofema/Documents/spray/src/debugger.c","line":1081,"column":20},{"file":"/home/rasofema/Documents/spray/src/debugger.c","line":1081,"column":20})},[],{"qual_type":{"type_ptr":23}},{"is_signed":true,"bitwidth":32,"value":"8"})>],{"qual_type":{"type_ptr":23}})>})>],{},<"TTK_Enum">,{})>
+[16032][      debug] Elapsed: 263ms.
+[16032][      debug] GC stats for capture:
+[16032][      debug]   minor_words: 1.37278e+07
+[16032][      debug]   promoted_words: 1.15475e+06
+[16032][      debug]   major_words: 1.21756e+06
+[16032][      debug]   minor_collections: 17
+[16032][      debug]   major_collections: 3
+[16032][      debug]   compactions: 0
+[16032][      debug]   top_heap_words: 1331712
+[16032][      debug]   
+[16032][      debug] GC stats for main_process_full:
+[16032][      debug]   minor_words: 1.51389e+07
+[16032][      debug]   promoted_words: 1.32334e+06
+[16032][      debug]   major_words: 1.40679e+06
+[16032][      debug]   minor_collections: 36
+[16032][      debug]   major_collections: 8
+[16032][      debug]   compactions: 1
+[16032][      debug]   top_heap_words: 1331712
+[16032][      debug]   
+[16032][environment] Scheduler: file
+[16032][environment] Cores used: 2
+[16032][environment] 
+[16051][environment] CWD = /home/rasofema/Documents/spray
+[16051][environment] No .inferconfig file found
+[16051][environment] Project root = /home/rasofema/Documents/spray
+[16051][environment] INFER_ARGS =   @/tmp/args.tmp.7e9e87
+[16051][environment] command line arguments:   /opt/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/wrappers/clang
+[16051][environment]                           @/home/rasofema/Documents/spray/infer-out/tmp/cdb_clang_args.tmp.ad2773.txt
+[16051][environment]                           -fsyntax-only
+[16051][environment] Available memory at startup: 5148 MB
+[16051][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[16046][      debug] 
+[16046][      debug] *** Beginning capture of file /home/rasofema/Documents/spray/src/info.c ***
+[16046][      debug] Loading the following linters files: /opt/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[16046][      debug] Elapsed: 208ms.
+[16046][      debug] GC stats for capture:
+[16046][      debug]   minor_words: 9.78403e+06
+[16046][      debug]   promoted_words: 1.16372e+06
+[16046][      debug]   major_words: 1.22891e+06
+[16046][      debug]   minor_collections: 12
+[16046][      debug]   major_collections: 2
+[16046][      debug]   compactions: 0
+[16046][      debug]   top_heap_words: 1331712
+[16046][      debug]   
+[16046][      debug] GC stats for main_process_full:
+[16046][      debug]   minor_words: 1.11951e+07
+[16046][      debug]   promoted_words: 1.3323e+06
+[16046][      debug]   major_words: 1.41814e+06
+[16046][      debug]   minor_collections: 31
+[16046][      debug]   major_collections: 7
+[16046][      debug]   compactions: 1
+[16046][      debug]   top_heap_words: 1331712
+[16046][      debug]   
+[16046][environment] Scheduler: file
+[16046][environment] Cores used: 2
+[16046][environment] [16051][      debug] 
+[16051][      debug] *** Beginning capture of file /home/rasofema/Documents/spray/src/magic.c ***
+[16051][      debug] Loading the following linters files: /opt/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[16051][      debug] Elapsed: 150ms.
+[16051][      debug] GC stats for capture:
+[16051][      debug]   minor_words: 6.92806e+06
+[16051][      debug]   promoted_words: 704687
+[16051][      debug]   major_words: 740938
+[16051][      debug]   minor_collections: 9
+[16051][      debug]   major_collections: 1
+[16051][      debug]   compactions: 0
+[16051][      debug]   top_heap_words: 1006592
+[16051][      debug]   
+[16051][      debug] GC stats for main_process_full:
+[16051][      debug]   minor_words: 8.33914e+06
+[16051][      debug]   promoted_words: 873272
+[16051][      debug]   major_words: 930175
+[16051][      debug]   minor_collections: 28
+[16051][      debug]   major_collections: 6
+[16051][      debug]   compactions: 1
+[16051][      debug]   top_heap_words: 1006592
+[16051][      debug]   
+[16051][environment] Scheduler: file
+[16051][environment] Cores used: 2
+[16051][environment] 
+[16056][environment] CWD = /home/rasofema/Documents/spray
+[16056][environment] No .inferconfig file found
+[16056][environment] Project root = /home/rasofema/Documents/spray
+[16056][environment] INFER_ARGS =   @/tmp/args.tmp.04f501
+[16056][environment] command line arguments:   /opt/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/wrappers/clang
+[16056][environment]                           @/home/rasofema/Documents/spray/infer-out/tmp/cdb_clang_args.tmp.dc928e.txt
+[16056][environment]                           -fsyntax-only
+[16056][environment] Available memory at startup: 5162 MB
+[16056][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+
+[16057][environment] CWD = /home/rasofema/Documents/spray
+[16057][environment] No .inferconfig file found
+[16057][environment] Project root = /home/rasofema/Documents/spray
+[16057][environment] INFER_ARGS =   @/tmp/args.tmp.f8537f
+[16057][environment] command line arguments:   /opt/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/wrappers/clang
+[16057][environment]                           @/home/rasofema/Documents/spray/infer-out/tmp/cdb_clang_args.tmp.c23529.txt
+[16057][environment]                           -fsyntax-only
+[16057][environment] Available memory at startup: 5148 MB
+[16057][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[16057][      debug] 
+[16057][      debug] *** Beginning capture of file /home/rasofema/Documents/spray/src/ptrace.c ***
+[16057][      debug] Loading the following linters files: /opt/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[16057][      debug] Elapsed: 61.759ms.
+[16057][      debug] GC stats for capture:
+[16057][      debug]   minor_words: 2.39993e+06
+[16057][      debug]   promoted_words: 397158
+[16057][      debug]   major_words: 416003
+[16057][      debug]   minor_collections: 5
+[16057][      debug]   major_collections: 0
+[16057][      debug]   compactions: 0
+[16057][      debug]   top_heap_words: 661504
+[16057][      debug]   
+[16057][      debug] GC stats for main_process_full:
+[16057][      debug]   minor_words: 3.811e+06
+[16057][      debug]   promoted_words: 565743
+[16057][      debug]   major_words: 605240
+[16057][      debug]   minor_collections: 24
+[16057][      debug]   major_collections: 5
+[16057][      debug]   compactions: 1
+[16057][      debug]   top_heap_words: 661504
+[16057][      debug]   
+[16057][environment] Scheduler: file
+[16057][environment] Cores used: 2
+[16057][environment] 
+[16066][environment] CWD = /home/rasofema/Documents/spray
+[16066][environment] No .inferconfig file found
+[16066][environment] Project root = /home/rasofema/Documents/spray
+[16066][environment] INFER_ARGS =   @/tmp/args.tmp.716d38
+[16066][environment] command line arguments:   /opt/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/wrappers/clang
+[16066][environment]                           @/home/rasofema/Documents/spray/infer-out/tmp/cdb_clang_args.tmp.2359cf.txt
+[16066][environment]                           -fsyntax-only
+[16066][environment] Available memory at startup: 5132 MB
+[16066][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[16056][      debug] 
+[16056][      debug] *** Beginning capture of file /home/rasofema/Documents/spray/src/print_source.c ***
+[16056][      debug] Loading the following linters files: /opt/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[16056][      debug] Elapsed: 186ms.
+[16056][      debug] GC stats for capture:
+[16056][      debug]   minor_words: 6.97659e+06
+[16056][      debug]   promoted_words: 1.2564e+06
+[16056][      debug]   major_words: 1.32129e+06
+[16056][      debug]   minor_collections: 10
+[16056][      debug]   major_collections: 1
+[16056][      debug]   compactions: 0
+[16056][      debug]   top_heap_words: 1531904
+[16056][      debug]   
+[16056][      debug] GC stats for main_process_full:
+[16056][      debug]   minor_words: 8.38767e+06
+[16056][      debug]   promoted_words: 1.42498e+06
+[16056][      debug]   major_words: 1.51053e+06
+[16056][      debug]   minor_collections: 29
+[16056][      debug]   major_collections: 6
+[16056][      debug]   compactions: 1
+[16056][      debug]   top_heap_words: 1531904
+[16056][      debug]   
+[16056][environment] Scheduler: file
+[16056][environment] Cores used: 2
+[16056][environment] 
+[16071][environment] CWD = /home/rasofema/Documents/spray
+[16071][environment] No .inferconfig file found
+[16071][environment] Project root = /home/rasofema/Documents/spray
+[16071][environment] INFER_ARGS =   @/tmp/args.tmp.8e91cd
+[16071][environment] command line arguments:   /opt/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/wrappers/clang
+[16071][environment]                           @/home/rasofema/Documents/spray/infer-out/tmp/cdb_clang_args.tmp.9d4c9d.txt
+[16071][environment]                           -fsyntax-only
+[16071][environment] Available memory at startup: 5143 MB
+[16071][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[16066][      debug] 
+[16066][      debug] *** Beginning capture of file /home/rasofema/Documents/spray/src/registers.c ***
+[16066][      debug] Loading the following linters files: /opt/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[16066][      debug] Elapsed: 73.09ms.
+[16066][      debug] GC stats for capture:
+[16066][      debug]   minor_words: 3.01046e+06
+[16066][      debug]   promoted_words: 433517
+[16066][      debug]   major_words: 453866
+[16066][      debug]   minor_collections: 6
+[16066][      debug]   major_collections: 1
+[16066][      debug]   compactions: 0
+[16066][      debug]   top_heap_words: 661504
+[16066][      debug]   
+[16066][      debug] GC stats for main_process_full:
+[16066][      debug]   minor_words: 4.42154e+06
+[16066][      debug]   promoted_words: 602102
+[16066][      debug]   major_words: 643103
+[16066][      debug]   minor_collections: 25
+[16066][      debug]   major_collections: 6
+[16066][      debug]   compactions: 1
+[16066][      debug]   top_heap_words: 661504
+[16066][      debug]   
+[16066][environment] Scheduler: file
+[16066][environment] Cores used: 2
+[16066][environment] 
+[16074][environment] CWD = /home/rasofema/Documents/spray
+[16074][environment] No .inferconfig file found
+[16074][environment] Project root = /home/rasofema/Documents/spray
+[16074][environment] INFER_ARGS =   @/tmp/args.tmp.5d5131
+[16074][environment] command line arguments:   /opt/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/wrappers/clang
+[16074][environment]                           @/home/rasofema/Documents/spray/infer-out/tmp/cdb_clang_args.tmp.a0a2cd.txt
+[16074][environment]                           -fsyntax-only
+[16074][environment] Available memory at startup: 5143 MB
+[16074][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[16071][      debug] 
+[16071][      debug] *** Beginning capture of file /home/rasofema/Documents/spray/src/spray.c ***
+[16071][      debug] Loading the following linters files: /opt/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[16071][      debug] Elapsed: 74.974ms.
+[16071][      debug] GC stats for capture:
+[16071][      debug]   minor_words: 2.98567e+06
+[16071][      debug]   promoted_words: 477550
+[16071][      debug]   major_words: 502434
+[16071][      debug]   minor_collections: 5
+[16071][      debug]   major_collections: 0
+[16071][      debug]   compactions: 0
+[16071][      debug]   top_heap_words: 760832
+[16071][      debug]   
+[16071][      debug] GC stats for main_process_full:
+[16071][      debug]   minor_words: 4.39674e+06
+[16071][      debug]   promoted_words: 646135
+[16071][      debug]   major_words: 691671
+[16071][      debug]   minor_collections: 24
+[16071][      debug]   major_collections: 5
+[16071][      debug]   compactions: 1
+[16071][      debug]   top_heap_words: 760832
+[16071][      debug]   
+[16071][environment] Scheduler: file
+[16071][environment] Cores used: 2
+[16071][environment] 
+[16081][environment] CWD = /home/rasofema/Documents/spray
+[16081][environment] No .inferconfig file found
+[16081][environment] Project root = /home/rasofema/Documents/spray
+[16081][environment] INFER_ARGS =   @/tmp/args.tmp.b1d149
+[16081][environment] command line arguments:   /opt/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/wrappers/clang
+[16081][environment]                           @/home/rasofema/Documents/spray/infer-out/tmp/cdb_clang_args.tmp.b1a363.txt
+[16081][environment]                           -fsyntax-only
+[16081][environment] Available memory at startup: 5141 MB
+[16081][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[16081][      debug] 
+[16081][      debug] *** Beginning capture of file /home/rasofema/Documents/spray/src/spray_elf.c ***
+[16081][      debug] Loading the following linters files: /opt/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[16081][      debug] Elapsed: 127ms.
+[16081][      debug] GC stats for capture:
+[16081][      debug]   minor_words: 6.68396e+06
+[16081][      debug]   promoted_words: 763370
+[16081][      debug]   major_words: 801808
+[16081][      debug]   minor_collections: 9
+[16081][      debug]   major_collections: 1
+[16081][      debug]   compactions: 0
+[16081][      debug]   top_heap_words: 1006592
+[16081][      debug]   
+[16081][      debug] GC stats for main_process_full:
+[16081][      debug]   minor_words: 8.09503e+06
+[16081][      debug]   promoted_words: 931955
+[16081][      debug]   major_words: 991045
+[16081][      debug]   minor_collections: 28
+[16081][      debug]   major_collections: 6
+[16081][      debug]   compactions: 1
+[16081][      debug]   top_heap_words: 1006592
+[16081][      debug]   
+[16081][environment] Scheduler: file
+[16081][environment] Cores used: 2
+[16081][environment] [16074][      debug] 
+[16074][      debug] *** Beginning capture of file /home/rasofema/Documents/spray/src/spray_dwarf.c ***
+[16074][      debug] Loading the following linters files: /opt/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[16074][      debug] src/spray_dwarf.c:3069:3-31: ERROR translating statement 'DeclStmt'
+[16074][      debug] Aborting translation of method 'callback__get_filepaths' in file 'src/spray_dwarf.c'
+[16074][      debug] Unimplemented feature:
+[16074][      debug]   In DeclStmt found an unknown declaration type <"EnumDecl":({"pointer":18798,"source_range":({"file":"/home/rasofema/Documents/spray/src/spray_dwarf.c","line":3069,"column":3},{"file":"/home/rasofema/Documents/spray/src/spray_dwarf.c","line":3069,"column":30})},{"name":"","qual_name":["anonymous_enum_src/spray_dwarf.c:3069:3","callback__get_filepaths"]},18799,[<"EnumConstantDecl":({"pointer":18800,"source_range":({"file":"/home/rasofema/Documents/spray/src/spray_dwarf.c","line":3069,"column":10},{"file":"/home/rasofema/Documents/spray/src/spray_dwarf.c","line":3069,"column":28}),"is_this_declaration_referenced":true},{"name":"FILEPATHS_ALLOC","qual_name":["FILEPATHS_ALLOC","anonymous_enum_src/spray_dwarf.c:3069:3","callback__get_filepaths"]},{"type_ptr":134},{"init_expr":<"ConstantExpr":({"pointer":18801,"source_range":({"file":"/home/rasofema/Documents/spray/src/spray_dwarf.c","line":3069,"column":28},{"file":"/home/rasofema/Documents/spray/src/spray_dwarf.c","line":3069,"column":28})},[<"IntegerLiteral":({"pointer":18802,"source_range":({"file":"/home/rasofema/Documents/spray/src/spray_dwarf.c","line":3069,"column":28},{"file":"/home/rasofema/Documents/spray/src/spray_dwarf.c","line":3069,"column":28})},[],{"qual_type":{"type_ptr":134}},{"is_signed":true,"bitwidth":32,"value":"8"})>],{"qual_type":{"type_ptr":134}})>})>],{},<"TTK_Enum">,{})>
+[16074][      debug] src/spray_dwarf.c:3069:3-31: ERROR translating statement 'DeclStmt'
+[16074][      debug] Aborting translation of method 'callback__get_filepaths' in file 'src/spray_dwarf.c'
+[16074][      debug] Unimplemented feature:
+[16074][      debug]   In DeclStmt found an unknown declaration type <"EnumDecl":({"pointer":18798,"source_range":({"file":"/home/rasofema/Documents/spray/src/spray_dwarf.c","line":3069,"column":3},{"file":"/home/rasofema/Documents/spray/src/spray_dwarf.c","line":3069,"column":30})},{"name":"","qual_name":["anonymous_enum_src/spray_dwarf.c:3069:3","callback__get_filepaths"]},18799,[<"EnumConstantDecl":({"pointer":18800,"source_range":({"file":"/home/rasofema/Documents/spray/src/spray_dwarf.c","line":3069,"column":10},{"file":"/home/rasofema/Documents/spray/src/spray_dwarf.c","line":3069,"column":28}),"is_this_declaration_referenced":true},{"name":"FILEPATHS_ALLOC","qual_name":["FILEPATHS_ALLOC","anonymous_enum_src/spray_dwarf.c:3069:3","callback__get_filepaths"]},{"type_ptr":134},{"init_expr":<"ConstantExpr":({"pointer":18801,"source_range":({"file":"/home/rasofema/Documents/spray/src/spray_dwarf.c","line":3069,"column":28},{"file":"/home/rasofema/Documents/spray/src/spray_dwarf.c","line":3069,"column":28})},[<"IntegerLiteral":({"pointer":18802,"source_range":({"file":"/home/rasofema/Documents/spray/src/spray_dwarf.c","line":3069,"column":28},{"file":"/home/rasofema/Documents/spray/src/spray_dwarf.c","line":3069,"column":28})},[],{"qual_type":{"type_ptr":134}},{"is_signed":true,"bitwidth":32,"value":"8"})>],{"qual_type":{"type_ptr":134}})>})>],{},<"TTK_Enum">,{})>
+[16074][      debug] Elapsed: 382ms.
+[16074][      debug] GC stats for capture:
+[16074][      debug]   minor_words: 2.34276e+07
+[16074][      debug]   promoted_words: 2.02043e+06
+[16074][      debug]   major_words: 2.1441e+06
+[16074][      debug]   minor_collections: 28
+[16074][      debug]   major_collections: 5
+[16074][      debug]   compactions: 0
+[16074][      debug]   top_heap_words: 2330624
+[16074][      debug]   
+[16074][      debug] GC stats for main_process_full:
+[16074][      debug]   minor_words: 2.48387e+07
+[16074][      debug]   promoted_words: 2.18902e+06
+[16074][      debug]   major_words: 2.33333e+06
+[16074][      debug]   minor_collections: 47
+[16074][      debug]   major_collections: 10
+[16074][      debug]   compactions: 1
+[16074][      debug]   top_heap_words: 2330624
+[16074][      debug]   
+[16074][environment] Scheduler: file
+[16074][environment] Cores used: 2
+[16074][environment] 
+[16007][      debug] GC stats for capture:
+[16007][      debug]   minor_words: 1.02294e+06
+[16007][      debug]   promoted_words: 155544
+[16007][      debug]   major_words: 163737
+[16007][      debug]   minor_collections: 2
+[16007][      debug]   major_collections: 2
+[16007][      debug]   compactions: 1
+[16007][      debug]   top_heap_words: 875008
+[16007][      debug]   
+[16007][environment] Parallel jobs: 2
+[16007][   progress] Found 15 source files to analyze in /home/rasofema/Documents/spray/infer-out
+[16086][   progress] dependencies/hashmap.c/hashmap.c starting
+[16087][   progress] src/registers.c starting
+[16087][   progress] src/registers.c DONE
+[16087][   progress] src/info.c starting
+[16086][   progress] dependencies/hashmap.c/hashmap.c DONE
+[16086][   progress] dependencies/linenoise/linenoise.c starting
+[16086][   progress] dependencies/linenoise/linenoise.c DONE
+[16086][   progress] src/ptrace.c starting
+[16086][   progress] src/ptrace.c DONE
+[16086][   progress] src/print_source.c starting
+[16086][   progress] src/print_source.c DONE
+[16086][   progress] src/magic.c starting
+[16086][   progress] src/magic.c DONE
+[16086][   progress] src/spray_elf.c starting
+[16086][   progress] src/spray_elf.c DONE
+[16086][   progress] src/spray_dwarf.c starting
+[16087][   progress] src/info.c DONE
+[16087][   progress] src/backtrace.c starting
+[16087][   progress] src/backtrace.c DONE
+[16087][   progress] src/debugger.c starting
+[16087][   progress] src/debugger.c DONE
+[16087][   progress] src/breakpoints.c starting
+[16087][   progress] src/breakpoints.c DONE
+[16087][   progress] src/spray.c starting
+[16087][   progress] src/spray.c DONE
+[16087][   progress] src/history.c starting
+[16087][   progress] src/history.c DONE
+[16087][   progress] src/args.c starting
+[16087][   progress] src/args.c DONE
+[16086][   progress] src/spray_dwarf.c DONE
+[16007][      debug] Backend stats:
+[16007][      debug]   summary_file_try_load= 3882
+[16007][      debug]   summary_read_from_disk= 141
+[16007][      debug]   summary_cache_hits= 16422 (80%)
+[16007][      debug]   summary_cache_misses= 3882
+[16007][      debug]   ondemand_procs_analyzed= 344
+[16007][      debug]   ondemand_local_cache_hits= 7592 (93%)
+[16007][      debug]   ondemand_local_cache_misses= 565
+[16007][      debug]   proc_locker_lock_time_user= 0.00000000
+[16007][      debug]   proc_locker_lock_time_sys= 0.00000000
+[16007][      debug]   proc_locker_lock_time_wall= 0.00000000
+[16007][      debug]   proc_locker_unlock_time_user= 0.00000000
+[16007][      debug]   proc_locker_unlock_time_sys= 0.00000000
+[16007][      debug]   proc_locker_unlock_time_wall= 0.00000000
+[16007][      debug]   restart_scheduler_useful_time_user= 0.00000000
+[16007][      debug]   restart_scheduler_useful_time_sys= 0.00000000
+[16007][      debug]   restart_scheduler_useful_time_wall= 0.00000000
+[16007][      debug]   restart_scheduler_total_time_user= 0.00000000
+[16007][      debug]   restart_scheduler_total_time_sys= 0.00000000
+[16007][      debug]   restart_scheduler_total_time_wall= 0.00000000
+[16007][      debug]   
+[16007][      debug] GC stats for backend_stats.gc_stats_add.:
+[16007][      debug]   minor_words: 9.29899e+09
+[16007][      debug]   promoted_words: 5.47889e+07
+[16007][      debug]   major_words: 6.42229e+07
+[16007][      debug]   minor_collections: 8926
+[16007][      debug]   major_collections: 125
+[16007][      debug]   compactions: 0
+[16007][      debug]   top_heap_words: 8099328
+[16007][      debug]   
+[16007][      debug] GC stats for backend_stats.gc_stats_max.:
+[16007][      debug]   minor_words: 5.07351e+09
+[16007][      debug]   promoted_words: 3.13652e+07
+[16007][      debug]   major_words: 3.52901e+07
+[16007][      debug]   minor_collections: 4867
+[16007][      debug]   major_collections: 63
+[16007][      debug]   compactions: 0
+[16007][      debug]   top_heap_words: 4612096
+[16007][      debug]   
+[16007][      debug] Average over 2 processes
+[16007][      debug] GC stats for backend_stats.gc_stats_average.:
+[16007][      debug]   minor_words: 4.6495e+09
+[16007][      debug]   promoted_words: 2.73944e+07
+[16007][      debug]   major_words: 3.21115e+07
+[16007][      debug]   minor_collections: 4463
+[16007][      debug]   major_collections: 62
+[16007][      debug]   compactions: 0
+[16007][      debug]   top_heap_words: 4049664
+[16007][      debug]   
+[16007][      debug] Analysis phase finished in 14.393s
+[16007][      debug] backend_stats.scheduler_process_analysis_time_user= 0.13731200
+[16007][      debug] backend_stats.scheduler_process_analysis_time_sys= 0.05453600
+[16007][      debug] backend_stats.scheduler_process_analysis_time_wall= 14.39315634
+[16007][      debug] GC stats for analysis_scheduler:
+[16007][      debug]   minor_words: 1.35318e+07
+[16007][      debug]   promoted_words: 8163
+[16007][      debug]   major_words: 16869
+[16007][      debug]   minor_collections: 15
+[16007][      debug]   major_collections: 5
+[16007][      debug]   compactions: 1
+[16007][      debug]   top_heap_words: 875008
+[16007][      debug]   
+[16007][      debug] GC stats for report:
+[16007][      debug]   minor_words: 350389
+[16007][      debug]   promoted_words: 0
+[16007][      debug]   major_words: 4249
+[16007][      debug]   minor_collections: 0
+[16007][      debug]   major_collections: 0
+[16007][      debug]   compactions: 0
+[16007][      debug]   top_heap_words: 875008
+[16007][      debug]   
+[16007][      debug] GC stats for main_process_full:
+[16007][      debug]   minor_words: 1.65849e+07
+[16007][      debug]   promoted_words: 342281
+[16007][      debug]   major_words: 889470
+[16007][      debug]   minor_collections: 32
+[16007][      debug]   major_collections: 11
+[16007][      debug]   compactions: 3
+[16007][      debug]   top_heap_words: 875008
+[16007][      debug]   
+[16008][      debug] Sqlite write daemon: terminating
