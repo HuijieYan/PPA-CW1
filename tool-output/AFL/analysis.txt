@@ -1,0 +1,9 @@
+Crashes
+0-2 -> TP, https://github.com/sunjay/brainfuck/blob/master/brainfuck.md#the-program-counter-and-address-pointer it should be possible to move to the left. However, programmer decided that to not be the case. Nonetheless, needs to fail gracefully, which it doesn’t, marked as TODO. Probably executes random code that leads to failures
+3-14 -> maybe FP ? It’s like an infinite loop, more like a goto, so I guess it makes sense it just crashes, expected, run out of memory
+
+Hangs
+ALL -> FP ? infinite loop
+
+#7 is cool cause it actually just misses, not empty body while true loop, 14, 36, 45, 59, 61,66 similar
+#49,64,72 has a loop inside the loop, also cool
