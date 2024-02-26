@@ -31,3 +31,7 @@ XERXES
 #2 -> FP
 #3 -> FP
 #4 -> FP
+
+Hash
+#0 -> FP, hard to see because of the MACROS, but following the substitutions leads to reads only happening when flag is true, and there’s an assignment when that same flag is true
+#1-9 -> TP seems true, following macros, hash_new uses calloc without checking for null after
