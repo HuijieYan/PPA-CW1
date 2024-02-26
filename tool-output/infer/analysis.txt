@@ -1,0 +1,33 @@
+AIDE
+#0 -> FP, all allocations inside eval_string_expression have null check
+#1 -> TP, fstat just fetches info for the file, if if fails the file is not closed
+#2 -> FP it seems
+#3 -> FP it does get initialised by same if statement before
+#4 -> TP, local var?
+#5 -> TP, local var?
+#6 -> FP, all allocations inside eval_string_expression have null check
+#7 -> FP? Depends if conf properly defined and guaranteed to have &(conf->database_…) not null
+#8 -> FP, used for checks of return values
+#9 -> TP, no check if st is null on localtime call and no check of errno in between
+#10 -> TP? parentname not null because checked_strdup guarantees it, but assumes it contains ‘\’ in there
+#11 -> TP, no check after, local var
+Rest -> ? In yacc file
+
+LightDM GTK Greeter
+FP seems like a valid function function call
+
+Spray
+#0 -> TP
+#1-3 -> dependencies
+#1 -> FP, is initialised just in weird way
+#2 -> TP
+#3 -> TP
+#4 -> TP
+#5 -> TP !!
+
+XERXES
+#0 -> FP
+#1 -> TP
+#2 -> FP
+#3 -> FP
+#4 -> FP
