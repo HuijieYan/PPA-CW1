@@ -2,4 +2,5 @@
 
 ## Run static analysis tool cppcheck
 cd <project_dir>
+
 cppcheck --verbose . > tool-output/cppcheck/<project_name>.txt 2>&1
