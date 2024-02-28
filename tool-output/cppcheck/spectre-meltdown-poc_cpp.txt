@@ -1,0 +1,79 @@
+Checking spectre-meltdown-poc/btb.c ...
+spectre-meltdown-poc/btb.c:140:52: error: Subtracting pointers that point to different objects [comparePointers]
+     memcpy(btb + (offt ^ mask) - (&btb_branch_end - &btb_start), &btb_start, &btb_end - &btb_start);
+                                                   ^
+spectre-meltdown-poc/btb.c:8:24: note: Variable declared here.
+extern char btb_start, btb_branch_end, btb_end;
+                       ^
+spectre-meltdown-poc/btb.c:140:36: note: Address of variable taken here.
+     memcpy(btb + (offt ^ mask) - (&btb_branch_end - &btb_start), &btb_start, &btb_end - &btb_start);
+                                   ^
+spectre-meltdown-poc/btb.c:8:13: note: Variable declared here.
+extern char btb_start, btb_branch_end, btb_end;
+            ^
+spectre-meltdown-poc/btb.c:140:54: note: Address of variable taken here.
+     memcpy(btb + (offt ^ mask) - (&btb_branch_end - &btb_start), &btb_start, &btb_end - &btb_start);
+                                                     ^
+spectre-meltdown-poc/btb.c:140:52: note: Subtracting pointers that point to different objects
+     memcpy(btb + (offt ^ mask) - (&btb_branch_end - &btb_start), &btb_start, &btb_end - &btb_start);
+                                                   ^
+spectre-meltdown-poc/btb.c:141:59: error: Subtracting pointers that point to different objects [comparePointers]
+     void *entry = btb + (offt ^ mask) - (&btb_branch_end - &btb_start);
+                                                          ^
+spectre-meltdown-poc/btb.c:8:24: note: Variable declared here.
+extern char btb_start, btb_branch_end, btb_end;
+                       ^
+spectre-meltdown-poc/btb.c:141:43: note: Address of variable taken here.
+     void *entry = btb + (offt ^ mask) - (&btb_branch_end - &btb_start);
+                                          ^
+spectre-meltdown-poc/btb.c:8:13: note: Variable declared here.
+extern char btb_start, btb_branch_end, btb_end;
+            ^
+spectre-meltdown-poc/btb.c:141:61: note: Address of variable taken here.
+     void *entry = btb + (offt ^ mask) - (&btb_branch_end - &btb_start);
+                                                            ^
+spectre-meltdown-poc/btb.c:141:59: note: Subtracting pointers that point to different objects
+     void *entry = btb + (offt ^ mask) - (&btb_branch_end - &btb_start);
+                                                          ^
+spectre-meltdown-poc/btb.c:143:53: error: Subtracting pointers that point to different objects [comparePointers]
+     memcpy(btb_time + offt - (&btb_time_branch_end - &btb_time_start), &btb_time_start, &btb_time_end - &btb_time_start);
+                                                    ^
+spectre-meltdown-poc/btb.c:29:29: note: Variable declared here.
+extern char btb_time_start, btb_time_branch_end, btb_time_end;
+                            ^
+spectre-meltdown-poc/btb.c:143:32: note: Address of variable taken here.
+     memcpy(btb_time + offt - (&btb_time_branch_end - &btb_time_start), &btb_time_start, &btb_time_end - &btb_time_start);
+                               ^
+spectre-meltdown-poc/btb.c:29:13: note: Variable declared here.
+extern char btb_time_start, btb_time_branch_end, btb_time_end;
+            ^
+spectre-meltdown-poc/btb.c:143:55: note: Address of variable taken here.
+     memcpy(btb_time + offt - (&btb_time_branch_end - &btb_time_start), &btb_time_start, &btb_time_end - &btb_time_start);
+                                                      ^
+spectre-meltdown-poc/btb.c:143:53: note: Subtracting pointers that point to different objects
+     memcpy(btb_time + offt - (&btb_time_branch_end - &btb_time_start), &btb_time_start, &btb_time_end - &btb_time_start);
+                                                    ^
+spectre-meltdown-poc/btb.c:144:65: error: Subtracting pointers that point to different objects [comparePointers]
+     void *entry_time = btb_time + offt - (&btb_time_branch_end - &btb_time_start);
+                                                                ^
+spectre-meltdown-poc/btb.c:29:29: note: Variable declared here.
+extern char btb_time_start, btb_time_branch_end, btb_time_end;
+                            ^
+spectre-meltdown-poc/btb.c:144:44: note: Address of variable taken here.
+     void *entry_time = btb_time + offt - (&btb_time_branch_end - &btb_time_start);
+                                           ^
+spectre-meltdown-poc/btb.c:29:13: note: Variable declared here.
+extern char btb_time_start, btb_time_branch_end, btb_time_end;
+            ^
+spectre-meltdown-poc/btb.c:144:67: note: Address of variable taken here.
+     void *entry_time = btb_time + offt - (&btb_time_branch_end - &btb_time_start);
+                                                                  ^
+spectre-meltdown-poc/btb.c:144:65: note: Subtracting pointers that point to different objects
+     void *entry_time = btb_time + offt - (&btb_time_branch_end - &btb_time_start);
+                                                                ^
+1/2 files checked 27% done
+Checking spectre-meltdown-poc/poc.c ...
+Checking spectre-meltdown-poc/poc.c: POISON...
+Checking spectre-meltdown-poc/poc.c: RANDOMIZE...
+Checking spectre-meltdown-poc/poc.c: VISUALIZE...
+2/2 files checked 100% done

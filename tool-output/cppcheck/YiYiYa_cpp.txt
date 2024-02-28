@@ -1,0 +1,154 @@
+Checking YiYiYa/boot/arm/init-armv7.c ...
+YiYiYa/boot/arm/init-armv7.c:20:31: error: Subtracting pointers that point to different objects [comparePointers]
+  ptr->length=64*1024-(&_ebss - &_sdata);//64k
+                              ^
+YiYiYa/boot/arm/init-armv7.c:6:12: note: Variable declared here.
+extern int _ebss;
+           ^
+YiYiYa/boot/arm/init-armv7.c:20:24: note: Address of variable taken here.
+  ptr->length=64*1024-(&_ebss - &_sdata);//64k
+                       ^
+YiYiYa/boot/arm/init-armv7.c:3:12: note: Variable declared here.
+extern int _sdata;
+           ^
+YiYiYa/boot/arm/init-armv7.c:20:33: note: Address of variable taken here.
+  ptr->length=64*1024-(&_ebss - &_sdata);//64k
+                                ^
+YiYiYa/boot/arm/init-armv7.c:20:31: note: Subtracting pointers that point to different objects
+  ptr->length=64*1024-(&_ebss - &_sdata);//64k
+                              ^
+YiYiYa/boot/arm/init-armv7.c:41:34: error: Comparing pointers that point to different objects [comparePointers]
+  for (dst = &__bss_start__; dst < &__bss_end__; dst++) {
+                                 ^
+YiYiYa/boot/arm/init-armv7.c:9:12: note: Variable declared here.
+extern int __bss_start__,__bss_end__;
+           ^
+YiYiYa/boot/arm/init-armv7.c:41:14: note: Address of variable taken here.
+  for (dst = &__bss_start__; dst < &__bss_end__; dst++) {
+             ^
+YiYiYa/boot/arm/init-armv7.c:9:26: note: Variable declared here.
+extern int __bss_start__,__bss_end__;
+                         ^
+YiYiYa/boot/arm/init-armv7.c:41:36: note: Address of variable taken here.
+  for (dst = &__bss_start__; dst < &__bss_end__; dst++) {
+                                   ^
+YiYiYa/boot/arm/init-armv7.c:41:34: note: Comparing pointers that point to different objects
+  for (dst = &__bss_start__; dst < &__bss_end__; dst++) {
+                                 ^
+Checking YiYiYa/boot/arm/init-armv7.c: CUBIEBOARD2...
+Checking YiYiYa/boot/arm/init-armv7.c: NO_KSTART...
+Checking YiYiYa/boot/arm/init-armv7.c: RASPI2...
+Checking YiYiYa/boot/arm/init-armv7.c: V3S...
+1/7 files checked 1% done
+Checking YiYiYa/boot/arm/init.c ...
+Checking YiYiYa/boot/arm/init.c: CUBIEBOARD2...
+Checking YiYiYa/boot/arm/init.c: CUBIEBOARD2;V3S...
+Checking YiYiYa/boot/arm/init.c: KERNEL_MOVE...
+Checking YiYiYa/boot/arm/init.c: MIYOO...
+Checking YiYiYa/boot/arm/init.c: ORANGEPI_PC...
+Checking YiYiYa/boot/arm/init.c: RASPI2...
+Checking YiYiYa/boot/arm/init.c: RASPI2;RASPI3...
+Checking YiYiYa/boot/arm/init.c: RK3128...
+Checking YiYiYa/boot/arm/init.c: SINGLE_KERNEL...
+YiYiYa/boot/arm/init.c:39:32: error: Comparing pointers that point to different objects [comparePointers]
+  for (dst = &__bss_start; dst < &__bss_end; dst++) {
+                               ^
+YiYiYa/boot/arm/init.c:23:21: note: Variable declared here.
+extern unsigned int __bss_start, __bss_end;
+                    ^
+YiYiYa/boot/arm/init.c:39:14: note: Address of variable taken here.
+  for (dst = &__bss_start; dst < &__bss_end; dst++) {
+             ^
+YiYiYa/boot/arm/init.c:23:34: note: Variable declared here.
+extern unsigned int __bss_start, __bss_end;
+                                 ^
+YiYiYa/boot/arm/init.c:39:34: note: Address of variable taken here.
+  for (dst = &__bss_start; dst < &__bss_end; dst++) {
+                                 ^
+YiYiYa/boot/arm/init.c:39:32: note: Comparing pointers that point to different objects
+  for (dst = &__bss_start; dst < &__bss_end; dst++) {
+                               ^
+Checking YiYiYa/boot/arm/init.c: STM32F4XX...
+Checking YiYiYa/boot/arm/init.c: T113_S3...
+2/7 files checked 20% done
+Checking YiYiYa/boot/riscv/init.c ...
+Checking YiYiYa/boot/riscv/init.c: KERNEL_MOVE...
+Checking YiYiYa/boot/riscv/init.c: RISCV_VIRT...
+Checking YiYiYa/boot/riscv/init.c: RISCV_VIRT;SBI...
+Checking YiYiYa/boot/riscv/init.c: SBI...
+Checking YiYiYa/boot/riscv/init.c: SINGLE_KERNEL...
+YiYiYa/boot/riscv/init.c:455:41: error: Subtracting pointers that point to different objects [comparePointers]
+  boot_data.segments[num].size = &__end - &__start ;
+                                        ^
+YiYiYa/boot/riscv/init.c:450:21: note: Variable declared here.
+extern int __start, __end;
+                    ^
+YiYiYa/boot/riscv/init.c:455:34: note: Address of variable taken here.
+  boot_data.segments[num].size = &__end - &__start ;
+                                 ^
+YiYiYa/boot/riscv/init.c:450:12: note: Variable declared here.
+extern int __start, __end;
+           ^
+YiYiYa/boot/riscv/init.c:455:43: note: Address of variable taken here.
+  boot_data.segments[num].size = &__end - &__start ;
+                                          ^
+YiYiYa/boot/riscv/init.c:455:41: note: Subtracting pointers that point to different objects
+  boot_data.segments[num].size = &__end - &__start ;
+                                        ^
+3/7 files checked 34% done
+Checking YiYiYa/boot/x86-duck/init.c ...
+Checking YiYiYa/boot/x86-duck/init.c: KERNEL_MOVE...
+Checking YiYiYa/boot/x86-duck/init.c: X86...
+4/7 files checked 58% done
+Checking YiYiYa/boot/x86/init.c ...
+YiYiYa/boot/x86/init.c:130:51: error: Subtracting pointers that point to different objects [comparePointers]
+  boot_info->kernel_stack_size = kernel_stack_top - kernel_stack;
+                                                  ^
+YiYiYa/boot/x86/init.c:19:4: note: Variable declared here.
+u8 kernel_stack_top[0];
+   ^
+YiYiYa/boot/x86/init.c:130:34: note: Array decayed to pointer here.
+  boot_info->kernel_stack_size = kernel_stack_top - kernel_stack;
+                                 ^
+YiYiYa/boot/x86/init.c:18:4: note: Variable declared here.
+u8 kernel_stack[1024];  // 1k
+   ^
+YiYiYa/boot/x86/init.c:130:53: note: Array decayed to pointer here.
+  boot_info->kernel_stack_size = kernel_stack_top - kernel_stack;
+                                                    ^
+YiYiYa/boot/x86/init.c:130:51: note: Subtracting pointers that point to different objects
+  boot_info->kernel_stack_size = kernel_stack_top - kernel_stack;
+                                                  ^
+Checking YiYiYa/boot/x86/init.c: KERNEL_MOVE...
+Checking YiYiYa/boot/x86/init.c: __WIN32__...
+5/7 files checked 79% done
+Checking YiYiYa/boot/xtensa/init.c ...
+YiYiYa/boot/xtensa/init.c:169:37: error: Subtracting pointers that point to different objects [comparePointers]
+  memset(&_bss_start, 0, (&_bss_end - &_bss_start) * sizeof(_bss_start));
+                                    ^
+YiYiYa/boot/xtensa/init.c:40:12: note: Variable declared here.
+extern int _bss_end;
+           ^
+YiYiYa/boot/xtensa/init.c:169:27: note: Address of variable taken here.
+  memset(&_bss_start, 0, (&_bss_end - &_bss_start) * sizeof(_bss_start));
+                          ^
+YiYiYa/boot/xtensa/init.c:39:12: note: Variable declared here.
+extern int _bss_start;
+           ^
+YiYiYa/boot/xtensa/init.c:169:39: note: Address of variable taken here.
+  memset(&_bss_start, 0, (&_bss_end - &_bss_start) * sizeof(_bss_start));
+                                      ^
+YiYiYa/boot/xtensa/init.c:169:37: note: Subtracting pointers that point to different objects
+  memset(&_bss_start, 0, (&_bss_end - &_bss_start) * sizeof(_bss_start));
+                                    ^
+Checking YiYiYa/boot/xtensa/init.c: CONFIG_EFUSE_VIRTUAL...
+Checking YiYiYa/boot/xtensa/init.c: KERNEL_BIN...
+Checking YiYiYa/boot/xtensa/init.c: SINGLE_KERNEL...
+Checking YiYiYa/boot/xtensa/init.c: SOC_MPU_REGION_RO_SUPPORTED...
+Checking YiYiYa/boot/xtensa/init.c: SOC_MPU_REGION_WO_SUPPORTED...
+6/7 files checked 95% done
+Checking YiYiYa/tools/mksunxi/mksunxiboot.c ...
+Checking YiYiYa/tools/mksunxi/mksunxiboot.c: CONFIG_MACH_SUN50I;CONFIG_MACH_SUN9I...
+7/7 files checked 100% done
+nofile:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 configurations. Use --force to check all configurations. For more details, use --enable=information. [toomanyconfigs]
+

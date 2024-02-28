@@ -1,0 +1,4 @@
+Checking nx-hbloader/source/main.c ...
+nx-hbloader/source/main.c:257:30: error: syntax error [syntaxError]
+        .num_copy_handles = 1,
+                             ^

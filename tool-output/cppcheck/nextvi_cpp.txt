@@ -1,0 +1,30 @@
+Checking nextvi/conf.c ...
+1/9 files checked 7% done
+Checking nextvi/ex.c ...
+nextvi/ex.c:960:2: error: Common realloc mistake: 'bufs' nulled but not freed upon failure [memleakOnRealloc]
+ bufs = realloc(bufs, sizeof(struct buf) * xbufsmax);
+ ^
+2/9 files checked 21% done
+Checking nextvi/lbuf.c ...
+3/9 files checked 30% done
+Checking nextvi/led.c ...
+nextvi/led.c:574:29: error: syntax error [syntaxError]
+   term_exec(":", 1, /*nop*/, /*nop*/)
+                            ^
+4/9 files checked 40% done
+Checking nextvi/regex.c ...
+nextvi/regex.c:604:1: error: Memory leak: rs [memleak]
+}
+^
+nextvi/regex.c:193:5: error: Expression 'code[prog->unilen++]=(prog->unilen+((size+2)*i)-(prog->unilen)-2)' depends on order of evaluation of side effects [unknownEvaluationOrder]
+    EMIT(PC++, REL(PC, PC+((size+2)*i)));
+    ^
+5/9 files checked 48% done
+Checking nextvi/ren.c ...
+6/9 files checked 54% done
+Checking nextvi/term.c ...
+7/9 files checked 58% done
+Checking nextvi/uc.c ...
+8/9 files checked 71% done
+Checking nextvi/vi.c ...
+9/9 files checked 100% done
