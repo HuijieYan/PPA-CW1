@@ -1544,4 +1544,22 @@ Stopping analysis ... (CPAchecker.runAlgorithm, INFO)
 Verification result: TRUE. No property violation found by chosen configuration.
 More details about the verification run can be found in the directory "./output".
 Graphical representation included in the file "./output/Report.html".
+uninitVars
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Language C detected and set for analysis (CPAMain.detectFrontendLanguageIfNecessary, INFO)
+
+Using the following resource limits: CPU-time limit of 60s (ResourceLimitChecker.fromConfiguration, INFO)
+
+CPAchecker 2.1.1 / uninitVars (OpenJDK 64-Bit Server VM 17.0.9) started (CPAchecker.run, INFO)
+
+Parsing CFA from file(s) "/home/pom/CS-Work/Year-4/Practical-Programming-Analysis-COMP0174/Courseworks/Coursework_1/repos/XERXES/xerxes.c" (CPAchecker.parse, INFO)
+
+Starting analysis ... (CPAchecker.runAlgorithm, INFO)
+
+Stopping analysis ... (CPAchecker.runAlgorithm, INFO)
+
+Verification result: FALSE. Property violation (UninitializedVariablesObservingAutomaton) found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
 All .properties files processed successfully.

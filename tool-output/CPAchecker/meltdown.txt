@@ -1138,4 +1138,24 @@ Exception in thread "main" java.lang.IllegalArgumentException: expected one elem
 	at org.sosy_lab.cpachecker.core.counterexample.ReportGenerator.generate(ReportGenerator.java:179)
 	at org.sosy_lab.cpachecker.cmdline.CPAMain.printResultAndStatistics(CPAMain.java:750)
 	at org.sosy_lab.cpachecker.cmdline.CPAMain.main(CPAMain.java:175)
+uninitVars
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Language C detected and set for analysis (CPAMain.detectFrontendLanguageIfNecessary, INFO)
+
+Using the following resource limits: CPU-time limit of 60s (ResourceLimitChecker.fromConfiguration, INFO)
+
+CPAchecker 2.1.1 / uninitVars (OpenJDK 64-Bit Server VM 17.0.9) started (CPAchecker.run, INFO)
+
+Parsing CFA from file(s) "/home/pom/CS-Work/Year-4/Practical-Programming-Analysis-COMP0174/Courseworks/Coursework_1/repos/spectre-meltdown-poc/poc.c" (CPAchecker.parse, INFO)
+
+Inline assembler ignored, analysis is probably unsound! (CFABuilder.createCFA, WARNING)
+
+Starting analysis ... (CPAchecker.runAlgorithm, INFO)
+
+Stopping analysis ... (CPAchecker.runAlgorithm, INFO)
+
+Verification result: FALSE. Property violation (UninitializedVariablesObservingAutomaton) found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Report.html".
 All .properties files processed successfully.
